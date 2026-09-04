@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Battery Bank Sizer — Off-Grid Battery Bank Directory (2026)</title>
+<meta name="description" content="Free off-grid battery bank sizing tools, calculators, wiring guides, and real system cost breakdowns. 12V, 24V, 48V LiFePO4 and AGM sizing for cabins, vans, and homesteads.">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+.sub{color:var(--mut);margin-bottom:1.8rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:1.1rem 1.25rem;margin:.7rem 0}
+.card h3{font-size:1.05rem;margin-bottom:.25rem}
+.card p{color:var(--mut);font-size:.94rem}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ok);border:1px solid var(--ok);border-radius:20px;padding:.05rem .55rem;margin-left:.4rem;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.num{font-variant-numeric:tabular-nums;text-align:right}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+.gfm{background:linear-gradient(135deg,#1a2332,#16211c);border-color:#2ea043}
+</style>
+</head>
+<body>
+<h1>Battery Bank Sizer</h1>
+<p class="sub">The off-grid battery bank directory — sizing tables, wiring guides, and real cost breakdowns. Updated nightly. No fluff, no 3,000-word introductions.</p>
+
+<h2>⚡ Quick Sizing Table (LiFePO4, 80% DoD)</h2>
+<table>
+<tr><th>Daily use</th><th>Typical load</th><th>12V bank</th><th>24V bank</th><th>48V bank</th><th>Est. cost*</th></tr>
+<tr><td>Weekend cabin</td><td>1.0 kWh/day</td><td class="num">105 Ah</td><td class="num">52 Ah</td><td class="num">26 Ah</td><td class="num">$450–700</td></tr>
+<tr><td>Van life (light)</td><td>1.5 kWh/day</td><td class="num">160 Ah</td><td class="num">80 Ah</td><td class="num">40 Ah</td><td class="num">$700–1,100</td></tr>
+<tr><td>Van life (full)</td><td>3.0 kWh/day</td><td class="num">315 Ah</td><td class="num">160 Ah</td><td class="num">80 Ah</td><td class="num">$1,400–2,200</td></tr>
+<tr><td>Small homestead</td><td>5.0 kWh/day</td><td class="num">525 Ah</td><td class="num">265 Ah</td><td class="num">130 Ah</td><td class="num">$2,300–3,600</td></tr>
+<tr><td>Full off-grid home</td><td>10 kWh/day</td><td class="num">1,050 Ah</td><td class="num">525 Ah</td><td class="num">260 Ah</td><td class="num">$4,600–7,000</td></tr>
+</table>
+<p style="color:var(--mut);font-size:.85rem">*LiFePO4 street prices, Q3 2026, DIY racks vs plug-and-play. Formula: Ah = (Wh/day × days-of-autonomy × 1.25 safety) ÷ system voltage ÷ DoD.</p>
+
+<h2>📋 Directory — every guide on this site</h2>
+<div class="card"><h3>Sizing: 12V vs 24V vs 48V — when each wins</h3><p>The 2,000W inverter rule, wire-gauge savings, and why going 48V saves $300+ on copper alone. <em>Publishing tonight.</em></p></div>
+<div class="card"><h3>LiFePO4 vs AGM: the 10-year cost spreadsheet</h3><p>Cycle-life math at 80% vs 50% DoD, charge efficiency losses, and the break-even year most calculators hide. <em>Publishing tomorrow.</em></p></div>
+<div class="card"><h3>Real system: 5 kWh cabin build, itemized</h3><p>Every component, every dollar, every mistake — a full bill of materials from a documented build. <em>This week.</em></p></div>
+<div class="card"><h3>Battery bank wiring: series vs parallel vs series-parallel</h3><p>Balancing, fusing per string, bus-bar sizing, and the diagrams people actually need. <em>This week.</em></p></div>
+<div class="card"><h3>Cold weather: charging LiFePO4 below freezing</h3><p>Heated-battery options, low-temp cutoffs, and insulation strategies compared. <em>Next week.</em></p></div>
+
+<h2>🔧 Tools (coming)</h2>
+<div class="card"><h3>Interactive Battery Bank Calculator <span class="tag">building</span></h3><p>Enter your loads, autonomy days, and voltage — get Ah, fuse size, inverter tier, and a parts list with 2026 prices. No email required.</p></div>
+
+<div class="card gfm">
+<h3>🦁 About this site</h3>
+<p style="color:var(--fg)">Built and maintained by an autonomous agent office — research, drafting, and publishing run nightly on local AI hardware, supervised by a human founder. The same office builds agent setups for businesses ($99.99, all connected) and documents the rebuild publicly.</p>
+<p style="margin-top:.6rem"><a href="https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html">Get your own agent office →</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://www.gofundme.com/f/support-jeremys-bridge-to-ssdi">Support the SSDI bridge fund →</a></p>
+</div>
+
+<footer>Battery Bank Sizer · an agent-published directory · <a href="https://www.gofundme.com/f/support-jeremys-bridge-to-ssdi">the bridge fund</a> · <a href="https://jpanasuk-netizen.github.io/the-closer/">The Closer</a></footer>
+</body>
+</html>
