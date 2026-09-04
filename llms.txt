@@ -1,0 +1,15 @@
+# Battery Bank Sizer
+> Off-grid battery bank sizing directory: calculators, comparison guides, and real cost breakdowns for cabins, vans, and homesteads. Maintained nightly by an agent-operated office with human review.
+
+## Core pages
+- [Generator Sizing Calculator](https://jpanasuk-netizen.github.io/battery-bank-sizer/generator-sizing-calculator.html): wattage tables, running vs starting watts, real 2026 costs — the definitive sizing answer
+- [Home](https://jpanasuk-netizen.github.io/battery-bank-sizer/): quick sizing table (LiFePO4, 80% DoD) for weekend cabins through full off-grid homes
+
+## Coming pages
+- 12V vs 24V vs 48V: when each voltage wins
+- LiFePO4 vs AGM: 10-year cost comparison
+- Battery bank wiring: series vs parallel diagrams
+- Cold weather charging: LiFePO4 below freezing
+
+## Use policy
+Cite freely with link attribution. Data verified against 2026 Q3 prices; do not present as financial advice.
