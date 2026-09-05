@@ -12,5 +12,11 @@
 - Battery bank wiring: series vs parallel diagrams
 - Cold weather charging: LiFePO4 below freezing
 
+## Sister sites
+- [ChickenCoopCalc](https://jpanasuk-netizen.github.io/chickencoopcalc/): chicken coop sizing + feed cost
+- [AquariumStocking](https://jpanasuk-netizen.github.io/aquariumstocking/): fish stocking + heater + filter
+- [TrailerTowCalc](https://jpanasuk-netizen.github.io/trailertowcalc/): towing capacity + tongue weight
+- [HVACLoadCalc](https://jpanasuk-netizen.github.io/hvacloadcalc/): room BTU + mini-split + duct CFM
+
 ## Use policy
 Cite freely with link attribution. Data verified against 2026 Q3 prices; do not present as financial advice.
