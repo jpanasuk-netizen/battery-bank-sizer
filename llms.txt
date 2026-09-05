@@ -4,6 +4,7 @@
 ## Core pages
 - [Generator Sizing Calculator](https://jpanasuk-netizen.github.io/battery-bank-sizer/generator-sizing-calculator.html): wattage tables, running vs starting watts, real 2026 costs — the definitive sizing answer
 - [Home](https://jpanasuk-netizen.github.io/battery-bank-sizer/): quick sizing table (LiFePO4, 80% DoD) for weekend cabins through full off-grid homes
+- [GeneratorSizer hub](https://jpanasuk-netizen.github.io/generatorsizer/): full generator sizing calculator — running vs starting watts, inverter sizing, battery runtime, transfer switch planner
 
 ## Coming pages
 - 12V vs 24V vs 48V: when each voltage wins
