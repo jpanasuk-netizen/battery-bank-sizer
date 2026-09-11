@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Battery Bank Sizer — Off-Grid Battery Bank Directory (2026)</title>
+<title>Battery Bank Size Calculator — How Many Batteries Do You Need?</title>
+<link rel="canonical" href="https://battery-bank-sizer.com/">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="shortcut icon" href="/assets/favicon.ico">
 <meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
-<meta name="description" content="Free off-grid battery bank sizing tools, calculators, wiring guides, and real system cost breakdowns. 12V, 24V, 48V LiFePO4 and AGM sizing for cabins, vans, and homesteads.">
+<meta name="description" content="Free battery bank size calculator: how many batteries you need for off-grid cabins, van life, and homesteads. Ah tables at 12V/24V/48V with real 2026 cost.">
 <style>
 :root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
 *{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
@@ -28,7 +29,13 @@ th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;le
 .num{font-variant-numeric:tabular-nums;text-align:right}
 footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
 .gfm{background:linear-gradient(135deg,#1a2332,#16211c);border-color:#2ea043}
+.faqsec{margin-top:2.2rem;border-top:1px solid var(--bd);padding-top:1rem}
+.faqsec h3{margin:1.1rem 0 .3rem}
+.faqsec p{color:var(--mut);font-size:.95rem}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How many batteries do you need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "A weekend cabin using about 1 kWh/day needs ~105 Ah at 12V LiFePO4 (or 26 Ah at 48V) using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80 DoD. That is one 100 Ah battery plus headroom; a 3 kWh/day cabin needs ~315 Ah at 12V."}},{"@type": "Question", "name": "How many batteries for van life?", "acceptedAnswer": {"@type": "Answer", "text": "Two 100 Ah 12V LiFePO4 batteries (~160 Ah usable budget) cover a light 1.5 kWh/day van build: fridge, lights, fan, and charging. Full-timer vans at 3 kWh/day need ~315 Ah, typically three to four 100 Ah batteries."}},{"@type": "Question", "name": "How many 100 Ah batteries does a 2000 watt inverter need?", "acceptedAnswer": {"@type": "Answer", "text": "A 2,000W inverter can pull ~175 A from a 12V bank at full load. Two 100 Ah LiFePO4 batteries in parallel supply that briefly, but sustained inverter use means size by daily watt-hours, not inverter rating \u2014 3 kWh/day of inverter runtime needs ~315 Ah at 12V or 160 Ah at 24V."}},{"@type": "Question", "name": "How long will a 100 Ah battery run a fridge?", "acceptedAnswer": {"@type": "Answer", "text": "A 12V compressor fridge draws 40\u201360 W at a 30\u201340% duty cycle \u2014 roughly 400\u2013500 Wh/day. A 100 Ah LiFePO4 battery stores 1,280 Wh (80% DoD usable \u2248 1,024 Wh), so it runs the fridge about two full days with nothing else on the bank."}},{"@type": "Question", "name": "LiFePO4 vs AGM: how does that change the battery count?", "acceptedAnswer": {"@type": "Answer", "text": "AGM can only cycle to 50% DoD, so a 105 Ah LiFePO4 cabin bank becomes 168 Ah of AGM for the same energy. Over 3,000\u20135,000 cycles vs 400\u2013600, LiFePO4 wins on cost per usable watt-hour by year two or three in almost every sizing scenario."}}]}
+</script>
 </head>
 <body>
 <h1>Battery Bank Sizer</h1>
@@ -45,6 +52,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 </table>
 <p style="color:var(--mut);font-size:.85rem">*LiFePO4 street prices, Q3 2026, DIY racks vs plug-and-play. Formula: Ah = (Wh/day × days-of-autonomy × 1.25 safety) ÷ system voltage ÷ DoD.</p>
 
+<p>Start here: <a href="what-size-battery-bank-for-off-grid-cabin.html">what size battery bank for an off-grid cabin</a> (the full formula with worked 1–5 kWh/day examples) or <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries you need for van life</a>. Comparing backup options? Our <a href="generator-sizing-calculator.html">generator sizing calculator</a> covers the wattage side, and the <a href="index.html">quick sizing table</a> below maps daily use to Amp-hours at 12V, 24V, and 48V.</p>
 <h2>📋 Directory — every guide on this site</h2>
 <div class="card"><h3><a href="what-size-battery-bank-for-off-grid-cabin.html">What size battery bank for an off-grid cabin?</a></h3><p>The full formula, worked 1–5 kWh/day cabin examples, autonomy days, and the AGM-vs-LiFePO4 DoD math.</p></div>
 <div class="card"><h3><a href="how-many-batteries-do-i-need-for-van-life.html">How many batteries do you need for van life?</a></h3><p>Two 100 Ah batteries for most vans — worked load lists from weekend to full-timer, and when to jump to 24V/48V.</p></div>
@@ -54,8 +62,22 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <div class="card"><h3>Battery bank wiring: series vs parallel vs series-parallel</h3><p>Balancing, fusing per string, bus-bar sizing, and the diagrams people actually need. <em>This week.</em></p></div>
 <div class="card"><h3>Cold weather: charging LiFePO4 below freezing</h3><p>Heated-battery options, low-temp cutoffs, and insulation strategies compared. <em>Next week.</em></p></div>
 
+<p class="small">Buyer math, worked in full: <a href="what-size-battery-bank-for-off-grid-cabin.html">off-grid cabin battery bank sizing</a> · <a href="how-many-batteries-do-i-need-for-van-life.html">van life battery count</a> · <a href="generator-sizing-calculator.html">what size generator do I need</a>.</p>
 <h2>🔧 Tools (coming)</h2>
 <div class="card"><h3>Interactive Battery Bank Calculator <span class="tag">building</span></h3><p>Enter your loads, autonomy days, and voltage — get Ah, fuse size, inverter tier, and a parts list with 2026 prices. No email required.</p></div>
+
+<section class="faqsec"><h2>Frequently asked questions</h2>
+<h3>How many batteries do you need for an off-grid cabin?</h3>
+<p>A weekend cabin using about 1 kWh/day needs ~105 Ah at 12V LiFePO4 (or 26 Ah at 48V) using Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ 0.80 DoD. That is one 100 Ah battery plus headroom; a 3 kWh/day cabin needs ~315 Ah at 12V.</p>
+<h3>How many batteries for van life?</h3>
+<p>Two 100 Ah 12V LiFePO4 batteries (~160 Ah usable budget) cover a light 1.5 kWh/day van build: fridge, lights, fan, and charging. Full-timer vans at 3 kWh/day need ~315 Ah, typically three to four 100 Ah batteries.</p>
+<h3>How many 100 Ah batteries does a 2000 watt inverter need?</h3>
+<p>A 2,000W inverter can pull ~175 A from a 12V bank at full load. Two 100 Ah LiFePO4 batteries in parallel supply that briefly, but sustained inverter use means size by daily watt-hours, not inverter rating — 3 kWh/day of inverter runtime needs ~315 Ah at 12V or 160 Ah at 24V.</p>
+<h3>How long will a 100 Ah battery run a fridge?</h3>
+<p>A 12V compressor fridge draws 40–60 W at a 30–40% duty cycle — roughly 400–500 Wh/day. A 100 Ah LiFePO4 battery stores 1,280 Wh (80% DoD usable ≈ 1,024 Wh), so it runs the fridge about two full days with nothing else on the bank.</p>
+<h3>LiFePO4 vs AGM: how does that change the battery count?</h3>
+<p>AGM can only cycle to 50% DoD, so a 105 Ah LiFePO4 cabin bank becomes 168 Ah of AGM for the same energy. Over 3,000–5,000 cycles vs 400–600, LiFePO4 wins on cost per usable watt-hour by year two or three in almost every sizing scenario.</p>
+</section>
 
 <div class="card gfm">
 <h3>🦁 About this site</h3>
@@ -63,6 +85,6 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <p style="margin-top:.6rem"><a href="https://jpanasuk-netizen.github.io/the-closer/CONNECT_YOUR_LIFE.html">Get your own agent office →</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://www.gofundme.com/f/support-jeremys-bridge-to-ssdi">Support the SSDI bridge fund →</a></p>
 </div>
 
-<footer>Battery Bank Sizer · an agent-published directory · <a href="https://www.scrolllaunch.com" target="_blank" rel="noopener" style="color:var(--acc);border:1px solid var(--bd);border-radius:6px;padding:2px 8px;font-size:.75rem;text-decoration:none">⚡ Launched on ScrollLaunch</a> · <a href="https://www.gofundme.com/f/support-jeremys-bridge-to-ssdi">the bridge fund</a> · <a href="https://jpanasuk-netizen.github.io/the-closer/">The Closer</a> · <a href="https://jpanasuk-netizen.github.io/generatorsizer/" rel="noopener">GeneratorSizer</a> · <a href="https://jpanasuk-netizen.github.io/solarsizer/" rel="noopener">SolarSizer</a> · <a href="https://jpanasuk-netizen.github.io/weldingcalc/" rel="noopener">WeldingCalc</a> · <a href="https://jpanasuk-netizen.github.io/chickencoopcalc/" rel="noopener">ChickenCoopCalc</a> · <a href="https://jpanasuk-netizen.github.io/aquariumstocking/" rel="noopener">AquariumStocking</a> · <a href="https://jpanasuk-netizen.github.io/trailertowcalc/" rel="noopener">TrailerTowCalc</a> · <a href="https://jpanasuk-netizen.github.io/hvacloadcalc/" rel="noopener">HVACLoadCalc</a></footer>
+<footer>Battery Bank Sizer · an agent-published directory · <a href="https://www.scrolllaunch.com" target="_blank" rel="noopener" style="color:var(--acc);border:1px solid var(--bd);border-radius:6px;padding:2px 8px;font-size:.75rem;text-decoration:none">⚡ Launched on ScrollLaunch</a> · <a href="https://www.gofundme.com/f/support-jeremys-bridge-to-ssdi">the bridge fund</a> · <a href="https://jpanasuk-netizen.github.io/the-closer/">The Closer</a> · <a href="https://jpanasuk-netizen.github.io/generatorsizer/" rel="noopener">GeneratorSizer</a> · <a href="https://jpanasuk-netizen.github.io/solarsizer/" rel="noopener">SolarSizer</a> · <a href="https://jpanasuk-netizen.github.io/weldingcalc/" rel="noopener">WeldingCalc</a> · <a href="https://jpanasuk-netizen.github.io/chickencoopcalc/" rel="noopener">ChickenCoopCalc</a> · <a href="https://jpanasuk-netizen.github.io/aquariumstocking/" rel="noopener">AquariumStocking</a> · <a href="https://jpanasuk-netizen.github.io/trailertowcalc/" rel="noopener">TrailerTowCalc</a> · <a href="https://jpanasuk-netizen.github.io/hvacloadcalc/" rel="noopener">HVACLoadCalc</a><a href="what-size-battery-bank-for-off-grid-cabin.html">off-grid cabin sizing</a> · <a href="how-many-batteries-do-i-need-for-van-life.html">van life battery guide</a> · </footer>
 </body>
 </html>

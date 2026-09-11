@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What Size Battery Bank for an Off-Grid Cabin? Worked Math (2026)</title>
-<meta name="description" content="Off-grid cabin battery bank sizing with the real formula: a 1 kWh/day weekend cabin needs ~105 Ah at 12V or 26 Ah at 48V LiFePO4. Days of autonomy, DoD, and inverter surge included.">
+<title>What Size Battery Bank for an Off-Grid Cabin? Worked Sizing Math</title>
+<meta name="description" content="Off-grid cabin battery sizing: a 1 kWh/day cabin needs ~105 Ah at 12V LiFePO4. The formula, autonomy days, DoD, and worked examples from 1 to 5 kWh/day.">
 <link rel="canonical" href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -33,27 +33,7 @@ ul{margin:.6rem 0 .6rem 1.2rem}
 footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
 </style>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What size battery bank do I need for an off-grid cabin?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A weekend cabin running about 1 kWh per day (lights, water pump, laptop, fridge) needs roughly 105 Ah of LiFePO4 at 12V, or 26 Ah at 48V, using the formula Ah = (Wh/day × days of autonomy × 1.25 safety margin) ÷ system voltage ÷ 0.80 DoD. For 2 days of autonomy, double it: about 210 Ah at 12V for the same cabin." }
-    },
-    {
-      "@type": "Question",
-      "name": "How many days of autonomy should an off-grid cabin battery bank have?",
-      "acceptedAnswer": { "@type": "Answer", "text": "2 days is the standard for cabins with a generator or solar backup; 3 days if you're fully off-grid with no charging source during storms. Every extra day multiplies the bank linearly — a 1 kWh/day cabin at 3 days autonomy needs about 315 Ah at 12V instead of 210." }
-    },
-    {
-      "@type": "Question",
-      "name": "Is 12V or 48V better for a cabin battery bank?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Above roughly 1.5 kWh/day, 24V or 48V wins. A 48V bank needs a quarter of the Amp-hours of the same 12V bank, uses far thinner (cheaper) copper, runs cooler, and any inverter over 3,000W is realistically 48V-only. Small weekend cabins under 1 kWh/day are the last place 12V still makes sense, mostly because 12V DC appliances are cheap and common." }
-    }
-  ]
-}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "What size battery bank do I need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "A weekend cabin running about 1 kWh per day needs roughly 105 Ah of LiFePO4 at 12V, or 26 Ah at 48V, using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80. Two days of autonomy doubles that; a full-time cabin at 5 kWh/day lands around 525 Ah at 12V or 130 Ah at 48V."}},{"@type": "Question", "name": "How many days of autonomy should I plan for?", "acceptedAnswer": {"@type": "Answer", "text": "Two days with any charging backup; three if the bank stands alone through storms. Each extra day multiplies the bank linearly \u2014 and it's the most expensive knob in the formula, so pair autonomy days with an honest load-shedding plan."}},{"@type": "Question", "name": "Is 12V or 48V better for a cabin?", "acceptedAnswer": {"@type": "Answer", "text": "Above about 1.5 kWh/day, 24V or 48V wins: a quarter of the Amp-hours, thinner copper, cooler runs, and inverters over 3,000W are effectively 48V-only. Small weekend cabins under 1 kWh/day are the last place 12V still makes sense."}},{"@type": "Question", "name": "How many batteries for a 1,000 watt-hour-per-day cabin?", "acceptedAnswer": {"@type": "Answer", "text": "One to two 100 Ah 12V LiFePO4 batteries: the formula gives ~105 Ah at 12V for one day of autonomy and ~210 Ah for two days, so one 100\u2013120 Ah battery covers weekends and two cover storm days."}},{"@type": "Question", "name": "Is AGM or LiFePO4 better for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "LiFePO4. AGM is half the price per Ah but only half usable (50% DoD) and lasts 400\u2013600 cycles; LiFePO4 gives 80% DoD and 3,000\u20135,000 cycles. A 105 Ah LiFePO4 cabin bank becomes 168 Ah in AGM for the same energy."}}]}
 </script>
 </head>
 <body>
@@ -126,9 +106,14 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <p>Two days with any charging backup; three if the bank stands alone through storms. Each extra day multiplies the bank linearly — and it's the most expensive knob in the formula, so pair autonomy days with an honest load-shedding plan.</p>
 <h3>Is 12V or 48V better for a cabin?</h3>
 <p>Above about 1.5 kWh/day, 24V or 48V wins: a quarter of the Amp-hours, thinner copper, cooler runs, and inverters over 3,000W are effectively 48V-only. Small weekend cabins under 1 kWh/day are the last place 12V still makes sense.</p>
+<h3>How many batteries for a 1,000 watt-hour-per-day cabin?</h3>
+<p>One to two 100 Ah 12V LiFePO4 batteries: the formula gives ~105 Ah at 12V for one day of autonomy and ~210 Ah for two days, so one 100–120 Ah battery covers weekends and two cover storm days.</p>
+<h3>Is AGM or LiFePO4 better for an off-grid cabin?</h3>
+<p>LiFePO4. AGM is half the price per Ah but only half usable (50% DoD) and lasts 400–600 cycles; LiFePO4 gives 80% DoD and 3,000–5,000 cycles. A 105 Ah LiFePO4 cabin bank becomes 168 Ah in AGM for the same energy.</p>
 
+<p>Backup power comparison: the <a href="generator-sizing-calculator.html">generator sizing calculator</a> covers what size generator you need when a battery bank won't carry the load.</p>
 <p class="small">Next steps: the <a href="index.html">battery bank sizer directory</a> has the full quick-sizing table and voltage comparison, and the van-life math lives in <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries you need for van life</a>. Charging-side math: GeneratorSizer's <a href="https://jpanasuk-netizen.github.io/generatorsizer/" rel="noopener">generator size calculator ↗</a>.</p>
 
-<footer>Battery Bank Sizer · <a href="index.html">battery bank directory</a> · <a href="how-many-batteries-do-i-need-for-van-life.html">van life sizing</a> · pages may contain affiliate links</footer>
+<footer>Battery Bank Sizer · <a href="index.html">battery bank directory</a> · <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries do you need for van life</a> · <a href="generator-sizing-calculator.html">generator sizing</a> · pages may contain affiliate links</footer>
 </body>
 </html>
