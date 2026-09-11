@@ -10,4 +10,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://jpanasuk-netizen.github.io/battery-bank-sizer/sitemap.xml
+Sitemap: https://battery-bank-sizer.com/sitemap.xml
