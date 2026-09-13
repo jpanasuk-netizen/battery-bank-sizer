@@ -4,7 +4,7 @@
 ## Core pages
 - [Generator Sizing Calculator](https://battery-bank-sizer.com/generator-sizing-calculator.html): wattage tables, running vs starting watts, real 2026 costs — the definitive sizing answer
 - [Home](https://battery-bank-sizer.com/): quick sizing table (LiFePO4, 80% DoD) for weekend cabins through full off-grid homes
-- [GeneratorSizer hub](https://jpanasuk-netizen.github.io/generatorsizer/): full generator sizing calculator — running vs starting watts, inverter sizing, battery runtime, transfer switch planner
+- [GeneratorSizer hub](https://generator-sizer.com/): full generator sizing calculator — running vs starting watts, inverter sizing, battery runtime, transfer switch planner
 
 ## Coming pages
 - 12V vs 24V vs 48V: when each voltage wins
@@ -13,10 +13,10 @@
 - Cold weather charging: LiFePO4 below freezing
 
 ## Sister sites
-- [ChickenCoopCalc](https://jpanasuk-netizen.github.io/chickencoopcalc/): chicken coop sizing + feed cost
-- [AquariumStocking](https://jpanasuk-netizen.github.io/aquariumstocking/): fish stocking + heater + filter
-- [TrailerTowCalc](https://jpanasuk-netizen.github.io/trailertowcalc/): towing capacity + tongue weight
-- [HVACLoadCalc](https://jpanasuk-netizen.github.io/hvacloadcalc/): room BTU + mini-split + duct CFM
+- [ChickenCoopCalc](https://chickencoopcalc.com/): chicken coop sizing + feed cost
+- [AquariumStocking](https://aquarium-stocking.com/): fish stocking + heater + filter
+- [TrailerTowCalc](https://trailertowcalc.com/): towing capacity + tongue weight
+- [HVACLoadCalc](https://hvac-load-calc.com/): room BTU + mini-split + duct CFM
 
 ## Use policy
 Cite freely with link attribution. Data verified against 2026 Q3 prices; do not present as financial advice.
