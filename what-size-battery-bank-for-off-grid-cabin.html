@@ -14,6 +14,18 @@
 <meta name="twitter:description" content="The formula, worked cabin examples from 1 to 5 kWh/day, autonomy days, and why DoD and surge decide the real answer.">
 <meta name="robots" content="index,follow">
 <style>
+
+.btn-amz{display:inline-block;background:var(--card,#1a1a1a);color:var(--fg,#eee);border:1px solid var(--warn,#f5a623);border-radius:8px;padding:.55rem .9rem;font-size:.92rem;text-decoration:none;min-height:44px;line-height:1.4;margin:.2rem}
+.btn-amz-primary{background:var(--acc,#3b82f6);color:#fff!important;border-color:var(--acc,#3b82f6);font-weight:700;width:100%;text-align:center}
+@media(min-width:560px){.btn-amz-primary{width:auto;min-width:240px}}
+#matchedCta{margin:.85rem 0 1rem;padding:.85rem 1rem;border:1px solid var(--warn,#f5a623);border-radius:10px;background:var(--card,#1a1a1a)}
+#matchedCta[hidden]{display:none!important}
+#amzSticky{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;align-items:center;gap:.75rem;justify-content:space-between;padding:.7rem .9rem;background:var(--card,#1a1a1a);border-top:2px solid var(--warn,#f5a623);box-shadow:0 -6px 24px rgba(0,0,0,.35)}
+#amzSticky[hidden]{display:none!important}
+#amzSticky .btn-amz-primary{width:auto;flex:1;max-width:420px}
+#amzSticky .dismiss{background:transparent;border:1px solid var(--bd,#333);color:var(--mut,#999);border-radius:8px;padding:.45rem .7rem;cursor:pointer;min-height:44px}
+body{padding-bottom:4.5rem}
+
 .answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
 :root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
 *{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
@@ -92,7 +104,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <div class="affil">
 <span class="tag">Affiliate</span>
 <p>The 100–200 Ah 12V LiFePO4 class is the workhorse for weekend cabins, and a low-frequency 2,000–3,000W inverter handles the fridge and pump surges.</p>
-<p style="margin-top:.6rem"><a href="https://www.amazon.com/s?k=100ah+lifepo4+battery&tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank" style="border:1px solid var(--ok);border-radius:6px;padding:4px 12px;text-decoration:none">100 Ah LiFePO4 batteries on Amazon →</a>
+<p style="margin-top:.6rem"><a class="btn-amz btn-amz-primary" href="https://www.amazon.com/s?k=100ah+lifepo4+battery&tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank" style="border:1px solid var(--ok);border-radius:6px;padding:4px 12px;text-decoration:none">100 Ah LiFePO4 batteries on Amazon →</a>
 <a href="https://www.amazon.com/s?k=2000+watt+pure+sine+inverter+12v&tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank" style="border:1px solid var(--ok);border-radius:6px;padding:4px 12px;text-decoration:none;margin-left:.5rem">2,000W pure-sine inverters on Amazon →</a></p>
 </div>
 
@@ -118,5 +130,10 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <p class="small">Next steps: the <a href="index.html">battery bank sizer directory</a> has the full quick-sizing table and voltage comparison, and the van-life math lives in <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries you need for van life</a>. Charging-side math: GeneratorSizer's <a href="https://generator-sizer.com/" rel="noopener">generator size calculator ↗</a>.</p>
 
 <footer>Battery Bank Sizer · <a href="index.html">battery bank directory</a> · <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries do you need for van life</a> · <a href="generator-sizing-calculator.html">generator sizing</a> · pages may contain affiliate links</footer>
+
+<div id="amzSticky" aria-hidden="false">
+  <a id="amzStickyLink" class="btn-amz btn-amz-primary" href="https://www.amazon.com/s?k=100ah+lifepo4+battery+12v&tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">Shop 100 Ah LiFePO4 on Amazon</a>
+</div>
+
 </body>
 </html>

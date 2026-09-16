@@ -20,3 +20,10 @@
 
 ## Use policy
 Cite freely with link attribution. Data verified against 2026 Q3 prices; do not present as financial advice.
+
+## Topic map
+- [Battery Bank Sizer topic map](https://battery-bank-sizer.com/topics.html): Battery bank sizing for off-grid power systems.
+- **Bank math:** [Battery bank sizer](https://battery-bank-sizer.com/), [Ah pocket card](https://battery-bank-sizer.com/magnet.html)
+- **Cabin banks:** [Cabin battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html)
+- **Van banks:** [Van life battery count](https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html)
+- **Fuel backup:** [Generator sizing (bridge)](https://battery-bank-sizer.com/generator-sizing-calculator.html)
