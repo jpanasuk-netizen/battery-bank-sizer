@@ -4,4 +4,9 @@
   <url><loc>https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://battery-bank-sizer.com/generator-sizing-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://battery-bank-sizer.com/magnet.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
