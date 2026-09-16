@@ -46,14 +46,36 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 .faqsec p{color:var(--mut);font-size:.95rem}
 </style>
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "BatteryBankSizer Battery Bank Size Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "url": "https://battery-bank-sizer.com/",
+  "description": "Free battery bank sizing calculator and directory: Ah from daily Wh at 12V/24V/48V, LiFePO4 vs AGM DoD, cabin and van examples, and quick sizing tables.",
+  "dateModified": "2026-09-16",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How many batteries do you need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "A weekend cabin using about 1 kWh/day needs ~105 Ah at 12V LiFePO4 (or 26 Ah at 48V) using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80 DoD. That is one 100 Ah battery plus headroom; a 3 kWh/day cabin needs ~315 Ah at 12V."}},{"@type": "Question", "name": "How many batteries for van life?", "acceptedAnswer": {"@type": "Answer", "text": "Two 100 Ah 12V LiFePO4 batteries (~160 Ah usable budget) cover a light 1.5 kWh/day van build: fridge, lights, fan, and charging. Full-timer vans at 3 kWh/day need ~315 Ah, typically three to four 100 Ah batteries."}},{"@type": "Question", "name": "How many 100 Ah batteries does a 2000 watt inverter need?", "acceptedAnswer": {"@type": "Answer", "text": "A 2,000W inverter can pull ~175 A from a 12V bank at full load. Two 100 Ah LiFePO4 batteries in parallel supply that briefly, but sustained inverter use means size by daily watt-hours, not inverter rating \u2014 3 kWh/day of inverter runtime needs ~315 Ah at 12V or 160 Ah at 24V."}},{"@type": "Question", "name": "How long will a 100 Ah battery run a fridge?", "acceptedAnswer": {"@type": "Answer", "text": "A 12V compressor fridge draws 40\u201360 W at a 30\u201340% duty cycle \u2014 roughly 400\u2013500 Wh/day. A 100 Ah LiFePO4 battery stores 1,280 Wh (80% DoD usable \u2248 1,024 Wh), so it runs the fridge about two full days with nothing else on the bank."}},{"@type": "Question", "name": "LiFePO4 vs AGM: how does that change the battery count?", "acceptedAnswer": {"@type": "Answer", "text": "AGM can only cycle to 50% DoD, so a 105 Ah LiFePO4 cabin bank becomes 168 Ah of AGM for the same energy. Over 3,000\u20135,000 cycles vs 400\u2013600, LiFePO4 wins on cost per usable watt-hour by year two or three in almost every sizing scenario."}}]}
 </script>
 </head>
 <body>
 <h1>Battery Bank Size Calculator</h1>
+<p class="small" id="last-updated">Last updated: September 16, 2026 (CT)</p>
 <p><a href="topics.html"><strong>Topic map</strong></a> — pillars, existing pages, what this site is not.</p>
 <p class="sub">Battery bank sizing for off-grid power systems.</p>
 <p class="sub">The off-grid battery bank directory — sizing tables, wiring guides, and real cost breakdowns. Updated nightly. No fluff, no 3,000-word introductions.</p>
+
+<aside class="tldr" id="quick-answer" aria-label="Quick answer" style="margin:1rem 0 1.25rem;padding:1rem 1.1rem;border:1px solid var(--bd,#30363d);border-radius:10px;background:var(--card,#161b22)">
+  <h2 style="font-size:1.05rem;margin:0 0 .5rem;border:0;padding:0;border-bottom:0">Quick answer</h2>
+  <p style="margin:0 0 .45rem;color:var(--fg,#e6edf3)">Formula already on this page: <strong>Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ 0.80 DoD</strong> for LiFePO4.</p>
+  <p style="margin:0 0 .45rem;color:var(--fg,#e6edf3)">Weekend cabin ~<strong>1 kWh/day</strong> → about <strong>105 Ah at 12 V</strong> (or 26 Ah at 48 V). Light van ~<strong>1.5 kWh/day</strong> → two <strong>100 Ah 12 V</strong> LiFePO4 (~160 Ah usable). Full-timer / 3 kWh/day → ~<strong>315 Ah at 12 V</strong>.</p>
+  <p style="margin:0;color:var(--fg,#e6edf3)">A 100 Ah LiFePO4 bank runs a typical 12 V compressor fridge (~400–500 Wh/day) about <strong>two full days</strong> with nothing else on the bank. Use the quick sizing table below — no invented loads.</p>
+</aside>
+
 
 <h2>⚡ Quick Sizing Table (LiFePO4, 80% DoD)</h2>
 <table>
@@ -68,8 +90,8 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 
 <p>Start here: <a href="what-size-battery-bank-for-off-grid-cabin.html">what size battery bank for an off-grid cabin</a> (the full formula with worked 1–5 kWh/day examples) or <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries you need for van life</a>. Comparing backup options? Our <a href="generator-sizing-calculator.html">generator sizing calculator</a> covers the wattage side, and the <a href="index.html">quick sizing table</a> below maps daily use to Amp-hours at 12V, 24V, and 48V.</p>
 <h2>📋 Directory — every guide on this site</h2>
-<div class="card"><h3><a href="what-size-battery-bank-for-off-grid-cabin.html">What size battery bank for an off-grid cabin?</a></h3><p>The full formula, worked 1–5 kWh/day cabin examples, autonomy days, and the AGM-vs-LiFePO4 DoD math.</p></div>
-<div class="card"><h3><a href="how-many-batteries-do-i-need-for-van-life.html">How many batteries do you need for van life?</a></h3><p>Two 100 Ah batteries for most vans — worked load lists from weekend to full-timer, and when to jump to 24V/48V.</p></div>
+<div class="card"><h3><a href="what-size-battery-bank-for-off-grid-cabin.html">What size battery bank for an off-grid cabin?</a></h3><p>Direct answer: ~<strong>1 kWh/day</strong> weekend cabin → about <strong>105 Ah at 12 V LiFePO4</strong>; <strong>3 kWh/day</strong> → ~<strong>315 Ah at 12 V</strong>. Full formula and AGM vs LiFePO4 DoD on the guide.</p></div>
+<div class="card"><h3><a href="how-many-batteries-do-i-need-for-van-life.html">How many batteries do you need for van life?</a></h3><p>Direct answer: light ~<strong>1.5 kWh/day</strong> van → <strong>two 100 Ah 12 V LiFePO4</strong>; full-timer at <strong>3 kWh/day</strong> → ~<strong>315 Ah</strong> (typically three to four 100 Ah). Load lists on the guide.</p></div>
 <div class="card"><h3>Sizing: 12V vs 24V vs 48V — when each wins</h3><p>The 2,000W inverter rule, wire-gauge savings, and why going 48V saves $300+ on copper alone. <em>Publishing tonight.</em></p></div>
 <div class="card"><h3>LiFePO4 vs AGM: the 10-year cost spreadsheet</h3><p>Cycle-life math at 80% vs 50% DoD, charge efficiency losses, and the break-even year most calculators hide. <em>Publishing tomorrow.</em></p></div>
 <div class="card"><h3>Real system: 5 kWh cabin build, itemized</h3><p>Every component, every dollar, every mistake — a full bill of materials from a documented build. <em>This week.</em></p></div>
