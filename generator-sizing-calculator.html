@@ -37,20 +37,20 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 {
   "sources": [
     {
-      "title": "NEC Article 480 Storage Batteries",
-      "url": "https://www.nfpa.org/nec",
-      "date": "2026-09-17"
+      "title": "Battle Born BB10012i manual: 100% usable depth of discharge, 3,000-5,000 cycles",
+      "url": "https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf",
+      "date": "2026-10-02"
     },
     {
-      "title": "DOE Battery Life Cycle Report",
-      "url": "https://www.energy.gov/eere/articles/batteries-storage",
-      "date": "2026-09-17"
+      "title": "Battle Born: lead-acid and AGM typically limited to about 50% depth of discharge",
+      "url": "https://battlebornbatteries.com/blogs/academy/lead-acid-vs-agm-vs-lithium-batteries-whats-the-difference-the-battle-born-educational-series",
+      "date": "2026-10-02"
     }
   ]
 }
 </script>
 <script>
-document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>All calculations verified against:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
+document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>References for depth of discharge and cycle life:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
 </script>
 <meta name="llms.txt" content="https://battery-bank-sizer.com/sources.json">
 </head>
@@ -71,6 +71,29 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <tr><td>Space heater</td><td class="num">1,500</td><td class="num">1,500</td></tr></table>
 <h2>Battery bank instead of fuel? (The 2026 question)</h2>
 <p>If your daily load is under ~5 kWh and you have solar, a LiFePO4 battery bank often beats a generator: no fuel storage, no exhaust, silent, 10-year lifespan. See <a href="what-size-battery-bank-for-off-grid-cabin.html">what size battery bank for an off-grid cabin</a> and <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries you need for van life</a>, plus the full <a href="/">battery bank sizing tables</a> — the crossover point is roughly $4,600 in batteries vs a $1,200 generator plus $80/month of fuel. Hybrid setups (small generator + battery bank) beat both for full off-grid.</p>
+<h2 id="common-questions">Common questions</h2>
+<h3>Inverter size</h3>
+<ul>
+<li><a href="what-size-battery-bank-for-a-1000w-inverter.html">What size battery bank for a 1000W inverter?</a></li>
+<li><a href="what-size-battery-bank-for-a-2000w-inverter.html">What size battery bank for a 2000W inverter?</a></li>
+<li><a href="what-size-battery-bank-for-a-3000w-inverter.html">What size battery bank for a 3000W inverter?</a></li>
+<li><a href="what-size-battery-bank-for-a-5000w-inverter.html">What size battery bank for a 5000W inverter?</a></li>
+</ul>
+<h3>Appliances</h3>
+<ul>
+<li><a href="what-size-battery-bank-for-a-cpap.html">What size battery bank for a CPAP?</a></li>
+<li><a href="what-size-battery-bank-for-a-microwave.html">What size battery bank for a microwave?</a></li>
+<li><a href="what-size-battery-bank-for-a-refrigerator.html">What size battery bank for a refrigerator?</a></li>
+<li><a href="what-size-battery-bank-for-a-rv-air-conditioner.html">What size battery bank for an RV air conditioner?</a></li>
+<li><a href="what-size-battery-bank-for-a-sump-pump-backup.html">What size battery bank for a sump pump backup?</a></li>
+</ul>
+<h3>Trolling motors</h3>
+<ul>
+<li><a href="what-size-battery-for-a-30-lb-trolling-motor.html">What size battery for a 30 lb trolling motor?</a></li>
+<li><a href="what-size-battery-for-a-55-lb-trolling-motor.html">What size battery for a 55 lb trolling motor?</a></li>
+<li><a href="what-size-battery-for-a-80-lb-trolling-motor.html">What size battery for an 80 lb trolling motor?</a></li>
+<li><a href="what-size-battery-for-a-112-lb-trolling-motor.html">What size battery for a 112 lb trolling motor?</a></li>
+</ul>
 <h2>Real 2026 costs</h2>
 <table><tr><th>Setup</th><th class="num">Typical cost</th></tr>
 <tr><td>3,500W inverter generator (cabin)</td><td class="num">$900–1,400</td></tr>

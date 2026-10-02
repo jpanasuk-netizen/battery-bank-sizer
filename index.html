@@ -59,7 +59,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 }
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many batteries do you need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "A weekend cabin using about 1 kWh/day and 2 days of autonomy needs about 260 Ah at 12V LiFePO4 (65 Ah at 48V) using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80 DoD. That is three 100 Ah batteries; a 3 kWh/day cabin at the same 2 days needs about 781 Ah at 12V."}}, {"@type": "Question", "name": "How many batteries for van life?", "acceptedAnswer": {"@type": "Answer", "text": "Two 100 Ah 12V LiFePO4 batteries cover a light 1.5 kWh/day van at 1 day of autonomy (about 195 Ah): fridge, lights, fan, and charging. Full-timer vans at 3 kWh/day and 1 day need about 391 Ah, four 100 Ah batteries."}}, {"@type": "Question", "name": "How many 100 Ah batteries does a 2000 watt inverter need?", "acceptedAnswer": {"@type": "Answer", "text": "A 2,000W inverter can pull 166.7 A from a 12V bank at full load (2,000 \u00f7 12). Two 100 Ah LiFePO4 batteries in parallel supply that briefly, but sustained inverter use means size by daily watt-hours, not inverter rating \u2014 3 kWh/day for 1 day of autonomy needs about 391 Ah at 12V or 195 Ah at 24V."}}, {"@type": "Question", "name": "How long will a 100 Ah battery run a fridge?", "acceptedAnswer": {"@type": "Answer", "text": "A 12V compressor fridge draws 40\u201360 W at a 30\u201340% duty cycle \u2014 roughly 400\u2013500 Wh/day. A 100 Ah LiFePO4 battery stores 1,200 Wh at 12 V (80% DoD usable = 960 Wh), so it runs the fridge about two full days with nothing else on the bank."}}, {"@type": "Question", "name": "LiFePO4 vs AGM: how does that change the battery count?", "acceptedAnswer": {"@type": "Answer", "text": "AGM can only cycle to 50% DoD, so a 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah of AGM for the same energy. Over 3,000\u20135,000 cycles vs 400\u2013600, LiFePO4 wins on cost per usable watt-hour by year two or three in almost every sizing scenario."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many batteries do you need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "A weekend cabin using about 1 kWh/day and 2 days of autonomy needs about 260 Ah at 12V LiFePO4 (65 Ah at 48V) using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80 DoD. That is three 100 Ah batteries; a 3 kWh/day cabin at the same 2 days needs about 781 Ah at 12V."}}, {"@type": "Question", "name": "How many batteries for van life?", "acceptedAnswer": {"@type": "Answer", "text": "Two 100 Ah 12V LiFePO4 batteries cover a light 1.5 kWh/day van at 1 day of autonomy (about 195 Ah): fridge, lights, fan, and charging. Full-timer vans at 3 kWh/day and 1 day need about 391 Ah, four 100 Ah batteries."}}, {"@type": "Question", "name": "How many 100 Ah batteries does a 2000 watt inverter need?", "acceptedAnswer": {"@type": "Answer", "text": "A 2,000W inverter can pull 166.7 A from a 12V bank at full load (2,000 \u00f7 12). Two 100 Ah LiFePO4 batteries in parallel supply that briefly, but sustained inverter use means size by daily watt-hours, not inverter rating \u2014 3 kWh/day for 1 day of autonomy needs about 391 Ah at 12V or 195 Ah at 24V."}}, {"@type": "Question", "name": "How long will a 100 Ah battery run a fridge?", "acceptedAnswer": {"@type": "Answer", "text": "A 12V compressor fridge draws 40\u201360 W at a 30\u201340% duty cycle \u2014 roughly 400\u2013500 Wh/day. A 100 Ah LiFePO4 battery stores 1,200 Wh at 12 V (80% DoD usable = 960 Wh), so it runs the fridge about two full days with nothing else on the bank."}}, {"@type": "Question", "name": "LiFePO4 vs AGM: how does that change the battery count?", "acceptedAnswer": {"@type": "Answer", "text": "Flooded lead-acid and AGM are typically limited to about 50% depth of discharge, so a 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah of AGM for the same energy. The Battle Born 100 Ah manual lists 3,000\u20135,000 deep discharge cycles and 100% usable capacity for that lithium battery; these tables still plan LiFePO4 at 80% DoD. That manual does not publish an AGM cycle count."}}]}
 </script>
 
 <meta property="og:type" content="website">
@@ -75,14 +75,14 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 {
   "sources": [
     {
-      "title": "NEC Article 480 Storage Batteries",
-      "url": "https://www.nfpa.org/nec",
-      "date": "2026-09-17"
+      "title": "Battle Born BB10012i manual: 100% usable depth of discharge, 3,000-5,000 cycles",
+      "url": "https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf",
+      "date": "2026-10-02"
     },
     {
-      "title": "DOE Battery Life Cycle Report",
-      "url": "https://www.energy.gov/eere/articles/batteries-storage",
-      "date": "2026-09-17"
+      "title": "Battle Born: lead-acid and AGM typically limited to about 50% depth of discharge",
+      "url": "https://battlebornbatteries.com/blogs/academy/lead-acid-vs-agm-vs-lithium-batteries-whats-the-difference-the-battle-born-educational-series",
+      "date": "2026-10-02"
     },
     {
       "title": "Redodo 12V 100Ah LiFePO4 battery, current price $269.99",
@@ -113,7 +113,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 }
 </script>
 <script>
-document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>All calculations verified against:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
+document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>Sources for the 2 Oct 2026 price checks and for depth of discharge and cycle life:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
 </script>
 <meta name="llms.txt" content="https://battery-bank-sizer.com/sources.json">
 </head>
@@ -154,6 +154,29 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <div class="card"><h3>Cold weather: charging LiFePO4 below freezing</h3><p>Heated-battery options, low-temp cutoffs, and insulation strategies compared. <em>Planned — not published yet.</em></p></div>
 
 <p class="small">Buyer math, worked in full: <a href="what-size-battery-bank-for-off-grid-cabin.html">off-grid cabin battery bank sizing</a> · <a href="how-many-batteries-do-i-need-for-van-life.html">van life battery count</a> · <a href="generator-sizing-calculator.html">what size generator do I need</a>.</p>
+<h2 id="common-questions">Common questions</h2>
+<h3>Inverter size</h3>
+<ul>
+<li><a href="what-size-battery-bank-for-a-1000w-inverter.html">What size battery bank for a 1000W inverter?</a></li>
+<li><a href="what-size-battery-bank-for-a-2000w-inverter.html">What size battery bank for a 2000W inverter?</a></li>
+<li><a href="what-size-battery-bank-for-a-3000w-inverter.html">What size battery bank for a 3000W inverter?</a></li>
+<li><a href="what-size-battery-bank-for-a-5000w-inverter.html">What size battery bank for a 5000W inverter?</a></li>
+</ul>
+<h3>Appliances</h3>
+<ul>
+<li><a href="what-size-battery-bank-for-a-cpap.html">What size battery bank for a CPAP?</a></li>
+<li><a href="what-size-battery-bank-for-a-microwave.html">What size battery bank for a microwave?</a></li>
+<li><a href="what-size-battery-bank-for-a-refrigerator.html">What size battery bank for a refrigerator?</a></li>
+<li><a href="what-size-battery-bank-for-a-rv-air-conditioner.html">What size battery bank for an RV air conditioner?</a></li>
+<li><a href="what-size-battery-bank-for-a-sump-pump-backup.html">What size battery bank for a sump pump backup?</a></li>
+</ul>
+<h3>Trolling motors</h3>
+<ul>
+<li><a href="what-size-battery-for-a-30-lb-trolling-motor.html">What size battery for a 30 lb trolling motor?</a></li>
+<li><a href="what-size-battery-for-a-55-lb-trolling-motor.html">What size battery for a 55 lb trolling motor?</a></li>
+<li><a href="what-size-battery-for-a-80-lb-trolling-motor.html">What size battery for an 80 lb trolling motor?</a></li>
+<li><a href="what-size-battery-for-a-112-lb-trolling-motor.html">What size battery for a 112 lb trolling motor?</a></li>
+</ul>
 <h2>🔧 Tools (coming)</h2>
 <div class="card"><h3>Interactive Battery Bank Calculator <span class="tag">building</span></h3><p>Enter your loads, autonomy days, and voltage — get Ah, fuse size, inverter tier, and a parts list with 2026 prices. No email required.</p></div>
 
@@ -167,7 +190,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <h3>How long will a 100 Ah battery run a fridge?</h3>
 <p>A 12V compressor fridge draws 40–60 W at a 30–40% duty cycle — roughly 400–500 Wh/day. A 100 Ah LiFePO4 battery stores 1,200 Wh at 12 V (80% DoD usable = 960 Wh), so it runs the fridge about two full days with nothing else on the bank.</p>
 <h3>LiFePO4 vs AGM: how does that change the battery count?</h3>
-<p>AGM can only cycle to 50% DoD, so a 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah of AGM for the same energy. Over 3,000–5,000 cycles vs 400–600, LiFePO4 wins on cost per usable watt-hour by year two or three in almost every sizing scenario.</p>
+<p>Flooded lead-acid and AGM are typically limited to about 50% depth of discharge, so a 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah of AGM for the same energy. The Battle Born 100 Ah manual lists 3,000–5,000 deep discharge cycles and 100% usable capacity for that lithium battery; these tables still plan LiFePO4 at 80% DoD. That manual does not publish an AGM cycle count.</p>
 </section>
 
 <div class="card gfm">

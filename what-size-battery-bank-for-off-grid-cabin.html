@@ -46,7 +46,7 @@ ul{margin:.6rem 0 .6rem 1.2rem}
 footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
 </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What size battery bank do I need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "Using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80, a 1 kWh/day cabin is about 130 Ah at 12V for one day (33 Ah at 48V) and about 260 Ah at 12V for two days (65 Ah at 48V). A 5 kWh/day cabin at two days is about 1,302 Ah at 12V or 326 Ah at 48V."}}, {"@type": "Question", "name": "How many days of autonomy should I plan for?", "acceptedAnswer": {"@type": "Answer", "text": "Two days with any charging backup; three if the bank stands alone through storms. Each extra day multiplies the bank linearly \u2014 and it's the most expensive knob in the formula, so pair autonomy days with an honest load-shedding plan."}}, {"@type": "Question", "name": "Is 12V or 48V better for a cabin?", "acceptedAnswer": {"@type": "Answer", "text": "Above about 1.5 kWh/day, 24V or 48V wins: a quarter of the Amp-hours, thinner copper, cooler runs, and inverters over 3,000W are effectively 48V-only. Small weekend cabins under 1 kWh/day are the last place 12V still makes sense."}}, {"@type": "Question", "name": "How many batteries for a 1,000 watt-hour-per-day cabin?", "acceptedAnswer": {"@type": "Answer", "text": "The formula gives about 130 Ah at 12V for one day of autonomy and about 260 Ah for two days. Two 100 Ah batteries cover the one-day result (200 Ah). Three 100 Ah batteries cover the two-day result (300 Ah)."}}, {"@type": "Question", "name": "Is AGM or LiFePO4 better for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "LiFePO4. AGM is half the price per Ah but only half usable (50% DoD) and lasts 400\u2013600 cycles; LiFePO4 gives 80% DoD and 3,000\u20135,000 cycles. A 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah in AGM for the same energy."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What size battery bank do I need for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "Using Ah = (Wh/day \u00d7 autonomy days \u00d7 1.25) \u00f7 voltage \u00f7 0.80, a 1 kWh/day cabin is about 130 Ah at 12V for one day (33 Ah at 48V) and about 260 Ah at 12V for two days (65 Ah at 48V). A 5 kWh/day cabin at two days is about 1,302 Ah at 12V or 326 Ah at 48V."}}, {"@type": "Question", "name": "How many days of autonomy should I plan for?", "acceptedAnswer": {"@type": "Answer", "text": "Two days with any charging backup; three if the bank stands alone through storms. Each extra day multiplies the bank linearly \u2014 and it's the most expensive knob in the formula, so pair autonomy days with an honest load-shedding plan."}}, {"@type": "Question", "name": "Is 12V or 48V better for a cabin?", "acceptedAnswer": {"@type": "Answer", "text": "Above about 1.5 kWh/day, 24V or 48V wins: a quarter of the Amp-hours, thinner copper, cooler runs, and inverters over 3,000W are effectively 48V-only. Small weekend cabins under 1 kWh/day are the last place 12V still makes sense."}}, {"@type": "Question", "name": "How many batteries for a 1,000 watt-hour-per-day cabin?", "acceptedAnswer": {"@type": "Answer", "text": "The formula gives about 130 Ah at 12V for one day of autonomy and about 260 Ah for two days. Two 100 Ah batteries cover the one-day result (200 Ah). Three 100 Ah batteries cover the two-day result (300 Ah)."}}, {"@type": "Question", "name": "Is AGM or LiFePO4 better for an off-grid cabin?", "acceptedAnswer": {"@type": "Answer", "text": "LiFePO4. Flooded lead-acid and AGM are typically limited to about 50% depth of discharge, so a 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah of AGM for the same energy. The Battle Born 100 Ah manual lists 3,000\u20135,000 deep discharge cycles and 100% usable capacity for that lithium battery; this page still plans LiFePO4 at 80% DoD. That manual does not publish an AGM cycle count."}}]}
 </script>
 
 <meta property="og:type" content="website">
@@ -59,14 +59,14 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 {
   "sources": [
     {
-      "title": "NEC Article 480 Storage Batteries",
-      "url": "https://www.nfpa.org/nec",
-      "date": "2026-09-17"
+      "title": "Battle Born BB10012i manual: 100% usable depth of discharge, 3,000-5,000 cycles",
+      "url": "https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf",
+      "date": "2026-10-02"
     },
     {
-      "title": "DOE Battery Life Cycle Report",
-      "url": "https://www.energy.gov/eere/articles/batteries-storage",
-      "date": "2026-09-17"
+      "title": "Battle Born: lead-acid and AGM typically limited to about 50% depth of discharge",
+      "url": "https://battlebornbatteries.com/blogs/academy/lead-acid-vs-agm-vs-lithium-batteries-whats-the-difference-the-battle-born-educational-series",
+      "date": "2026-10-02"
     },
     {
       "title": "Redodo 12V 100Ah LiFePO4 battery, current price $269.99",
@@ -97,7 +97,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 }
 </script>
 <script>
-document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>All calculations verified against:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
+document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>Sources for the 2 Oct 2026 price checks and for depth of discharge and cycle life:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
 </script>
 <meta name="llms.txt" content="https://battery-bank-sizer.com/sources.json">
 </head>
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <p>Every extra day multiplies the bank linearly, and it's the most expensive knob you turn. 2 days is right if you have any charging backup (solar array, generator, a weekly drive with a DC charger). If the bank is the only source during a week of storms, 3 days plus honest load shedding is the real spec. Cabin owners who size 1 day "because we'll just conserve" routinely end up at 100% discharge by night two.</p>
 
 <h3>3. Depth of discharge — the AGM trap</h3>
-<p>AGM is half the price per Ah and roughly half the usable capacity: you can only cycle to 50% without wrecking cycle life, and you get 400–600 cycles. LiFePO4 gives you 80% DoD and 3,000–5,000 cycles. Per usable watt-hour over the bank's life, LiFePO4 wins by year two or three in almost every cabin scenario. If you're sizing an AGM bank, use 0.50 instead of 0.80 as the DoD divisor. The 1 kWh/day, 2-day, 12V bank is then (1,000 × 2 × 1.25) ÷ 12 ÷ 0.50 = 416.7 Ah, about 417 Ah of AGM, against about 260 Ah of LiFePO4.</p>
+<p>AGM is half the price per Ah and roughly half the usable capacity. Flooded lead-acid and AGM are typically limited to about 50% depth of discharge (<a href="https://battlebornbatteries.com/blogs/academy/lead-acid-vs-agm-vs-lithium-batteries-whats-the-difference-the-battle-born-educational-series" rel="noopener" target="_blank">Battle Born chemistry guide</a>). The <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">Battle Born 100 Ah manual</a> lists that lithium battery at 100% usable depth of discharge and 3,000–5,000 deep discharge cycles; this page still plans LiFePO4 at 80% DoD. That manual does not publish an AGM cycle count. If you're sizing an AGM bank, use 0.50 instead of 0.80 as the DoD divisor. The 1 kWh/day, 2-day, 12V bank is then (1,000 × 2 × 1.25) ÷ 12 ÷ 0.50 = 416.7 Ah, about 417 Ah of AGM, against about 260 Ah of LiFePO4.</p>
 
 <div class="affil">
 <span class="tag">Affiliate</span>
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <h3>How many batteries for a 1,000 watt-hour-per-day cabin?</h3>
 <p>The formula gives about 130 Ah at 12V for one day of autonomy and about 260 Ah for two days. Two 100 Ah batteries cover the one-day result (200 Ah). Three 100 Ah batteries cover the two-day result (300 Ah).</p>
 <h3>Is AGM or LiFePO4 better for an off-grid cabin?</h3>
-<p>LiFePO4. AGM is half the price per Ah but only half usable (50% DoD) and lasts 400–600 cycles; LiFePO4 gives 80% DoD and 3,000–5,000 cycles. A 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah in AGM for the same energy.</p>
+<p>LiFePO4. Flooded lead-acid and AGM are typically limited to about 50% depth of discharge, so a 260 Ah LiFePO4 cabin bank (1 kWh/day, 2 days, 12V) becomes about 417 Ah of AGM for the same energy. The Battle Born 100 Ah manual lists 3,000–5,000 deep discharge cycles and 100% usable capacity for that lithium battery; this page still plans LiFePO4 at 80% DoD. That manual does not publish an AGM cycle count.</p>
 
 <p>Backup power comparison: the <a href="generator-sizing-calculator.html">generator sizing calculator</a> covers what size generator you need when a battery bank won't carry the load.</p>
 <p class="small">Next steps: the <a href="index.html">battery bank sizer directory</a> has the full quick-sizing table and voltage comparison, and the van-life math lives in <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries you need for van life</a>. Charging-side math: GeneratorSizer's <a href="https://generator-sizer.com/" rel="noopener">generator size calculator ↗</a>.</p>
