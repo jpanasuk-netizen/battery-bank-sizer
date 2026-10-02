@@ -67,6 +67,31 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
       "title": "DOE Battery Life Cycle Report",
       "url": "https://www.energy.gov/eere/articles/batteries-storage",
       "date": "2026-09-17"
+    },
+    {
+      "title": "Redodo 12V 100Ah LiFePO4 battery, current price $269.99",
+      "url": "https://www.redodopower.com/products/12v-100ah-lithium-battery",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "LiTime 12V 100Ah LiFePO4 battery (Ampere Time rebrand), current price $302.39",
+      "url": "https://www.litime.com/products/litime-12v-100ah-lithium-lifepo4-battery",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "SOK SK12V100H 12V 100Ah self-heating LiFePO4 battery, current price $369.00",
+      "url": "https://us.sokbattery.com/product-page/sk12v100h-12v-100ah-self-heating-lifepo4-battery",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "Battle Born BB10012 100Ah 12V LiFePO4 battery, current price $799.00",
+      "url": "https://battlebornbatteries.com/products/100ah-12v-lifepo4-deep-cycle-battery",
+      "date": "2026-10-02"
+    },
+    {
+      "title": "Renogy 12.8V 100Ah Core Mini LiFePO4 battery, listed price $356.99 (unavailable)",
+      "url": "https://www.renogy.com/products/12-8v-100ah-lithium-iron-phosphate-battery",
+      "date": "2026-10-02"
     }
   ]
 }
@@ -110,13 +135,13 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <h2>The sizing table at a glance (LiFePO4, 80% DoD, 2 days autonomy)</h2>
 <table>
 <tr><th>Daily use</th><th>12V bank</th><th>24V bank</th><th>48V bank</th><th class="num">Est. cost*</th></tr>
-<tr><td>Weekend cabin (1.0 kWh/day)</td><td class="num">260 Ah</td><td class="num">130 Ah</td><td class="num">65 Ah</td><td class="num">$450–700</td></tr>
-<tr><td>Van life light (1.5 kWh/day)</td><td class="num">391 Ah</td><td class="num">195 Ah</td><td class="num">98 Ah</td><td class="num">$700–1,100</td></tr>
-<tr><td>Van life full (3.0 kWh/day)</td><td class="num">781 Ah</td><td class="num">391 Ah</td><td class="num">195 Ah</td><td class="num">$1,400–2,200</td></tr>
-<tr><td>Small homestead (5.0 kWh/day)</td><td class="num">1,302 Ah</td><td class="num">651 Ah</td><td class="num">326 Ah</td><td class="num">$2,300–3,600</td></tr>
-<tr><td>Full off-grid home (10 kWh/day)</td><td class="num">2,604 Ah</td><td class="num">1,302 Ah</td><td class="num">651 Ah</td><td class="num">$4,600–7,000</td></tr>
+<tr><td>Weekend cabin (1.0 kWh/day)</td><td class="num">260 Ah</td><td class="num">130 Ah</td><td class="num">65 Ah</td><td class="num">$700–2,100</td></tr>
+<tr><td>Van life light (1.5 kWh/day)</td><td class="num">391 Ah</td><td class="num">195 Ah</td><td class="num">98 Ah</td><td class="num">$1,050–3,100</td></tr>
+<tr><td>Van life full (3.0 kWh/day)</td><td class="num">781 Ah</td><td class="num">391 Ah</td><td class="num">195 Ah</td><td class="num">$2,100–6,250</td></tr>
+<tr><td>Small homestead (5.0 kWh/day)</td><td class="num">1,302 Ah</td><td class="num">651 Ah</td><td class="num">326 Ah</td><td class="num">$3,500–10,400</td></tr>
+<tr><td>Full off-grid home (10 kWh/day)</td><td class="num">2,604 Ah</td><td class="num">1,302 Ah</td><td class="num">651 Ah</td><td class="num">$7,050–20,800</td></tr>
 </table>
-<p class="small">*LiFePO4 street prices, Q3 2026, DIY racks vs plug-and-play. Same 2-day autonomy assumption throughout.</p>
+<p class="small">*Battery cost uses the 12V Ah in the row, because the 24V and 48V figures store the same watt-hours. Cost = (Ah × 12 ÷ 1,200) × the 12V 100Ah street price, rounded to the nearest $50. Low is Redodo at $269.99; high is Battle Born BB10012 at $799.00. Checked 2 Oct 2026. LiTime $302.39 and SOK $369.00 sit inside that span. Renogy lists $356.99 and was unavailable, so it is not an endpoint. Same 2-day autonomy assumption throughout.</p>
 
 <h2>Three inputs people get wrong</h2>
 <h3>1. The load list</h3>
