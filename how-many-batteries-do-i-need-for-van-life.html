@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>How Many Batteries Do You Need for Van Life? The Real Math</title>
-<meta name="description" content="Van life battery math: a light 1.5 kWh/day build needs ~160 Ah at 12V LiFePO4 (two 100 Ah batteries), full-timers ~315 Ah. Formula and worked load lists.">
+<meta name="description" content="Van life battery math: a light 1.5 kWh/day build needs ~195 Ah at 12V LiFePO4 (two 100 Ah batteries), full-timers ~391 Ah. Formula and worked load lists.">
 <link rel="canonical" href="https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="shortcut icon" href="/assets/favicon.ico">
@@ -46,12 +46,12 @@ ul{margin:.6rem 0 .6rem 1.2rem}
 footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type": "Question", "name": "How many batteries do you need for van life?", "acceptedAnswer": {"@type": "Answer", "text": "A light weekend build (1.5 kWh/day: fridge, lights, fan, phones) needs about 160 Ah at 12V LiFePO4 \u2014 typically two 100 Ah batteries. A full-timer build (3 kWh/day) needs ~315 Ah at 12V, commonly three to four 100 Ah units."}},{"@type": "Question", "name": "Is one 100Ah battery enough for van life?", "acceptedAnswer": {"@type": "Answer", "text": "For minimal weekend use \u2014 12V fridge, LED lights, phone charging, a fan (about 700\u2013800 Wh/day) \u2014 one 100 Ah LiFePO4 works with a 1.25-day reserve. Add induction cooking, a diesel heater on full, or a work day of laptops and 100 Ah runs out by evening; two 100 Ah batteries is the common real-world answer."}},{"@type": "Question", "name": "Can you run a 12V fridge off a single battery overnight?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A typical 12V compressor fridge draws 40\u201360 W at 30\u201340% duty cycle \u2014 roughly 400\u2013500 Wh per day, about 250 Wh overnight. That is under 30% of a 100 Ah (1,280 Wh) battery, so overnight is easy; the rest of the load list decides the real count."}},{"@type": "Question", "name": "12V or 24V/48V for a van build?", "acceptedAnswer": {"@type": "Answer", "text": "Vans almost always stay 12V because DC appliances are 12V-native and loads stay under 2 kWh/day. Above roughly 3 kWh/day with a big inverter (induction cooking, AC), 24V halves the current and wire gauge; 48V only pays off in large stationary systems, not vans."}},{"@type": "Question", "name": "How long will a 100 Ah battery run a fridge in a van?", "acceptedAnswer": {"@type": "Answer", "text": "About two days by itself: the fridge's ~400\u2013500 Wh/day against 1,024 Wh usable (100 Ah LiFePO4 at 80% DoD). Real vans never run the fridge alone, which is why the full load list \u2014 not the fridge \u2014 sets the battery count."}}]}
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many batteries do you need for van life?", "acceptedAnswer": {"@type": "Answer", "text": "A light weekend build (1.5 kWh/day: fridge, lights, fan, phones) needs about 195 Ah at 12V LiFePO4 \u2014 two 100 Ah batteries. A full-timer build (3 kWh/day, 1 day of autonomy) needs about 391 Ah at 12V, four 100 Ah batteries."}}, {"@type": "Question", "name": "Is one 100Ah battery enough for van life?", "acceptedAnswer": {"@type": "Answer", "text": "At about 700 Wh/day, (700 \u00d7 1 \u00d7 1.25) \u00f7 12 \u00f7 0.80 is about 91 Ah, so one 100 Ah battery covers that day. At 800 Wh/day the same formula is about 104 Ah, just over one 100 Ah battery. Induction cooking, a diesel heater on full, or a work day of laptops is the load that makes two 100 Ah batteries the common answer."}}, {"@type": "Question", "name": "Can you run a 12V fridge off a single battery overnight?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A typical 12V compressor fridge draws 40\u201360 W at 30\u201340% duty cycle \u2014 roughly 400\u2013500 Wh per day, about 250 Wh overnight. That is under 30% of a 100 Ah battery at 12 V (1,200 Wh), so overnight is easy; the rest of the load list decides the real count."}}, {"@type": "Question", "name": "12V or 24V/48V for a van build?", "acceptedAnswer": {"@type": "Answer", "text": "Vans almost always stay 12V because DC appliances are 12V-native and loads stay under 2 kWh/day. Above roughly 3 kWh/day with a big inverter (induction cooking, AC), 24V halves the current and wire gauge; 48V only pays off in large stationary systems, not vans."}}, {"@type": "Question", "name": "How long will a 100 Ah battery run a fridge in a van?", "acceptedAnswer": {"@type": "Answer", "text": "About two days by itself: the fridge's ~400\u2013500 Wh/day against 960 Wh usable (100 Ah \u00d7 12 V \u00d7 0.80 DoD). Real vans never run the fridge alone, which is why the full load list \u2014 not the fridge \u2014 sets the battery count."}}]}
 </script>
 
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html">
-<meta property="og:description" content="Van life battery math: a light 1.5 kWh/day build needs ~160 Ah at 12V LiFePO4 (two 100 Ah batteries), full-timers ~315 Ah. Formula and worked load lists.">
+<meta property="og:description" content="Van life battery math: a light 1.5 kWh/day build needs ~195 Ah at 12V LiFePO4 (two 100 Ah batteries), full-timers ~391 Ah. Formula and worked load lists.">
 <meta name="twitter:card" content="summary_large_image">
 
 
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <h1>How many batteries do you need for van life?</h1>
 <p class="sub">Two 100 Ah LiFePO4 batteries is the answer for most vans. Here's the math that says whether your build is "most vans."</p>
 
-<div class="answer-box"><strong>Quick answer:</strong> A light weekend van build (1.5 kWh/day) needs about 160 Ah at 12V LiFePO4 — typically two 100 Ah batteries; a full-timer build (3 kWh/day) needs roughly 315 Ah, or three to four 100 Ah units. Run the calculator below for your exact load.</div>
+<div class="answer-box"><strong>Quick answer:</strong> A light weekend van build (1.5 kWh/day, 1 day of autonomy) needs about 195 Ah at 12V LiFePO4 — two 100 Ah batteries. A full-timer build (3 kWh/day, 1 day) needs about 391 Ah, or four 100 Ah batteries. Run the calculator below for your exact load.</div>
 <p>The inverter-only version of this question is <a href="what-size-battery-bank-for-a-2000w-inverter.html">what size battery bank for a 2000W inverter</a>.</p>
 
 <h2>The formula, tuned for vans</h2>
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
   <li>Water pump + misc = 100 Wh</li>
   <li>Total ≈ <strong>1,160 Wh/day</strong></li>
 </ul>
-<p>With 1 day of autonomy (you drive or solar-refill daily): (1,160 × 1 × 1.25) ÷ 12 ÷ 0.80 = <strong>~150 Ah</strong> → two 100 Ah batteries, comfortable. With 2 shaded days parked: ~300 Ah → three or four.</p>
+<p>With 1 day of autonomy (you drive or solar-refill daily): (1,160 × 1 × 1.25) ÷ 12 ÷ 0.80 = 151.0 Ah, about <strong>151 Ah</strong> → two 100 Ah batteries, comfortable. With 2 shaded days parked: (1,160 × 2 × 1.25) ÷ 12 ÷ 0.80 = 302.1 Ah, about 302 Ah → four 100 Ah batteries.</p>
 
 <h2>Worked load list 2 — full-timer (3 kWh/day)</h2>
 <ul>
@@ -111,17 +111,17 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
   <li>Work day: monitors, router, second laptop = 400 Wh</li>
   <li>Total ≈ <strong>3,000 Wh/day</strong></li>
 </ul>
-<p>(3,000 × 1 × 1.25) ÷ 12 ÷ 0.80 = <strong>~315 Ah</strong> at 12V → three to four 100 Ah batteries, and at this point a 48V bank starts making sense: 80 Ah at 48V does the same job with thinner cable and cooler runs. Induction is the fork in the road — propane cooking keeps the whole build one battery size smaller.</p>
+<p>(3,000 × 1 × 1.25) ÷ 12 ÷ 0.80 = 390.6 Ah, about <strong>391 Ah</strong> at 12V → four 100 Ah batteries. The same load at 48V is (3,000 × 1 × 1.25) ÷ 48 ÷ 0.80 = 97.7 Ah, about 98 Ah, with thinner cable and cooler runs. Induction is the fork in the road — propane cooking keeps the whole build one battery size smaller.</p>
 
-<h2>The quick table (LiFePO4, 12V)</h2>
+<h2>The quick table (LiFePO4, 12V, 1 day of autonomy)</h2>
 <table>
 <tr><th>Build</th><th>Daily use</th><th class="num">Ah needed</th><th>Typical hardware</th><th class="num">Cost*</th></tr>
-<tr><td>Bare weekend</td><td>0.8 kWh</td><td class="num">85 Ah</td><td>1 × 100 Ah</td><td class="num">$250–400</td></tr>
-<tr><td>Weekend/light</td><td>1.5 kWh</td><td class="num">160 Ah</td><td>2 × 100 Ah</td><td class="num">$500–800</td></tr>
-<tr><td>Full-timer</td><td>3.0 kWh</td><td class="num">315 Ah</td><td>3–4 × 100 Ah</td><td class="num">$1,400–2,200</td></tr>
-<tr><td>Full-timer + AC (4 h)</td><td>5.5 kWh</td><td class="num">575 Ah</td><td>6+ × 100 Ah or 48V</td><td class="num">$2,600–4,000</td></tr>
+<tr><td>Bare weekend</td><td>0.8 kWh</td><td class="num">104 Ah</td><td>2 × 100 Ah</td><td class="num">$250–400</td></tr>
+<tr><td>Weekend/light</td><td>1.5 kWh</td><td class="num">195 Ah</td><td>2 × 100 Ah</td><td class="num">$500–800</td></tr>
+<tr><td>Full-timer</td><td>3.0 kWh</td><td class="num">391 Ah</td><td>4 × 100 Ah</td><td class="num">$1,400–2,200</td></tr>
+<tr><td>Full-timer + AC (4 h)</td><td>5.5 kWh</td><td class="num">716 Ah</td><td>8 × 100 Ah or 48V</td><td class="num">$2,600–4,000</td></tr>
 </table>
-<p class="small">*Q3 2026 LiFePO4 street prices. Rooftop AC is why some vans quietly go 48V: 5.5 kWh/day at 48V is ~145 Ah, not 575.</p>
+<p class="small">*Q3 2026 LiFePO4 street prices. Rooftop AC is why some vans quietly go 48V: 5.5 kWh/day at 48V is (5,500 × 1 × 1.25) ÷ 48 ÷ 0.80 = 179.0 Ah, about 179 Ah, not 716.</p>
 
 <h2>Why the 1.25 and the 0.80 aren't optional</h2>
 <p>The 1.25 covers inverter conversion losses (5–10%), wiring loss, and the fact that LiFePO4 capacity ratings are optimistic below freezing. The 0.80 is the usable fraction — LiFePO4 tolerates deep discharge, but every percent below 80% DoD shortens cycle life disproportionately, and BMS low-voltage cutoffs will strand you before "100% of rated Ah" is actually delivered anyway. Skipping either factor is how people end up one battery short and blaming the brand.</p>
@@ -148,15 +148,15 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 
 <section class="faqsec"><h2>Frequently asked questions</h2>
 <h3>How many batteries do you need for van life?</h3>
-<p>A light weekend build (1.5 kWh/day: fridge, lights, fan, phones) needs about 160 Ah at 12V LiFePO4 — typically two 100 Ah batteries. A full-timer build (3 kWh/day) needs ~315 Ah at 12V, commonly three to four 100 Ah units.</p>
+<p>A light weekend build (1.5 kWh/day: fridge, lights, fan, phones) needs about 195 Ah at 12V LiFePO4 — two 100 Ah batteries. A full-timer build (3 kWh/day, 1 day of autonomy) needs about 391 Ah at 12V, four 100 Ah batteries.</p>
 <h3>Is one 100Ah battery enough for van life?</h3>
-<p>For minimal weekend use — 12V fridge, LED lights, phone charging, a fan (about 700–800 Wh/day) — one 100 Ah LiFePO4 works with a 1.25-day reserve. Add induction cooking, a diesel heater on full, or a work day of laptops and 100 Ah runs out by evening; two 100 Ah batteries is the common real-world answer.</p>
+<p>At about 700 Wh/day, (700 × 1 × 1.25) ÷ 12 ÷ 0.80 is about 91 Ah, so one 100 Ah battery covers that day. At 800 Wh/day the same formula is about 104 Ah, just over one 100 Ah battery. Induction cooking, a diesel heater on full, or a work day of laptops is the load that makes two 100 Ah batteries the common answer.</p>
 <h3>Can you run a 12V fridge off a single battery overnight?</h3>
-<p>Yes. A typical 12V compressor fridge draws 40–60 W at 30–40% duty cycle — roughly 400–500 Wh per day, about 250 Wh overnight. That is under 30% of a 100 Ah (1,280 Wh) battery, so overnight is easy; the rest of the load list decides the real count.</p>
+<p>Yes. A typical 12V compressor fridge draws 40–60 W at 30–40% duty cycle — roughly 400–500 Wh per day, about 250 Wh overnight. That is under 30% of a 100 Ah battery at 12 V (1,200 Wh), so overnight is easy; the rest of the load list decides the real count.</p>
 <h3>12V or 24V/48V for a van build?</h3>
 <p>Vans almost always stay 12V because DC appliances are 12V-native and loads stay under 2 kWh/day. Above roughly 3 kWh/day with a big inverter (induction cooking, AC), 24V halves the current and wire gauge; 48V only pays off in large stationary systems, not vans.</p>
 <h3>How long will a 100 Ah battery run a fridge in a van?</h3>
-<p>About two days by itself: the fridge's ~400–500 Wh/day against 1,024 Wh usable (100 Ah LiFePO4 at 80% DoD). Real vans never run the fridge alone, which is why the full load list — not the fridge — sets the battery count.</p>
+<p>About two days by itself: the fridge's ~400–500 Wh/day against 960 Wh usable (100 Ah × 12 V × 0.80 DoD). Real vans never run the fridge alone, which is why the full load list — not the fridge — sets the battery count.</p>
 </section>
 
 <p>Full-time off-grid instead of van life? The same formula at <a href="what-size-battery-bank-for-off-grid-cabin.html">what size battery bank for an off-grid cabin</a> covers cabin-scale autonomy math, and the <a href="index.html">battery bank size calculator directory</a> maps daily use to Amp-hours at every voltage.</p>
