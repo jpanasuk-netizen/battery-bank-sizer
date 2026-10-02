@@ -27,3 +27,18 @@ Cite freely with link attribution. Data verified against 2026 Q3 prices; do not 
 - **Cabin banks:** [Cabin battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html)
 - **Van banks:** [Van life battery count](https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html)
 - **Fuel backup:** [Generator sizing (bridge)](https://battery-bank-sizer.com/generator-sizing-calculator.html)
+
+## Questions
+- [1000W inverter battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-1000w-inverter.html): at least 100 Ah at 12 V by Battle Born's per-1,000 W rule
+- [2000W inverter battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-2000w-inverter.html): at least 200 Ah at 12 V, two batteries in parallel
+- [3000W inverter battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-3000w-inverter.html): 100 Ah per 1,000 W applied to a 3,000 W inverter
+- [5000W inverter battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-5000w-inverter.html): same rule at 5,000 W, above the about 3,500 W surge-limiter line
+- [CPAP battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-cpap.html): Champion 30–120 W over an 8-hour night
+- [Refrigerator battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-refrigerator.html): Battle Born's 100 W for 5 hours equals 500 Wh
+- [Sump pump backup battery](https://battery-bank-sizer.com/what-size-battery-bank-for-a-sump-pump-backup.html): 1,050 W running and 2,150 W starting
+- [RV air conditioner battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-rv-air-conditioner.html): 1,800 W running on a 13,500 BTU unit
+- [Microwave battery bank](https://battery-bank-sizer.com/what-size-battery-bank-for-a-microwave.html): 1,500 W draw; 200 Ah with a 2,000 W inverter
+- [30 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-30-lb-trolling-motor.html): 30 A at 12 V, at least 110 Ah
+- [55 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-55-lb-trolling-motor.html): 50 A at 12 V, one battery, at least 110 Ah
+- [80 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-80-lb-trolling-motor.html): 56 A at 24 V, two batteries in series
+- [112 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-112-lb-trolling-motor.html): 52 A at 36 V, three batteries in series
