@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <h2>The quick table (LiFePO4, 12V, 1 day of autonomy)</h2>
 <table>
 <tr><th>Build</th><th>Daily use</th><th class="num">Ah needed</th><th>Typical hardware</th><th class="num">Cost*</th></tr>
-<tr><td>Bare weekend</td><td>0.8 kWh</td><td class="num">104 Ah</td><td>2 × 100 Ah</td><td class="num">$300–850</td></tr>
-<tr><td>Weekend/light</td><td>1.5 kWh</td><td class="num">195 Ah</td><td>2 × 100 Ah</td><td class="num">$550–1,550</td></tr>
-<tr><td>Full-timer</td><td>3.0 kWh</td><td class="num">391 Ah</td><td>4 × 100 Ah</td><td class="num">$1,050–3,100</td></tr>
-<tr><td>Full-timer + AC (4 h)</td><td>5.5 kWh</td><td class="num">716 Ah</td><td>8 × 100 Ah</td><td class="num">$1,950–5,700</td></tr>
+<tr><td>Bare weekend</td><td>0.8 kWh</td><td class="num">104 Ah</td><td>2 × 100 Ah</td><td class="num">$550–1,600</td></tr>
+<tr><td>Weekend/light</td><td>1.5 kWh</td><td class="num">195 Ah</td><td>2 × 100 Ah</td><td class="num">$550–1,600</td></tr>
+<tr><td>Full-timer</td><td>3.0 kWh</td><td class="num">391 Ah</td><td>4 × 100 Ah</td><td class="num">$1,100–3,200</td></tr>
+<tr><td>Full-timer + AC (4 h)</td><td>5.5 kWh</td><td class="num">716 Ah</td><td>8 × 100 Ah</td><td class="num">$2,150–6,400</td></tr>
 </table>
-<p class="small">*Cost = (Ah × 12 ÷ 1,200) × $269.99 to $799.00 per 12V 100Ah battery, rounded to the nearest $50. Low is the Redodo 12V 100Ah at $269.99; high is the Battle Born BB10012 at $799.00. Checked 2 Oct 2026. LiTime $302.39 and SOK $369.00 sit inside that span. Renogy lists $356.99 and was unavailable, so it is not an endpoint. Hardware is the smallest whole count of 12V 100Ah batteries that covers the Ah (104→2, 195→2, 391→4, 716→8). Rooftop AC is why some vans quietly go 48V: 5.5 kWh/day at 48V is (5,500 × 1 × 1.25) ÷ 48 ÷ 0.80 = 179.0 Ah, about 179 Ah, not 716. Eight of those 100Ah batteries in series-parallel (4S2P) cover that 179 Ah at 48V.</p>
+<p class="small">*Price is for the listed number of 100 Ah batteries: count × $269.99 to $799.00, rounded to the nearest $50. Low is the Redodo 12V 100Ah at $269.99; high is the Battle Born BB10012 at $799.00. Checked 2 Oct 2026. LiTime $302.39 and SOK $369.00 sit inside that span. Renogy lists $356.99 and was unavailable, so it is not an endpoint. Hardware is the smallest whole count of 12V 100Ah batteries that covers the Ah (104→2, 195→2, 391→4, 716→8). Rooftop AC is why some vans quietly go 48V: 5.5 kWh/day at 48V is (5,500 × 1 × 1.25) ÷ 48 ÷ 0.80 = 179.0 Ah, about 179 Ah, not 716. Eight of those 100Ah batteries in series-parallel (4S2P) cover that 179 Ah at 48V.</p>
 
 <h2>Why the 1.25 and the 0.80 aren't optional</h2>
 <p>The 1.25 covers inverter conversion losses (5–10%), wiring loss, and the fact that LiFePO4 capacity ratings are optimistic below freezing. The 0.80 is the usable fraction — LiFePO4 tolerates deep discharge, but every percent below 80% DoD shortens cycle life disproportionately, and BMS low-voltage cutoffs will strand you before "100% of rated Ah" is actually delivered anyway. Skipping either factor is how people end up one battery short and blaming the brand.</p>
