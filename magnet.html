@@ -111,7 +111,19 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 </table>
 <p class="muted">DoD windows match the live calculator: LiFePO4 80% usable, AGM/lead-acid 50% usable. Not a datasheet substitute — check the exact battery.</p>
 <h2>Cabin shorthand</h2>
-<p>3 kWh/day × 2 days autonomy ÷ 0.80 DoD = 7,500 Wh of usable need → about <strong>625 Ah at 12 V</strong> or <strong>156 Ah at 48 V</strong> LiFePO4. Parallel strings of cheap 12 V drop-ins look cheaper until one cell takes the pack down. Voltage up, current down, wire smaller.</p>
+<p>The calculator is Ah = (Wh/day × days × 1.25) ÷ voltage ÷ DoD. For 3 kWh/day, 2 days, and 0.80 DoD, the watt-hours to store are (3,000 × 2 × 1.25) ÷ 0.80 = 9,375 Wh. That is <strong>781.25 Ah at 12 V</strong> (9,375 ÷ 12) and <strong>195.3125 Ah at 48 V</strong> (9,375 ÷ 48). The <a href="index.html">directory table</a> prints those as 781 Ah and 195 Ah. Dividing 3,000 × 2 by 0.80 and skipping the 1.25 produces 7,500 Wh, 625 Ah, and 156 Ah, and that shorthand is short of this formula.</p>
+<main>
+<h2>Amp-hours and watt-hours</h2>
+<p class="muted">Section added October 3, 2026.</p>
+<p>Watt-hours are amp-hours times volts. A 100 Ah battery at 12 V is 1,200 Wh nameplate, which is the first row of the table above. Usable watt-hours are that nameplate times depth of discharge: 1,200 × 0.80 = 960 Wh on LiFePO4, and 1,200 × 0.50 = 600 Wh on AGM. The other direction is the sizing formula. Daily watt-hours go in, amp-hours come out.</p>
+<p>Weekend cabin, worked: 1,000 Wh/day, 2 days, 12 V, 0.80. Ah = (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah, about 260 Ah. Nameplate watt-hours of that result are 260.4167 × 12 = 3,125 Wh, which is also (1,000 × 2 × 1.25) ÷ 0.80. Usable watt-hours at 0.80 are 3,125 × 0.80 = 2,500 Wh, the same 1,000 × 2 × 1.25 the formula started from. At 48 V the amp-hours shrink and the watt-hours do not: 65.104 Ah × 48 V is the same 3,125 Wh.</p>
+<p>A common mistake is to stop at “Wh = Ah × V” and buy 2,500 ÷ 12 = 208 Ah, which drops both the 1.25 and the depth of discharge. Another is the 625 Ah figure this section replaces. Shelf loss is not inside either number: the Battle Born spec table’s 2–3% per month, applied once to 260 Ah, is 5.2–7.8 Ah, on <a href="how-long-will-a-battery-hold-a-charge.html">how long a battery holds a charge</a>. The AGM case of this same cabin, 416.7 Ah and four 105 Ah batteries, is the <a href="agm-battery-guide.html">AGM guide</a>.</p>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>This site’s formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD. <a href="index.html">Battery bank calculator</a> and <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin worked example</a>.</li>
+<li>Battle Born BB10012i/BB1002iH manual, self-discharge 2–3% per month. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
+</ul>
+</main>
 <div class="kw noprint"><strong>Comment keyword:</strong> AH — that's the word we ask for on X/LinkedIn. We DM this page.</div>
 <p class="noprint">
   <a class="cta" href="https://battery-bank-sizer.com/">Size the full bank →</a>

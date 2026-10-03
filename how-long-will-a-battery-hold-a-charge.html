@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Long Will a Battery Hold a Charge?</title>
+<meta name="description" content="Battle Born lists 2–3% self-discharge per month on the spec table and 4–5% in storage. A 260 Ah cabin bank loses 5.2–7.8 Ah in one month at the spec-table rate. Bluetooth is a separate 10 mA.">
+<link rel="canonical" href="https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html">
+<meta property="og:title" content="How Long Will a Battery Hold a Charge?">
+<meta property="og:description" content="Spec-table self-discharge is 2–3% per month. Storage copy says 4–5%. The Bluetooth dongle is about 10 mA, and the manual does not add those figures together.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Long Will a Battery Hold a Charge?">
+<meta name="twitter:description" content="Spec-table self-discharge is 2–3% per month. Storage copy says 4–5%. The Bluetooth dongle is about 10 mA, and the manual does not add those figures together.">
+<meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin-bottom:1.2rem}
+.answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+ul,ol{margin:.6rem 0 .6rem 1.2rem}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+label{display:block;margin:.55rem 0 .15rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+.btn-amz{display:inline-block;background:var(--card);color:var(--fg);border:1px solid var(--acc);border-radius:8px;padding:.55rem .9rem;text-decoration:none;margin:.2rem 0}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Long Will a Battery Hold a Charge?",
+  "description": "Battle Born lists 2-3 percent self-discharge per month on the spec table and 4-5 percent in the storage section. Bluetooth draw is a separate 10 mA.",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
+  "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
+  "mainEntityOfPage": "https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html"
+}
+</script>
+</head>
+<body>
+<nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · How long will a battery hold a charge?</nav>
+<main>
+<h1>How Long Will a Battery Hold a Charge?</h1>
+<p class="sub">Published October 3, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<div class="answer-box"><strong>Direct answer:</strong> The Battle Born 100 Ah spec table lists self-discharge at 2–3% per month. A later storage bullet says batteries lose 4–5% capacity per month, and a footnote calls 2 to 4% per month the typical loss that subzero storage can beat. Those are three sentences in one manual. This page does not average them. On the cabin calculator result of about 260 Ah, one month at the spec-table ends is 5.2 Ah and 7.8 Ah. The Bluetooth dongle, about 10 mA, is a different line.</div>
+<p>The cabin number comes from this site’s formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. Inputs: 1,000 Wh/day, 2 days, 12 V, LiFePO4 depth of discharge 0.80. That is (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah, which the <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a> prints as about 260 Ah. Storage loss below is applied once, to that printed result, for one month. The manual does not describe compound decay, so this page does not compound it.</p>
+
+<h2>Three rates, one manual</h2>
+<table>
+<tr><th>Where it appears</th><th>What it says</th><th>One month on 260 Ah</th></tr>
+<tr><td>Spec table, Self Discharge</td><td>2–3% per month</td><td>5.2 Ah at 2%, 7.8 Ah at 3%</td></tr>
+<tr><td>Storage bullet, Monitor Capacity</td><td>4–5% capacity per month, subject to increase in extreme conditions</td><td>10.4 Ah at 4%, 13.0 Ah at 5%</td></tr>
+<tr><td>Storage-temperature footnote</td><td>typical 2 to 4% per month, and subzero storage can be drastically more</td><td>Same 5.2–10.4 Ah span if you stay inside “typical”</td></tr>
+</table>
+<p>260 × 0.02 = 5.2. 260 × 0.03 = 7.8. 260 × 0.04 = 10.4. 260 × 0.05 = 13.0. The 260 is the rounded cabin result, not a lab measurement of a 260 Ah pack. Charge efficiency on the same spec table is 99%. That is a charge figure, not a shelf-loss figure.</p>
+<p>The storage section also says to bring batteries to 100% state of charge and disconnect them completely. Its note then says that after six months they remain 75 to 80% charged. Applied to the same 260 Ah result, 75% is 195 Ah still stored and 80% is 208 Ah. That six-month sentence is not the spec-table percent, and it is not the 4–5% bullet. This page does not turn one into the other.</p>
+<p>The footnote’s subzero line is narrower than a generic “cold weather” warning. It says storing batteries in subzero weather (−15°F or more) can crack the ABS plastic and can cause a faster loss of capacity, in some cases drastically more than the typical 2 to 4% per month. The words are the manual’s. This page does not pick a larger percent to stand in for “drastically more.”</p>
+
+<h2>The 10 mA dongle is not the percent</h2>
+<p>Under the storage bullet, the manual says the integrated Bluetooth dongle consistently draws approximately 10 mA, and that you should account for that draw when planning storage. The Dragonfly specification block lists the same 10 mA as the discharge rate of the built-in communication, and it says future firmware is expected to result in about 1–3 mA. Plan on the 10 mA that is written as the present draw.</p>
+<p>0.010 A × 24 hours = 0.24 Ah per day. Over a 30-day example, that is 7.2 Ah. Thirty days is a length chosen on this page so the draw can be compared with a month. It is not a storage interval printed in the manual. 7.2 Ah is 7.2% of a 100 Ah battery, which is not the same statement as “4–5% capacity per month.” The manual places the milliamp note under the percent bullet and does not say to add them. Adding 7.2 Ah on top of 5.2–13.0 Ah would invent a combined loss the manual does not state.</p>
+
+<h2>A common mistake</h2>
+<p>The usual error is to treat “2–3% per month” as a monthly compound rate and then subtract the Bluetooth draw again. Six months at a flat 3% of the original 260 Ah is 6 × 7.8 = 46.8 Ah, leaving 213.2 Ah. That flat subtraction is already an illustration, not a manual test. Compounding 3% six times, or stacking 7.2 Ah on top, is a third calculation the manual never asks for. Use one cited rate, once per month you actually care about, and keep the 10 mA in its own column.</p>
+
+<h2>Limits, and when to call a pro</h2>
+<p>This arithmetic describes a battery that was charged fully and then disconnected, which is the storage instruction. A bank left connected to an inverter, a shunt, or a charge controller has loads this percent does not include. If a stored battery will not wake, the manual’s low-voltage note says many chargers must see over 10 V, and that you should jump the battery within 24 hours of entering low-voltage disconnect or you risk damaging it and voiding the warranty. That jump is a manufacturer support problem, not a percent to type into the calculator. Wiring limits live on <a href="how-to-wire-batteries-in-series-or-parallel.html">series and parallel wiring</a>. Charge cutoffs live on <a href="lithium-battery-charger.html">the lithium charger page</a>.</p>
+
+<h2>Run the same formula, then one cited rate</h2>
+<p>The form uses only Ah = (Wh/day × days × 1.25) ÷ voltage ÷ depth of discharge, then multiplies that Ah by one rate you pick from the manual’s ranges. It does not add the Bluetooth draw.</p>
+<form id="hold-form">
+<label for="wh">Daily watt-hours</label>
+<input id="wh" type="number" min="0" step="1" value="1000">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="2">
+<label for="volts">Voltage</label>
+<select id="volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.8">0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<label for="rate">One-month rate, applied once</label>
+<select id="rate">
+<option value="0.02">2% — low end of the 2–3% spec table</option>
+<option value="0.03" selected>3% — high end of the 2–3% spec table</option>
+<option value="0.04">4% — low end of the 4–5% storage bullet</option>
+<option value="0.05">5% — high end of the 4–5% storage bullet</option>
+</select>
+<label for="hours">Bluetooth hours (10 mA, reported separately)</label>
+<input id="hours" type="number" min="0" step="1" value="720">
+<button type="submit">Calculate</button>
+</form>
+<p id="hold-out"></p>
+<p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
+<p>Related: the <a href="index.html">battery bank calculator</a>, the <a href="agm-battery-guide.html">AGM guide</a> (Lifeline’s rate is a different document), and <a href="battery-maintenance-connections-and-terminals.html">maintenance and terminals</a>.</p>
+<h2>Sources</h2>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>Battle Born BB10012i/BB1002iH 100Ah 12V Smart LiFePO4 manual. Spec table self-discharge 2–3% per month; storage bullet 4–5% per month; Bluetooth about 10 mA; six-month 75–80% note; subzero footnote. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
+<li>This site’s published sizing formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD, with the 1,000 Wh/day, 2-day cabin inputs. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
+</ul>
+</main>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<script>
+document.getElementById("hold-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var rate = Number(document.getElementById("rate").value);
+  var hours = Number(document.getElementById("hours").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var loss = ah * rate;
+  var bt = 0.010 * hours;
+  document.getElementById("hold-out").textContent = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah. One month at " + (rate * 100) + "% of that result is " + loss.toFixed(2) + " Ah. Bluetooth at 10 mA for " + hours + " hours is " + bt.toFixed(2) + " Ah, reported separately and not added.";
+});
+</script>
+</body>
+</html>

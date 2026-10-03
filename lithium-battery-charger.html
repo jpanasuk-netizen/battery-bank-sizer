@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lithium Battery Charger Settings for a 12 V LiFePO4 Bank</title>
+<meta name="description" content="Battle Born bulk/absorption is 14.2–14.6 V, float 13.4–13.8 V, equalization disabled. The BMS blocks charging under 32°F. Three 100 Ah batteries take 90 minutes of absorption under the per-100 Ah rule.">
+<link rel="canonical" href="https://battery-bank-sizer.com/lithium-battery-charger.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://battery-bank-sizer.com/lithium-battery-charger.html">
+<meta property="og:title" content="Lithium Battery Charger Settings for a 12 V LiFePO4 Bank">
+<meta property="og:description" content="14.2–14.6 V absorb, 13.4–13.8 V float, no equalization, no temperature compensation. No charge under 32°F.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lithium Battery Charger Settings for a 12 V LiFePO4 Bank">
+<meta name="twitter:description" content="14.2–14.6 V absorb, 13.4–13.8 V float, no equalization, no temperature compensation. No charge under 32°F.">
+<meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin-bottom:1.2rem}
+.answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+ul,ol{margin:.6rem 0 .6rem 1.2rem}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+label{display:block;margin:.55rem 0 .15rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+.btn-amz{display:inline-block;background:var(--card);color:var(--fg);border:1px solid var(--acc);border-radius:8px;padding:.55rem .9rem;text-decoration:none;margin:.2rem 0}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lithium Battery Charger Settings for a 12 V LiFePO4 Bank",
+  "description": "Battle Born absorption is 14.2 to 14.6 V and float is 13.4 to 13.8 V. Equalization and temperature compensation stay off. The BMS blocks a charge under 32 F.",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
+  "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
+  "mainEntityOfPage": "https://battery-bank-sizer.com/lithium-battery-charger.html"
+}
+</script>
+</head>
+<body>
+<nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · Lithium battery charger</nav>
+<main>
+<h1>Lithium Battery Charger Settings for a 12 V LiFePO4 Bank</h1>
+<p class="sub">Published October 3, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<div class="answer-box"><strong>Direct answer:</strong> The Battle Born 100 Ah charging profile is bulk/absorption at 14.2–14.6 V, float at 13.4–13.8 V, equalization at 14.4 V or disabled, and temperature compensation off. Recommended charge current is 0.5C and the max charge current is 50 A. On this 100 Ah battery those two lines meet: 0.5 × 100 = 50 A. High BMS voltage protection is 14.7 V. The BMS will not allow a charging current under 32°F (0°C). The heading above that sentence reads “Low Temperature Charging (&lt; 25°F/−3.9°C).”</div>
+<p>If the charger cannot do multi-stage charging, the manual says to program bulk/absorption and to disable equalization and temperature compensation. That is a lead-acid profile turned off, not a suggestion to leave a lead-acid charger on its default. AGM voltages are a different manual; they are on the <a href="agm-battery-guide.html">AGM guide</a>.</p>
+
+<h2>Absorption time on the cabin bank</h2>
+<p>The spec table says absorption time is “30 Minutes per 100Ah Battery Bank.” The charging-profile example says “1 hour for a 200Ah battery bank (two batteries in parallel).” Thirty minutes times two is 60 minutes, so the written example matches the table for two batteries. This page does not treat the one-hour line as a different rule.</p>
+<p>The weekend cabin on this site is 1,000 Wh/day, 2 days, 12 V, depth of discharge 0.80: (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah, about 260 Ah. Three 100 Ah batteries in parallel are 300 Ah, which covers that target, as on <a href="how-to-wire-batteries-in-series-or-parallel.html">the wiring page</a>. Applying the table’s 30 minutes per 100 Ah to those three batteries is 30 × 3 = 90 minutes. That 90 minutes is the table rule applied to a 300 Ah bank. The manual’s written example is the two-battery case, not a three-battery test. Applying the same per-100 Ah rule to the unrounded 260.4167 Ah target, instead of to whole batteries, is 30 × (260.4167 ÷ 100) = 78.1 minutes. Use 90 minutes when the bank you charge is three 100 Ah batteries. Use 78 minutes only as the rule applied to the calculator’s Ah, not as a second line in the manual.</p>
+<p>Max charge current stacks per battery the same way the <a href="what-size-battery-bank-for-a-3000w-inverter.html">3,000 W page</a> already states: 50 A × 3 = 150 A. A charger set above 50 A into one battery is past the max on that battery. Recommended 0.5C on each 100 Ah battery is already 50 A, so “a bit under 0.5C” is not a third number this manual gives you.</p>
+<table>
+<tr><th>Setting</th><th>12 V bank</th><th>Where the manual says it</th></tr>
+<tr><td>Bulk / absorption</td><td>14.2–14.6 V</td><td>Spec table and charging profile</td></tr>
+<tr><td>Float</td><td>13.4–13.8 V</td><td>Spec table and charging profile</td></tr>
+<tr><td>Equalization</td><td>14.4 V, and disabled</td><td>Spec table “14.4V”; profile “14.4V/Disabled”</td></tr>
+<tr><td>Temperature compensation</td><td>No / disable</td><td>Spec table and charging profile</td></tr>
+<tr><td>Absorption, two batteries</td><td>1 hour</td><td>Profile example for a 200 Ah bank</td></tr>
+<tr><td>Absorption, three 100 Ah batteries</td><td>90 minutes</td><td>Table rule of 30 minutes per 100 Ah, applied here</td></tr>
+<tr><td>High voltage disconnect</td><td>above 14.7 V</td><td>BMS section; spec table lists 14.7 VDC</td></tr>
+<tr><td>Two batteries in series</td><td>28.8 V bulk/absorption, 27.2 V float</td><td>Series chapter, for a 24 V 100 Ah bank</td></tr>
+</table>
+<p>The series chapter prints those 28.8 V and 27.2 V figures for two batteries. It does not print a 36 V or 48 V charge voltage. Four batteries in series are allowed as a 48 V 100 Ah bank, and exceeding 48 V voids the warranty, but a 48 V absorption setpoint is not in that chapter. Leave it unset rather than doubling 14.6 four times on this page.</p>
+
+<h2>Cold charging, quoted as written</h2>
+<p>The charging-profile temperature block lists a battery charge range of 32°F to 131°F (0°C to 55°C) and a discharge range of −4°F to 140°F (−20°C to 60°C). Cell charge and cell discharge use the same pair of ranges. Later, the BMS chapter heading is “Low Temperature Charging (&lt; 25°F/−3.9°C).” The sentence under it says the BMS will not allow a charging current under 32°F (0°C), and will continue to discharge down to −4°F (−20°C). A note under that sentence gives an operating range of −4°F (−20°C) to 131°F (55°C). The spec table’s operating temperature is −4°F to 135°F (−20°C to 57.2°C). This page quotes both and does not decide which threshold the charger should trust past what the BMS sentence says: no charging current under 32°F (0°C).</p>
+<p>High temperature is separate. The BMS will not allow a charging current if internal temperature exceeds 131°F (55°C). It will prevent discharging at 140°F (60°C) or higher.</p>
+<p>The heat-enabled model is BB10012iH. Its spec block lists charge temperature as 25°F to 135°F and continuous power draw when heating is enabled as 28 W. The manual also says to read the Integrated Heating Instruction manual before use. This page does not turn 28 W into a daily watt-hour, because the manual does not say how long the heater runs. A cabin load list that needs heater watt-hours has to come from that heating guide, not from a guessed duty cycle. The <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a> flags the 32°F charge lockout as something the Ah formula leaves out.</p>
+
+<h2>A common mistake</h2>
+<p>Leaving equalization and temperature compensation enabled because the charger’s lead-acid preset “looks close” to 14.4 V. The manual’s equalization line is 14.4 V and disabled. Temperature compensation is No/Disable. A charger that climbs with cold, the way a flooded-battery charger does, is the behavior this profile tells you to turn off. The other mistake is charging a battery the BMS has already opened because the case feels merely cool. Under 32°F the BMS will not allow a charging current. Discharge is still allowed down to −4°F. Those are not the same limit.</p>
+
+<h2>Limits, and when to call a pro</h2>
+<p>Programming an inverter-charger, a solar controller, and a DC-DC charger so they cannot all push past 50 A per battery is system work. If a cell hits high-voltage disconnect, the manual says discharge is still allowed and that a bank which has not been balanced can trip at a lower voltage; it rebalances after several full charges. If the battery is in low-voltage disconnect, many chargers must see over 10 V, and the manual says to jump it within 24 hours or you risk damage and voiding the warranty. That is a support call, not a higher absorption voltage. Do not open the case. The safety chapter says failure to follow the guidelines can result in property damage, personal injury, or worse, and it says do not disassemble, pierce, immerse, or short the terminal.</p>
+
+<h2>Ah calculator, plus the absorption rule</h2>
+<p>The form runs the site Ah formula, then applies 30 minutes per 100 Ah to that Ah result. Whole-battery banks should use the 90-minute example above when they are three 100 Ah batteries.</p>
+<form id="chg-form">
+<label for="wh">Daily watt-hours</label>
+<input id="wh" type="number" min="0" step="1" value="1000">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="2">
+<label for="volts">Voltage</label>
+<select id="volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.8">0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<button type="submit">Calculate</button>
+</form>
+<p id="chg-out"></p>
+<p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p><a class="btn-amz" href="https://www.amazon.com/s?k=14.6V+lithium+battery+charger+12V&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12 V lithium chargers on Amazon</a></p>
+<p>Size the bank first on the <a href="index.html">battery bank calculator</a>. A van that sits below freezing still uses the same charge cutoff; the load math is <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries for van life</a>.</p>
+<h2>Sources</h2>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>Battle Born BB10012i/BB1002iH 100Ah 12V Smart LiFePO4 manual. Charging profile, absorption time, BMS temperature limits, 28 W heating draw on BB10012iH, series charge voltages. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
+<li>This site’s cabin formula, 1,000 Wh/day, 2 days, 12 V, 0.80 DoD. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
+</ul>
+</main>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<script>
+document.getElementById("chg-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var minutes = 30 * (ah / 100);
+  document.getElementById("chg-out").textContent = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah. Applying 30 minutes per 100 Ah to that result is " + minutes.toFixed(1) + " minutes. A 12 V lithium profile on this battery is still 14.2-14.6 V absorb and 13.4-13.8 V float, with equalization and temperature compensation disabled.";
+});
+</script>
+</body>
+</html>

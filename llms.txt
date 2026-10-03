@@ -12,8 +12,14 @@
 ## Coming pages
 - 12V vs 24V vs 48V: when each voltage wins
 - LiFePO4 vs AGM: 10-year cost comparison
-- Battery bank wiring: series vs parallel diagrams
-- Cold weather charging: LiFePO4 below freezing
+
+## Guides
+- [How long a battery holds a charge](https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html): 2–3% per month on the spec table, 4–5% in the storage section, 10 mA Bluetooth kept separate
+- [Series or parallel](https://battery-bank-sizer.com/how-to-wire-batteries-in-series-or-parallel.html): parallel adds Ah and current; series adds voltage; do not exceed 48 V
+- [Maintenance, connections, and terminals](https://battery-bank-sizer.com/battery-maintenance-connections-and-terminals.html): 9–11 ft-lb lithium torque; 70 in-lb on Lifeline M8 and M10
+- [Lithium charger](https://battery-bank-sizer.com/lithium-battery-charger.html): 14.2–14.6 V absorb, equalization off, no charge under 32°F
+- [Fridge and CPAP backup](https://battery-bank-sizer.com/battery-backup-systems.html): 1,460 Wh for one day, about 190 Ah at 12 V
+- [AGM guide](https://battery-bank-sizer.com/agm-battery-guide.html): 416.7 Ah at 50% DoD, four 105 Ah GPL-31T batteries
 
 ## Sister sites
 - [ChickenCoopCalc](https://chickencoopcalc.com/): chicken coop sizing + feed cost

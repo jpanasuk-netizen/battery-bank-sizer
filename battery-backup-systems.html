@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Battery Backup for a Fridge and a CPAP</title>
+<meta name="description" content="One outage day: Battle Born’s 100 W fridge for 5 hours is 500 Wh, plus Champion’s 120 W heated CPAP for 8 hours is 960 Wh. Together, 1,460 Wh. The calculator returns 190 Ah at 12 V LiFePO4.">
+<link rel="canonical" href="https://battery-bank-sizer.com/battery-backup-systems.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://battery-bank-sizer.com/battery-backup-systems.html">
+<meta property="og:title" content="Battery Backup for a Fridge and a CPAP">
+<meta property="og:description" content="500 Wh from the fridge example plus 960 Wh from an 8-hour heated CPAP is 1,460 Wh. At 12 V and 80% DoD the formula is 190 Ah.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Battery Backup for a Fridge and a CPAP">
+<meta name="twitter:description" content="500 Wh from the fridge example plus 960 Wh from an 8-hour heated CPAP is 1,460 Wh. At 12 V and 80% DoD the formula is 190 Ah.">
+<meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin-bottom:1.2rem}
+.answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+ul,ol{margin:.6rem 0 .6rem 1.2rem}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+label{display:block;margin:.55rem 0 .15rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+.btn-amz{display:inline-block;background:var(--card);color:var(--fg);border:1px solid var(--acc);border-radius:8px;padding:.55rem .9rem;text-decoration:none;margin:.2rem 0}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Battery Backup for a Fridge and a CPAP",
+  "description": "A published 500 Wh fridge example plus an 8-hour 120 W CPAP is 1,460 Wh. The site formula returns 190 Ah at 12 V and 80 percent depth of discharge.",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
+  "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
+  "mainEntityOfPage": "https://battery-bank-sizer.com/battery-backup-systems.html"
+}
+</script>
+</head>
+<body>
+<nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · Battery backup</nav>
+<main>
+<h1>Battery Backup for a Fridge and a CPAP</h1>
+<p class="sub">Published October 3, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<div class="answer-box"><strong>Direct answer:</strong> One outage day made from two published loads is 1,460 Wh. Battle Born’s deep-cycle example is a refrigerator at 100 W for 5 hours, which is 500 Wh. Champion’s CPAP chart tops the heated range at 120 W; the <a href="what-size-battery-bank-for-a-cpap.html">CPAP page</a> already uses 8 hours for a night, and 120 × 8 = 960 Wh. 500 + 960 = 1,460 Wh. This site’s formula at 1 day, 12 V, and 0.80 depth of discharge is (1,460 × 1 × 1.25) ÷ 12 ÷ 0.80 = 190.1 Ah. Two 100 Ah lithium batteries are 200 Ah, which covers 190 Ah.</div>
+<p>Eight hours is the duration the CPAP page uses. Champion publishes watts, not a night length. The 100 W and the 5 hours are Battle Born’s example, not a measurement from a fridge in this house. A sump pump is not folded into the 1,460 Wh. That load has its own running and starting watts on <a href="what-size-battery-bank-for-a-sump-pump-backup.html">the sump-pump page</a>.</p>
+
+<h2>Where each watt-hour comes from</h2>
+<table>
+<tr><th>Load</th><th>Published figure</th><th>Watt-hours used here</th></tr>
+<tr><td>Refrigerator</td><td>100 W for 5 hours</td><td>500 Wh</td></tr>
+<tr><td>Heated CPAP, high end of Champion’s range</td><td>120 W, for the 8-hour night used on the CPAP page</td><td>960 Wh</td></tr>
+<tr><td>Sum for one day</td><td>500 + 960</td><td>1,460 Wh</td></tr>
+<tr><td>After the 1.25 margin, before DoD</td><td>1,460 × 1.25</td><td>1,825 Wh</td></tr>
+<tr><td>12 V LiFePO4 bank at 0.80 DoD</td><td>1,825 ÷ 12 ÷ 0.80</td><td>190.1 Ah</td></tr>
+</table>
+<p>Two 100 Ah batteries are 200 Ah and, by the parallel rule in the Battle Born manual, 200 A continuous. Nameplate energy is 200 × 12 = 2,400 Wh. Usable energy at the calculator’s 0.80 depth of discharge is 2,400 × 0.80 = 1,920 Wh. The formula’s stored need is 1,825 Wh, and 1,920 is above 1,825, which is why two batteries clear this particular day and one 100 Ah battery (1,200 × 0.80 = 960 Wh usable) does not.</p>
+<p>Champion’s CPAP range is wider than the single 120 W used here: 30–60 W without the heater and 60–120 W heated. A 30 W night for 8 hours is 240 Wh, and the bank above is sized at the high heated end plus the fridge, not at 30 W. The fridge page also records Honda’s Energy Star running range and Honda’s 1,200 W start. Those starting watts are not added into the 1,460 Wh. A start is a surge the inverter has to cover. Treating 1,200 W as if it ran for 5 hours would invent 6,000 Wh the wattage chart does not describe.</p>
+
+<h2>What this backup is not</h2>
+<p>It is not a whole-house battery, and it is not the sump. Adding the pump means opening the sump page and adding that pump’s watt-hours to a new daily total, then rerunning the formula. A generator is the other tool when the bank will not carry the day. Wattage totals for that choice are on the <a href="generator-sizing-calculator.html">generator sizing calculator</a>. The lithium charge profile that refills the 200 Ah bank, including the 32°F charge cutoff, is on <a href="lithium-battery-charger.html">the lithium charger page</a>.</p>
+<p>Lead-acid and AGM at 0.50 depth of discharge change the same 1,460 Wh day: (1,460 × 1 × 1.25) ÷ 12 ÷ 0.50 = 304.2 Ah. That is the calculator’s DoD swap, which matches the chemistry guide’s “about 50%” limit only in the sense that this site uses 0.50 for that chemistry. The <a href="agm-battery-guide.html">AGM guide</a> keeps Lifeline’s own “twice the capacity” wording next to the 1.25 margin so the two are not silently merged.</p>
+
+<h2>A common mistake</h2>
+<p>Adding starting watts into the daily watt-hour budget. Honda’s refrigerator start is 1,200 W. Champion’s CPAP figure used here is a running range, not a start. The bank formula consumes watt-hours, which are running watts times hours. The inverter’s surge rating consumes the start. Counting 1,200 W × 5 hours as fridge energy, and then also counting 500 Wh, double-counts a number that was never energy. The other mistake is calling two 100 Ah batteries “enough backup” after a second appliance appears. The 190 Ah result is this pair of loads for one day. A second night doubles the day term: (1,460 × 2 × 1.25) ÷ 12 ÷ 0.80 = 380.2 Ah, which two batteries do not cover.</p>
+
+<h2>Limits, and when to call a pro</h2>
+<p>A transfer switch, a backed-up panel, and a standby generator interconnection are electrical work under the local code. This page does not size them. Medical equipment beyond the Champion wattage line — anything other than the published CPAP range — needs the device’s own power supply rating, not a substitution of 120 W. If the outage includes a sump in a flood, use the pump’s published watts and a generator plan; do not assume the 200 Ah fridge-and-CPAP bank also runs the pump. If you are inside a day and the battery has opened on low voltage, the Battle Born manual says many chargers must see more than 10 V and that a jump should happen within 24 hours of low-voltage disconnect or you risk damage and voiding the warranty.</p>
+
+<h2>Ah calculator</h2>
+<p>Defaults are the 1,460 Wh day, one day of autonomy, 12 V, and 0.80. Change the watt-hours when you add a sourced load. Do not type a starting-watt number into the watt-hour field.</p>
+<form id="bak-form">
+<label for="wh">Watt-hours for the outage day</label>
+<input id="wh" type="number" min="0" step="1" value="1460">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="1">
+<label for="volts">Voltage</label>
+<select id="volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.8">0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<button type="submit">Calculate Ah</button>
+</form>
+<p id="bak-out"></p>
+<p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
+<p>The full table is the <a href="index.html">battery bank calculator</a>. Fridge watts alone stay on <a href="what-size-battery-bank-for-a-refrigerator.html">the refrigerator page</a>.</p>
+<h2>Sources</h2>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>Battle Born, “How to Size a Deep Cycle Battery Bank” (May 22, 2026). Refrigerator example, 100 W for 5 hours. <a href="https://battlebornbatteries.com/blogs/academy/how-to-size-a-deep-cycle-battery-bank-the-battle-born-educational-series" rel="noopener" target="_blank">https://battlebornbatteries.com/blogs/academy/how-to-size-a-deep-cycle-battery-bank-the-battle-born-educational-series</a>. accessed Oct 3, 2026.</li>
+<li>Champion, “Generator Wattage Chart.” CPAP 30–60 W, heated 60–120 W. <a href="https://www.championpowerequipment.com/generator-wattage-chart/" rel="noopener" target="_blank">https://www.championpowerequipment.com/generator-wattage-chart/</a>. accessed Oct 3, 2026.</li>
+<li>Honda, “What wattage generator do I need?” Refrigerator starting watts, used here only as a surge that is not daily energy. <a href="https://powerequipment.honda.com/generators/generator-wattage-estimation-guide" rel="noopener" target="_blank">https://powerequipment.honda.com/generators/generator-wattage-estimation-guide</a>. accessed Oct 3, 2026.</li>
+<li>Battle Born BB10012i/BB1002iH manual. Parallel current adds; 100 A continuous per battery. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
+<li>This site’s formula, Ah = (Wh/day × days × 1.25) ÷ voltage ÷ DoD. The 8-hour night length is the duration already used on <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-a-cpap.html">the CPAP page</a>, not a Champion specification.</li>
+</ul>
+</main>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<script>
+document.getElementById("bak-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var msg = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah.";
+  if (volts === 12) {
+    msg += " In parallel at 12 V, that is " + Math.ceil(ah / 100) + " batteries of 100 Ah.";
+  }
+  msg += " Starting watts do not belong in the watt-hour field.";
+  document.getElementById("bak-out").textContent = msg;
+});
+</script>
+</body>
+</html>

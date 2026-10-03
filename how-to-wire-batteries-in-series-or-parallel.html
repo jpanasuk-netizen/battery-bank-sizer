@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Wire Batteries in Series or Parallel</title>
+<meta name="description" content="Parallel keeps 12 V and adds amp-hours. Series adds voltage and leaves amp-hours unchanged. Three 100 Ah batteries cover the 260 Ah cabin result. Four in series make 48 V at 100 Ah, and the manual says not to go past 48 V.">
+<link rel="canonical" href="https://battery-bank-sizer.com/how-to-wire-batteries-in-series-or-parallel.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://battery-bank-sizer.com/how-to-wire-batteries-in-series-or-parallel.html">
+<meta property="og:title" content="How to Wire Batteries in Series or Parallel">
+<meta property="og:description" content="Voltage stays put in parallel and amp-hours stay put in series. The Battle Born manual voids the warranty above a 48 V setup.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Wire Batteries in Series or Parallel">
+<meta name="twitter:description" content="Voltage stays put in parallel and amp-hours stay put in series. The Battle Born manual voids the warranty above a 48 V setup.">
+<meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin-bottom:1.2rem}
+.answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+ul,ol{margin:.6rem 0 .6rem 1.2rem}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+label{display:block;margin:.55rem 0 .15rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+.btn-amz{display:inline-block;background:var(--card);color:var(--fg);border:1px solid var(--acc);border-radius:8px;padding:.55rem .9rem;text-decoration:none;margin:.2rem 0}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Wire Batteries in Series or Parallel",
+  "description": "Parallel adds amp-hours and current at the same voltage. Series adds voltage and does not add amp-hours. Do not exceed 48 V.",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
+  "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
+  "mainEntityOfPage": "https://battery-bank-sizer.com/how-to-wire-batteries-in-series-or-parallel.html"
+}
+</script>
+</head>
+<body>
+<nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · Series or parallel</nav>
+<main>
+<h1>How to Wire Batteries in Series or Parallel</h1>
+<p class="sub">Published October 3, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<div class="answer-box"><strong>Direct answer:</strong> On the Battle Born 100 Ah battery, parallel leaves the voltage at 12 V and adds both capacity and current. Series leaves the current capacity at one battery’s rating and adds voltage. Two in parallel are a 12 V 200 Ah bank at 200 A continuous. Two in series are a 24 V 100 Ah bank. The manual says these batteries can be connected in series up to 48 V, and “DO NOT exceed a 48 V setup or you will void the batteries' warranty.”</div>
+<p>The feature list also says “No Limit When Wiring in Parallel.” The parallel chapter then shows four batteries as a 12 V 400 Ah bank. Series diagrams stop at four batteries: a 48 V 100 Ah bank. A safety line says “Do NOT operate the battery in series or in parallel with any other type of battery.” Same model, same state of charge, or you are outside what that sentence allows.</p>
+
+<h2>What the cabin formula is asking the wiring to hold</h2>
+<p>This site sizes amp-hours as Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. The weekend cabin inputs are 1,000 Wh/day, 2 days, and 0.80 depth of discharge. At 12 V that is (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah, printed as about 260 Ah on the <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a>. The watt-hours the formula is trying to store are 1,000 × 2 × 1.25 = 2,500 Wh of usable energy, which is 2,500 ÷ 0.80 = 3,125 Wh of nameplate.</p>
+<p>Three of these 100 Ah batteries in parallel are 300 Ah at 12 V. The manual’s own parallel rule makes current additive too, so three batteries are 300 A continuous (100 A × 3) and 600 A for 30 seconds (200 A × 3). 300 Ah is more than 260 Ah. Nameplate watt-hours are 300 × 12 = 3,600 Wh, which is more than 3,125 Wh. Parallel is the wiring that matches a 12 V cabin target. It does not raise the system voltage.</p>
+<p>The same energy at 48 V is (1,000 × 2 × 1.25) ÷ 48 ÷ 0.80 = 65.104 Ah, printed as about 65 Ah. Four 12 V 100 Ah batteries in series are the manual’s 48 V 100 Ah example. Series does not multiply amp-hours, so the string is still 100 Ah, not 400 Ah. 100 Ah is more than 65 Ah. Nameplate watt-hours are 48 V × 100 Ah = 4,800 Wh, which is more than 3,125 Wh, so one series string meets that 48 V target. A second string would be a parallel of series strings, which this page does not need for the 65 Ah figure.</p>
+<table>
+<tr><th>Connection</th><th>Manual’s result</th><th>Against the cabin target</th></tr>
+<tr><td>Two in parallel</td><td>12 V, 200 Ah, 200 A continuous, 400 A for 30 seconds</td><td>200 Ah is short of 260 Ah</td></tr>
+<tr><td>Three in parallel</td><td>12 V, 300 Ah, 300 A continuous, by the same additive rule</td><td>Covers about 260 Ah at 12 V</td></tr>
+<tr><td>Four in parallel</td><td>12 V, 400 Ah</td><td>More Ah than this cabin example needs</td></tr>
+<tr><td>Two in series</td><td>24 V, 100 Ah; charge at 28.8 V bulk/absorption and 27.2 V float</td><td>100 Ah at 24 V is 2,400 Wh nameplate, under 3,125 Wh</td></tr>
+<tr><td>Four in series</td><td>48 V, 100 Ah</td><td>Covers about 65 Ah at 48 V; do not add a fifth battery in series</td></tr>
+</table>
+<p>Two in series are short of the cabin’s stored-energy target because 24 × 100 = 2,400 Wh of nameplate, and 2,400 is under 3,125. The 24 V charge setpoints in that sentence are 28.8 V and 27.2 V. The manual does not print a 36 V or 48 V charge voltage in the series chapter. This page does not invent those setpoints. Charger limits for a 12 V bank are on <a href="lithium-battery-charger.html">the lithium charger page</a>.</p>
+
+<h2>Before the cables go on</h2>
+<p>The series procedure says to charge each battery to 14.2–14.6 V with a lithium charger first, and that all batteries should be at the same state of charge before connecting. It says to check state of charge with a multimeter. Both the parallel and series procedures say “DO NOT finger tighten,” and both say to torque hardware to 9 to 11 ft-lbs. The series wording is “Failure to adequately secure connections can result in severe damage and will void your warranty.” Terminal shape, the inch-pound torque on a Lifeline AGM, and the once-a-year series charge are on <a href="battery-maintenance-connections-and-terminals.html">maintenance, connections, and terminals</a>.</p>
+<p>Cables “MUST be able to accommodate the high currents that can be delivered by the battery.” The manual says appropriate fuses and circuit breakers are highly recommended, and it names ANL fuses between the batteries and the inverter or load. It does not print an ANL amp rating in that paragraph, so this page does not supply one. A cable-gauge chart sits in the manual by current and distance; the chart’s numbers are not reproduced here. A current surge limiter is required for inverters rated at 3,500 W or higher. The <a href="what-size-battery-bank-for-a-3000w-inverter.html">3,000 W inverter page</a> is under that line; the 5,000 W page is over it.</p>
+
+<h2>A common mistake</h2>
+<p>Series is not a way to buy fewer amp-hours of battery and still hit a 12 V amp-hour target. Four batteries in series are 100 Ah at 48 V. Four batteries in parallel are 400 Ah at 12 V. Same four boxes, different bank. Sizing the cabin at 12 V and then wiring series leaves you with 100 Ah where the formula asked for about 260 Ah. The other version of the mistake is a fifth battery in the series string. That is a 60 V setup. The manual’s sentence is that exceeding 48 V will void the warranty.</p>
+
+<h2>Limits, and when to call a pro</h2>
+<p>Matching lugs, fuse holders, and inverter DC ratings to a 300 A bank is electrical work. If the inverter is 3,500 W or above, the manual requires a current surge limiter and does not describe a substitute. If the batteries are not the same type, the manual’s instruction is not a mixing diagram: do not operate them in series or in parallel together. A boat trolling-motor string is a different voltage problem; the <a href="what-size-battery-for-a-80-lb-trolling-motor.html">80 lb motor page</a> is 24 V, two batteries in series, for that motor’s published current.</p>
+
+<h2>Ah calculator</h2>
+<p>This form runs the site formula only. It does not turn a series string into extra amp-hours.</p>
+<form id="wire-form">
+<label for="wh">Daily watt-hours</label>
+<input id="wh" type="number" min="0" step="1" value="1000">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="2">
+<label for="volts">Bank voltage</label>
+<select id="volts"><option value="12">12 V (parallel keeps this voltage)</option><option value="24">24 V</option><option value="48">48 V (manual’s series ceiling)</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.8">0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<button type="submit">Calculate Ah</button>
+</form>
+<p id="wire-out"></p>
+<p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
+<p>Back to the <a href="index.html">battery bank calculator</a>. Storage loss on a bank you actually built is <a href="how-long-will-a-battery-hold-a-charge.html">how long a battery holds a charge</a>.</p>
+<h2>Sources</h2>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>Battle Born BB10012i/BB1002iH 100Ah 12V Smart LiFePO4 manual. Parallel and series chapters, 48 V warranty line, torque, ANL fuse note, current surge limiter at 3,500 W. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
+<li>This site’s cabin formula and the 1,000 Wh/day, 2-day example. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
+</ul>
+</main>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<script>
+document.getElementById("wire-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var msg = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah. Series wiring does not multiply amp-hours, so the string still has to provide this many amp-hours at " + volts + " V.";
+  if (volts === 12) {
+    msg += " In parallel at 12 V, that is " + Math.ceil(ah / 100) + " batteries of 100 Ah.";
+  }
+  document.getElementById("wire-out").textContent = msg;
+});
+</script>
+</body>
+</html>

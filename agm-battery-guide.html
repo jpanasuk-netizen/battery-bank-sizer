@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGM Battery Guide: 50% DoD and the GPL-31T</title>
+<meta name="description" content="The cabin formula at 50% DoD is 416.7 Ah. Four Lifeline GPL-31T batteries are 420 Ah at the 20-hour rate. Lifeline’s own rule is to size at least twice the required capacity. The 1.25 margin is this calculator, not a Lifeline number.">
+<link rel="canonical" href="https://battery-bank-sizer.com/agm-battery-guide.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://battery-bank-sizer.com/agm-battery-guide.html">
+<meta property="og:title" content="AGM Battery Guide: 50% DoD and the GPL-31T">
+<meta property="og:description" content="416.7 Ah at 50% DoD needs four 105 Ah GPL-31T batteries. Absorption at 77°F is 14.3 V, not a lithium 14.6 V profile.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AGM Battery Guide: 50% DoD and the GPL-31T">
+<meta name="twitter:description" content="416.7 Ah at 50% DoD needs four 105 Ah GPL-31T batteries. Absorption at 77°F is 14.3 V, not a lithium 14.6 V profile.">
+<meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin-bottom:1.2rem}
+.answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+ul,ol{margin:.6rem 0 .6rem 1.2rem}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+label{display:block;margin:.55rem 0 .15rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+.btn-amz{display:inline-block;background:var(--card);color:var(--fg);border:1px solid var(--acc);border-radius:8px;padding:.55rem .9rem;text-decoration:none;margin:.2rem 0}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AGM Battery Guide: 50% DoD and the GPL-31T",
+  "description": "Four 105 Ah Lifeline GPL-31T batteries cover the cabin calculator at 50 percent depth of discharge. Absorption at 77 F is 14.30 V.",
+  "datePublished": "2026-10-03",
+  "dateModified": "2026-10-03",
+  "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
+  "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
+  "mainEntityOfPage": "https://battery-bank-sizer.com/agm-battery-guide.html"
+}
+</script>
+</head>
+<body>
+<nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · AGM battery guide</nav>
+<main>
+<h1>AGM Battery Guide: 50% Depth of Discharge and a 105 Ah Battery</h1>
+<p class="sub">Published October 3, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<div class="answer-box"><strong>Direct answer:</strong> Lifeline says to size the rated capacity at least twice the capacity the load requires, so average depth of discharge stays at 50% of the 20-hour rating. This site’s calculator already divides by 0.50 for AGM, and it also multiplies by 1.25 before that division. Those are not the same step. For the cabin’s 1,000 Wh/day and 2 days at 12 V, the calculator is (1,000 × 2 × 1.25) ÷ 12 ÷ 0.50 = 416.7 Ah. A GPL-31T is 12 V and 105 Ah at the 20-hour rate. 416.7 ÷ 105 = 3.97, so three batteries (315 Ah) are short and four (420 Ah) cover it.</div>
+<p>The <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a> already prints about 417 Ah for this AGM case and about 260 Ah for the same loads at 0.80 on LiFePO4. This page is the battery count and the charge profile that 417 Ah has to sit on. It is not a second cabin formula.</p>
+
+<h2>Twice the capacity, and the extra 1.25</h2>
+<p>Lifeline’s discharging chapter says: if 100 Ah is required on average, select at least a 200 Ah battery. The FAQ says the average depth of discharge should be no greater than 50% of the battery’s 20-hour rating. Take the cabin energy without this site’s margin: 1,000 × 2 = 2,000 Wh, which is 2,000 ÷ 12 = 166.7 Ah. Twice that, the manual’s own example method, is 333.3 Ah. Run the site formula instead and the 1.25 stays in the numerator: 2,500 Wh ÷ 12 ÷ 0.50 = 416.7 Ah. The gap between 333 Ah and 417 Ah is the calculator’s margin. Dropping the 1.25 because “AGM is already doubled” undersizes the bank relative to every other page on this site.</p>
+<p>Four GPL-31T batteries are 420 Ah nameplate, 12.9 × 6.75 × 9.27 inches and 64 lb each on the product page, so 256 lb before cables. Nameplate watt-hours are 420 × 12 = 5,040 Wh. At 50% depth of discharge that is 2,520 Wh usable, just above the formula’s 2,500 Wh. Three batteries are 315 Ah, 315 × 12 × 0.50 = 1,890 Wh usable, which is under 2,500 Wh. Parallel adds capacity and leaves voltage at 12 V, which is the Lifeline installation sentence and the right wiring for this 12 V target. Series would keep the string at 105 Ah.</p>
+<table>
+<tr><th>Bank</th><th>20-hour Ah</th><th>Usable Wh at 50%</th><th>Against 2,500 Wh</th></tr>
+<tr><td>Three GPL-31T</td><td>315 Ah</td><td>1,890 Wh</td><td>Short</td></tr>
+<tr><td>Four GPL-31T</td><td>420 Ah</td><td>2,520 Wh</td><td>Covers the calculator</td></tr>
+<tr><td>Lifeline “twice” only, no 1.25</td><td>333.3 Ah</td><td>2,000 Wh</td><td>Covers raw use, not this site’s margin</td></tr>
+</table>
+
+<h2>Charge it as an AGM, not as lithium</h2>
+<p>At 77°F (25°C), Lifeline’s absorption setting is 14.3 V ± 0.1 V. Table 5-1 at 77°F lists 14.30 V absorption and 13.30 V float. Float in the text is 13.3 ± 0.1 V at the same temperature. The battery is fully charged when current drops below 0.5% of rated capacity, which the manual illustrates as 0.5 A for a 100 Ah battery. On a 420 Ah bank that same 0.5% is 2.1 A. Absorption typically lasts 2–4 hours. The FAQ says to use a 3-stage charger that compensates voltage as temperature changes. That is the opposite of the Battle Born lithium profile, which says to disable temperature compensation. Do not point a 14.6 V lithium preset at this bank and call it close enough. Terminals, the 70 in-lb torque, and the baking-soda step stay on <a href="battery-maintenance-connections-and-terminals.html">maintenance, connections, and terminals</a>.</p>
+<p>Self-discharge in the technical manual’s comparison table is 1 to 3% per month at room temperature for Lifeline AGM, and it stays stable over life. The GPL-31T product page says an industry-leading 2% per month at 77°F (25°C), compared with 10%+ for conventional batteries. The manual’s flooded column says 5–10% per month when new. Those two “conventional” lines are not edited into one number here. One month at 2% of the 420 Ah bank is 8.4 Ah, applied once. One month at the manual’s 1% and 3% ends, on the 416.7 Ah calculator result, is 4.2 Ah and 12.5 Ah. This page does not compound them.</p>
+<p>Recharge is not 100% of what you removed. Lifeline says typically 102% to 110% of the discharged ampere-hours must be returned. The manual does not pick a single percent inside that band for the cabin, so this page does not either.</p>
+
+<h2>A common mistake</h2>
+<p>Using the lithium 0.80 depth of discharge on an AGM bank because the cabin table’s first column is 260 Ah. That 260 Ah figure is the 0.80 case. At 0.50 the same inputs are 416.7 Ah, and three 105 Ah batteries do not reach it. The paired mistake is a lithium charger profile: equalization disabled and no temperature compensation is the Battle Born instruction, and Lifeline’s FAQ asks for temperature compensation. Hydrogen rules below are also not optional just because the comparison table calls hydrogen emissions “generally negligible unless severely overcharged.”</p>
+
+<h2>Limits, and when to call a pro</h2>
+<p>Section 6.1 says hydrogen can ignite at concentrations as low as 4% in air, and “never install a Lifeline AGM battery in a sealed or an airtight container.” The FAQ repeats it: do not install these batteries in a sealed container or enclosure, because hydrogen released during storage, charging, or discharging must be ventilated to prevent ignition and/or explosion. Section 6.2: sulfuric acid can cause chemical burns; if electrolyte is displaced, avoid skin, eyes, and clothing, flush with water, and call a physician immediately. Section 6.3: a short across the terminals can cause severe burns and is a potential fire hazard. Remove metal jewelry and use insulated tools. A battery compartment in a boat or an RV that you cannot prove is ventilated is the point to stop and get someone who will. Float voltages that differ by more than 0.6 V on 12 V batteries, after the first month or two, are the manual’s cue for a conditioning charge in section 5.5. This page does not rewrite that procedure.</p>
+
+<h2>Ah calculator</h2>
+<p>Depth of discharge is locked to the two values this site publishes. AGM work uses 0.50. The note under the result counts 105 Ah GPL-31T batteries only as nameplate amp-hours at 12 V; it does not apply at 24 V or 48 V, where series changes the string.</p>
+<form id="agm-form">
+<label for="wh">Daily watt-hours</label>
+<input id="wh" type="number" min="0" step="1" value="1000">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="2">
+<label for="volts">Voltage</label>
+<select id="volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.5" selected>0.50 AGM / lead-acid</option><option value="0.8">0.80 LiFePO4</option></select>
+<button type="submit">Calculate Ah</button>
+</form>
+<p id="agm-out"></p>
+<p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p><a class="btn-amz" href="https://www.amazon.com/s?k=group+31+AGM+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">Group 31 AGM batteries on Amazon</a></p>
+<p>Lithium settings, if you are not on AGM, are <a href="lithium-battery-charger.html">the lithium charger page</a>. The directory table is the <a href="index.html">battery bank calculator</a>.</p>
+<h2>Sources</h2>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>Lifeline Technical Manual, Concorde document 6-0101 Rev. F. Sections 3 (Table 3-1), 4.2, 5.1–5.4, 5.9 note 2, 6.1–6.3, and FAQ items 4, 6, and 7. <a href="https://lifelinebatteries.com/wp-content/uploads/2015/12/6-0101F-Lifeline-Technical-Manual-Final-5-06-19.pdf" rel="noopener" target="_blank">https://lifelinebatteries.com/wp-content/uploads/2015/12/6-0101F-Lifeline-Technical-Manual-Final-5-06-19.pdf</a>. accessed Oct 3, 2026.</li>
+<li>Lifeline GPL-31T product page. 12 V, 105 Ah at the 20-hour rate, 64 lb, 12.9 × 6.75 × 9.27 in, 2% per month self-discharge at 77°F. <a href="https://lifelinebatteries.com/products/marine-batteries/gpl-31t/" rel="noopener" target="_blank">https://lifelinebatteries.com/products/marine-batteries/gpl-31t/</a>. accessed Oct 3, 2026.</li>
+<li>This site’s formula and the cabin AGM result of about 417 Ah. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
+</ul>
+</main>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<script>
+document.getElementById("agm-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var msg = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah.";
+  if (volts === 12) {
+    var n = Math.ceil(ah / 105);
+    msg += " At 12 V, " + n + " GPL-31T batteries (105 Ah at the 20-hour rate) is " + (n * 105) + " Ah nameplate.";
+  } else {
+    msg += " The 105 Ah count is a 12 V parallel count. Series at " + volts + " V does not multiply amp-hours.";
+  }
+  document.getElementById("agm-out").textContent = msg;
+});
+</script>
+</body>
+</html>
