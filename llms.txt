@@ -1,9 +1,12 @@
 # Battery Bank Sizer
-> Off-grid battery bank sizing directory: calculators, comparison guides, and real cost breakdowns for cabins, vans, and homesteads. Maintained nightly by an agent-operated office with human review.
+> Off-grid battery bank sizing directory: calculators, comparison guides, and real cost breakdowns for cabins, vans, and homesteads.
 
 ## Core pages
-- [Generator Sizing Calculator](https://battery-bank-sizer.com/generator-sizing-calculator.html): wattage tables, running vs starting watts, real 2026 costs — the definitive sizing answer
 - [Home](https://battery-bank-sizer.com/): quick sizing table (LiFePO4, 80% DoD) for weekend cabins through full off-grid homes
+- [About](https://battery-bank-sizer.com/about.html): who built the site, how the pages are drafted, and why
+- [Privacy](https://battery-bank-sizer.com/privacy.html): what this site loads, and the contact email
+- [Contact](https://battery-bank-sizer.com/contact.html): jpanasuk@gmail.com
+- [Generator Sizing Calculator](https://battery-bank-sizer.com/generator-sizing-calculator.html): wattage tables, running vs starting watts, real 2026 costs — the definitive sizing answer
 - [GeneratorSizer hub](https://generator-sizer.com/): full generator sizing calculator — running vs starting watts, inverter sizing, battery runtime, transfer switch planner
 
 ## Coming pages

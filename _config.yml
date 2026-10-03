@@ -1,0 +1,33 @@
+# GitHub Pages builds this repo with Jekyll. Publish the calculator pages
+# and static files as-is. Do not publish repo-internal notes, configs, or scripts.
+exclude:
+  - README.md
+  - LAUNCH_CHECKLIST.md
+  - MONETIZATION_STAGING.md
+  - lead-form-fields.md
+  - slm-advisor-marketing.md
+  - smoke-test.js
+  - config-leo-backup.yaml
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - test/
+  - tests/
+  - script/
+  - scripts/
+  - "*.md"
+  - "**/*.md"
+  - "*.yaml"
+  - "**/*.yaml"
+
+# Leave HTML without front matter as static files so Liquid in inline JS is not evaluated.
+optional_front_matter:
+  enabled: false
+relative_links:
+  enabled: false
+readme_index:
+  enabled: false
+  remove_originals: false
+titles_from_headings:
+  enabled: false
