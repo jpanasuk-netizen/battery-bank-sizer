@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Calculate Battery Bank Size, Step by Step</title>
+<meta name="description" content="Six steps for Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD. A 1,000 Wh cabin for 2 days is 260.4167 Ah at 12 V. A 1,500 Wh van for 1 day is 195.3125 Ah.">
+<link rel="canonical" href="https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<meta property="og:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html">
+<meta property="og:title" content="How to Calculate Battery Bank Size, Step by Step">
+<meta property="og:description" content="Six steps for Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD. Cabin example 260.4167 Ah. Light van example 195.3125 Ah.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Calculate Battery Bank Size, Step by Step">
+<meta name="twitter:description" content="Six steps for Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD. Cabin example 260.4167 Ah. Light van example 195.3125 Ah.">
+<meta name="twitter:image" content="https://battery-bank-sizer.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+a{color:var(--acc)}
+h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+.sub{color:var(--mut);margin-bottom:1.2rem}
+.answer-box{background:var(--card);border:1px solid var(--ok);border-left:4px solid var(--ok);border-radius:10px;padding:1rem 1.2rem;margin:0 0 1.4rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.92rem}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--bd)}
+th{color:var(--mut);font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+ul,ol{margin:.6rem 0 .6rem 1.2rem}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:var(--mut);font-size:.85rem}
+label{display:block;margin:.55rem 0 .15rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Calculate Battery Bank Size, Step by Step",
+  "description": "Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. These six steps are that formula. The battery bank calculator is the sizing table.",
+  "datePublished": "2026-10-06",
+  "dateModified": "2026-10-06",
+  "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
+  "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
+  "mainEntityOfPage": "https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Calculate Battery Bank Size, Step by Step",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Write down daily watt-hours. Use measured or published load watts times hours, not a guessed inverter size.", "text": "Write down daily watt-hours. Use measured or published load watts times hours, not a guessed inverter size."},
+    {"@type": "HowToStep", "position": 2, "name": "Choose how many days the bank must cover with no charging. That number is the autonomy days.", "text": "Choose how many days the bank must cover with no charging. That number is the autonomy days."},
+    {"@type": "HowToStep", "position": 3, "name": "Multiply watt-hours per day by the autonomy days, then by 1.25. The 1.25 is this site's margin. It is not a manufacturer rating.", "text": "Multiply watt-hours per day by the autonomy days, then by 1.25. The 1.25 is this site's margin. It is not a manufacturer rating."},
+    {"@type": "HowToStep", "position": 4, "name": "Divide by the bank voltage: 12, 24, or 48.", "text": "Divide by the bank voltage: 12, 24, or 48."},
+    {"@type": "HowToStep", "position": 5, "name": "Divide by depth of discharge: 0.80 for the LiFePO4 planning value on this site, or 0.50 for AGM and lead-acid.", "text": "Divide by depth of discharge: 0.80 for the LiFePO4 planning value on this site, or 0.50 for AGM and lead-acid."},
+    {"@type": "HowToStep", "position": 6, "name": "Round up to whole batteries of the amp-hour size you can buy. Series wiring does not multiply amp-hours.", "text": "Round up to whole batteries of the amp-hour size you can buy. Series wiring does not multiply amp-hours."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "How to Calculate Battery Bank Size, Step by Step",
+  "url": "https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "description": "Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. These six steps are that formula. The battery bank calculator is the sizing table."
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {"@type": "ListItem", "position": 1, "name": "Battery Bank Sizer", "item": "https://battery-bank-sizer.com/"},
+  {"@type": "ListItem", "position": 2, "name": "How to Calculate Battery Bank Size, Step by Step", "item": "https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html"}
+ ]
+}
+</script>
+</head>
+<body>
+<nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · How to calculate battery bank size</nav>
+<main>
+<h1>How to Calculate Battery Bank Size, Step by Step</h1>
+<p class="sub">Published October 6, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<p class="sub">Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. These six steps are that formula. The <a href="index.html">battery bank calculator</a> is the sizing table.</p>
+<div class="answer-box"><strong>Direct answer:</strong> A weekend cabin at 1,000 Wh/day, 2 days, 12 V, and 0.80 depth of discharge is (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah. A light van at 1,500 Wh/day, 1 day, 12 V, and 0.80 is (1,500 × 1 × 1.25) ÷ 12 ÷ 0.80 = 195.3125 Ah, which two 100 Ah batteries cover. The home page already prints those daily-use rows. This page is the order of operations.</div>
+
+<h2>The six steps</h2>
+<ol>
+<li>Write down daily watt-hours. Use measured or published load watts times hours, not a guessed inverter size.</li>
+<li>Choose how many days the bank must cover with no charging. That number is the autonomy days.</li>
+<li>Multiply watt-hours per day by the autonomy days, then by 1.25. The 1.25 is this site's margin. It is not a manufacturer rating.</li>
+<li>Divide by the bank voltage: 12, 24, or 48.</li>
+<li>Divide by depth of discharge: 0.80 for the LiFePO4 planning value on this site, or 0.50 for AGM and lead-acid.</li>
+<li>Round up to whole batteries of the amp-hour size you can buy. Series wiring does not multiply amp-hours.</li>
+</ol>
+<p>The 1.25 sits in the numerator on every other page of this site. Lifeline’s own AGM instruction is a different step: size rated capacity at least twice the capacity the load requires. That doubling is why this site uses 0.50 for AGM. It does not replace the 1.25. The <a href="agm-battery-guide.html">AGM guide</a> keeps those two steps apart.</p>
+
+<h2>Worked cabin</h2>
+<p>The <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a> uses 1,000 Wh/day and 2 days. Step 3 is 1,000 × 2 × 1.25 = 2,500 Wh. Step 4 at 12 V is 2,500 ÷ 12 = 208.3333 Ah before depth of discharge. Step 5 at 0.80 is 208.3333 ÷ 0.80 = 260.4167 Ah. The same energy at 48 V is 2,500 ÷ 48 ÷ 0.80 = 65.1042 Ah. Dividing by 0.80 is the same as asking the nameplate to hold 2,500 ÷ 0.80 = 3,125 Wh. At 12 V that is 3,125 ÷ 12 = 260.4167 Ah, which the cabin table prints as about 260 Ah.</p>
+<p>Step 6 at 12 V: 260.4167 ÷ 100 = 2.60, so two 100 Ah batteries (200 Ah) are short and three (300 Ah) cover it. Two 100 Ah batteries in series would be 24 V at 100 Ah, not 200 Ah. Series and parallel rules, including the Battle Born stop at 48 V, are on <a href="how-to-wire-batteries-in-series-or-parallel.html">series and parallel wiring</a>.</p>
+<table>
+<tr><th>Example</th><th>Inputs</th><th>Result</th><th>100 Ah batteries at 12 V</th></tr>
+<tr><td>Cabin</td><td>1,000 Wh/day, 2 days, 12 V, 0.80</td><td>260.4167 Ah</td><td>3 (300 Ah)</td></tr>
+<tr><td>Cabin, AGM divisor</td><td>1,000 Wh/day, 2 days, 12 V, 0.50</td><td>416.6667 Ah</td><td>Not a 100 Ah lithium count</td></tr>
+<tr><td>Light van</td><td>1,500 Wh/day, 1 day, 12 V, 0.80</td><td>195.3125 Ah</td><td>2 (200 Ah)</td></tr>
+</table>
+<p>The AGM row is the same cabin energy with step 5 changed to 0.50: (1,000 × 2 × 1.25) ÷ 12 ÷ 0.50 = 416.6667 Ah. The cabin page prints that as about 417 Ah. Counting it in 105 Ah GPL-31T batteries is the AGM guide, not this step list.</p>
+
+<h2>Worked van</h2>
+<p>The light van on the <a href="how-many-batteries-do-i-need-for-van-life.html">van page</a> is about 1.5 kWh/day, which this example writes as 1,500 Wh, and 1 day of autonomy. Step 3 is 1,500 × 1 × 1.25 = 1,875 Wh. At 12 V and 0.80 that is 1,875 ÷ 12 ÷ 0.80 = 195.3125 Ah. Two 100 Ah batteries are 200 Ah, which covers 195.3125 Ah. One 100 Ah battery does not. The van page’s own weekend list adds to about 1,160 Wh and produces a smaller result. Use the list you measured. Do not paste 1,500 in because this page used it as the labeled light-van case.</p>
+
+<h2>A common mistake</h2>
+<p>Starting from the inverter’s watt rating instead of daily watt-hours. A 2,000 W inverter is a power ceiling. It is not 2,000 Wh/day unless that inverter actually delivers 2,000 W for an hour, and the load list says so. The other mistake is step 6 in reverse: buying two 100 Ah batteries and wiring them in series because the cabin answer was “about 200 Ah.” Series raises voltage and leaves the string at 100 Ah. Parallel at the same voltage is what adds the amp-hours.</p>
+
+<h2>Limits, and when to call a pro</h2>
+<p>This page does not print the home directory’s five-row cost table, and it does not pick cable gauge or fuse amps. Storage loss, a charger that refuses a charge under 32°F (0°C), and a rested-voltage check are separate pages: <a href="how-long-will-a-battery-hold-a-charge.html">how long a battery holds a charge</a>, <a href="lithium-battery-charger.html">the lithium charger page</a>, and <a href="how-to-check-12v-battery-capacity.html">how to check a 12V battery’s capacity</a>. If the bank shares a compartment with fuel-burning equipment, or you cannot show the circuit is fused and ventilated, stop and use someone who will.</p>
+
+<h2>Run the six steps</h2>
+<p>The form uses only Ah = (Wh/day × days × 1.25) ÷ voltage ÷ depth of discharge. It counts 100 Ah batteries in parallel only at 12 V.</p>
+<form id="calc-form">
+<label for="wh">Daily watt-hours</label>
+<input id="wh" type="number" min="0" step="1" value="1000">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="2">
+<label for="volts">Voltage</label>
+<select id="volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.8" selected>0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<button type="submit">Calculate</button>
+</form>
+<p id="calc-out"></p>
+<p>The sizing table that already ran these rows is the <a href="index.html">battery bank calculator</a>.</p>
+<h2>Sources</h2>
+<p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
+<ul>
+<li>This site’s published formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD, and the cabin inputs of 1,000 Wh/day and 2 days. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
+<li>The light-van case of about 1.5 kWh/day and 1 day of autonomy. <a href="https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html">https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html</a>.</li>
+<li>Lifeline’s instruction to size rated capacity at least twice the required capacity, kept separate from the 1.25. <a href="https://lifelinebatteries.com/wp-content/uploads/2015/12/6-0101F-Lifeline-Technical-Manual-Final-5-06-19.pdf" rel="noopener" target="_blank">https://lifelinebatteries.com/wp-content/uploads/2015/12/6-0101F-Lifeline-Technical-Manual-Final-5-06-19.pdf</a>.</li>
+</ul>
+</main>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<script>
+document.getElementById("calc-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var msg = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(4) + " Ah.";
+  if (volts === 12) {
+    var n = Math.ceil(ah / 100);
+    msg += " At 12 V, " + n + " batteries of 100 Ah in parallel is " + (n * 100) + " Ah. Series does not multiply amp-hours.";
+  } else {
+    msg += " A 100 Ah count in parallel applies at 12 V. Series at " + volts + " V does not multiply amp-hours.";
+  }
+  document.getElementById("calc-out").textContent = msg;
+});
+</script>
+</body>
+</html>

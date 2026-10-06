@@ -21,32 +21,24 @@ ul{padding-left:1.2rem}li{margin:.35rem 0}footer{margin-top:3rem;padding-top:1re
 </script>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{"@type": "Question", "name": "Is this calculator free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 free to use, no signup, no email required."}}, {"@type": "Question", "name": "How accurate is the estimate?", "acceptedAnswer": {"@type": "Answer", "text": "Estimates follow industry-standard sizing rules and common safety margins. Always confirm with a licensed professional for final sizing."}}, {"@type": "Question", "name": "Can I use this on mobile?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 the page is fully responsive and works on phones, tablets, and desktop."}}]
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Battery Bank Sizer",
+   "item": "https://battery-bank-sizer.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "What Battery Bank Sizer is for",
+   "item": "https://battery-bank-sizer.com/topics.html"
+  }
+ ]
 }
 </script>
-
-<script id="sources-data" type="application/json">
-{
-  "sources": [
-    {
-      "title": "Battle Born BB10012i manual: 100% usable depth of discharge, 3,000-5,000 cycles",
-      "url": "https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf",
-      "date": "2026-10-02"
-    },
-    {
-      "title": "Battle Born: lead-acid and AGM typically limited to about 50% depth of discharge",
-      "url": "https://battlebornbatteries.com/blogs/academy/lead-acid-vs-agm-vs-lithium-batteries-whats-the-difference-the-battle-born-educational-series",
-      "date": "2026-10-02"
-    }
-  ]
-}
-</script>
-<script>
-document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getElementById('sources-data').textContent);var s=document.createElement('div');s.className='sources-section';s.innerHTML='<h2 id="sources-heading">Sources & Standards</h2><p>References for depth of discharge and cycle life:</p><ul>'+d.sources.map(x=>'<li><a href="'+x.url+'" target="_blank">'+x.title+'</a></li>').join('')+'</ul><p><button id="cite-toggle">Show Copyable Citations</button></p><div id="cite-output" style="display:none"></div>';var t=document.querySelector('nav')||document.querySelector('footer')||document.body;t.parentNode.insertBefore(s,t);var o=s.querySelector('#cite-toggle'),c=s.querySelector('#cite-output');o.onclick=()=>{c.textContent=d.sources.map(x=>x.title+'. '+x.url+'. Accessed '+x.date).join('\n\n');c.style.display='block';o.style.display='none'};});
-</script>
-<meta name="llms.txt" content="https://battery-bank-sizer.com/sources.json">
 </head>
 <body>
 <header class="site-head">
@@ -59,6 +51,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 </header>
 <main>
 <h1>What Battery Bank Sizer is for</h1>
+<p data-magnet-cta="1" style="margin:.6rem 0 1.1rem;padding:.7rem .9rem;border-left:4px solid #f59e0b;background:rgba(245,158,11,.08);font-size:1.02rem"><a href="magnet.html" style="font-weight:700">Free Ah pocket card — print it, 10 minutes.</a></p>
 <p class="sub">Battery bank sizing for off-grid power systems.</p>
 <p>Not a second generator-authority site. Generator math lives on generator-sizer.com.</p>
 <p>This map lists <strong>pages that exist</strong>. It is not a keyword dump and it does not treat every article as its own niche. The calculator (or the pack) is the hub. Guides sit under one pillar each.</p>
@@ -66,6 +59,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <p>Usable Ah is not nameplate Ah.</p>
 <ul>
 <li><a href="/">Battery bank sizer</a> — 12/24/48 V tables, LiFePO4 80% DoD.</li>
+<li><a href="/how-to-calculate-battery-bank-size.html">How to calculate battery bank size</a> — six steps, cabin 260.4167 Ah and van 195.3125 Ah.</li>
 <li><a href="/magnet.html">Ah pocket card</a> — Printable nameplate vs usable.</li>
 </ul>
 <h2>Cabin banks</h2>
@@ -109,12 +103,20 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <li><a href="/lithium-battery-charger.html">Lithium charger and cold charging</a> — 14.2–14.6 V absorb, no charge under 32°F.</li>
 <li><a href="/battery-backup-systems.html">Fridge and CPAP backup</a> — 1,460 Wh for one day, about 190 Ah at 12 V.</li>
 <li><a href="/agm-battery-guide.html">AGM guide</a> — 416.7 Ah, four 105 Ah GPL-31T batteries.</li>
+<li><a href="/how-to-check-12v-battery-capacity.html">How to check a 12V battery’s capacity</a> — Trojan’s rested-voltage table: 12.73 V is 100%, 12.10 V is 50%.</li>
+<li><a href="/diesel-heater-battery-bank.html">Diesel heater battery</a> — Air Top 2000 STC currents kept as three statements; 30.625 Ah for an 8-hour high example.</li>
 </ul>
 <h2>Sisters</h2>
 <p>Adjacent math lives next door, not here. <a href="https://solar-sizer.com/">SolarSizer</a> · <a href="https://generator-sizer.com/">GeneratorSizer</a></p>
+
+<section class="sources-section" aria-labelledby="sources-heading">
+<h2 id="sources-heading">Sources & Standards</h2>
+<p>References for depth of discharge and cycle life:</p>
+<ul><li><a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">Battle Born BB10012i manual: 100% usable depth of discharge, 3,000-5,000 cycles</a></li><li><a href="https://battlebornbatteries.com/blogs/academy/lead-acid-vs-agm-vs-lithium-batteries-whats-the-difference-the-battle-born-educational-series" rel="noopener" target="_blank">Battle Born: lead-acid and AGM typically limited to about 50% depth of discharge</a></li></ul>
+</section>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
-<script src="assets/magnet-cta.js"></script>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links · <a href="https://www.tiktok.com/@3jsa7" rel="noopener" target="_blank" data-tiktok-cta="1">TikTok @3jsa7</a></footer>
+<script src="assets/magnet-cta.js" defer></script>
 
 
 
@@ -136,7 +138,7 @@ document.addEventListener('DOMContentLoaded',()=>{var d=JSON.parse(document.getE
 <strong>More free calculators:</strong><br>
   <a href="/generator-sizing-calculator.html">What Size Generator Do I Need? Generator Sizing Calculator</a>
   <a href="/how-many-batteries-do-i-need-for-van-life.html">How Many Batteries Do You Need for Van Life? The Real Math</a>
-  <a href="/index.html">Battery Bank Size Calculator [Free] | BatteryBankSizer</a>
+  <a href="/index.html">Battery Bank Size Calculator: 12V, 24V &amp; 48V Sizing</a>
   <a href="/magnet.html">Free Battery Bank Ah Card</a>
   <a href="/topics.html">Topic map</a>
   <a href="/what-size-battery-bank-for-off-grid-cabin.html">What Size Battery Bank for an Off-Grid Cabin? Worked Sizing Math</a>

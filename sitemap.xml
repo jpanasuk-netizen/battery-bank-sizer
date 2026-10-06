@@ -19,6 +19,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://battery-bank-sizer.com/contact.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://battery-bank-sizer.com/diesel-heater-battery-bank.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://battery-bank-sizer.com/about.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
@@ -38,13 +50,25 @@
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/how-many-batteries-do-i-need-for-van-life.html</loc>
     <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://battery-bank-sizer.com/how-to-check-12v-battery-capacity.html</loc>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,7 +80,7 @@
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/index.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -74,19 +98,19 @@
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/privacy.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/topics.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

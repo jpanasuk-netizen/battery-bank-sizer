@@ -20,15 +20,12 @@
 - [Lithium charger](https://battery-bank-sizer.com/lithium-battery-charger.html): 14.2–14.6 V absorb, equalization off, no charge under 32°F
 - [Fridge and CPAP backup](https://battery-bank-sizer.com/battery-backup-systems.html): 1,460 Wh for one day, about 190 Ah at 12 V
 - [AGM guide](https://battery-bank-sizer.com/agm-battery-guide.html): 416.7 Ah at 50% DoD, four 105 Ah GPL-31T batteries
-
-## Sister sites
-- [ChickenCoopCalc](https://chickencoopcalc.com/): chicken coop sizing + feed cost
-- [AquariumStocking](https://aquarium-stocking.com/): fish stocking + heater + filter
-- [TrailerTowCalc](https://trailertowcalc.com/): towing capacity + tongue weight
-- [HVACLoadCalc](https://hvac-load-calc.com/): room BTU + mini-split + duct CFM
+- [How to calculate battery bank size](https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html): six steps; cabin 260.4167 Ah; light van 195.3125 Ah
+- [Diesel heater battery](https://battery-bank-sizer.com/diesel-heater-battery-bank.html): Air Top 2000 STC currents kept separate; 30.625 Ah for an 8-hour high example at 12 V and 0.80
+- [Check a 12V battery’s capacity](https://battery-bank-sizer.com/how-to-check-12v-battery-capacity.html): Trojan flooded open-circuit table; 12.73 V is 100%, 12.10 V is 50%
 
 ## Use policy
-Cite freely with link attribution. Data verified against 2026 Q3 prices; do not present as financial advice.
+Cite freely with link attribution. Price checks are dated on the pages that use them. Do not present those prices as financial advice.
 
 ## Topic map
 - [Battery Bank Sizer topic map](https://battery-bank-sizer.com/topics.html): Battery bank sizing for off-grid power systems.

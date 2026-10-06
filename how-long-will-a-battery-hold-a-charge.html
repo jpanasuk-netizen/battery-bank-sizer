@@ -46,10 +46,30 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
   "headline": "How Long Will a Battery Hold a Charge?",
   "description": "Battle Born lists 2-3 percent self-discharge per month on the spec table and 4-5 percent in the storage section. Bluetooth draw is a separate 10 mA.",
   "datePublished": "2026-10-03",
-  "dateModified": "2026-10-03",
+  "dateModified": "2026-10-06",
   "author": {"@type": "Organization", "name": "Battery Bank Sizer"},
   "publisher": {"@type": "Organization", "name": "Battery Bank Sizer", "url": "https://battery-bank-sizer.com"},
   "mainEntityOfPage": "https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Battery Bank Sizer",
+   "item": "https://battery-bank-sizer.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "How Long Will a Battery Hold a Charge?",
+   "item": "https://battery-bank-sizer.com/how-long-will-a-battery-hold-a-charge.html"
+  }
+ ]
 }
 </script>
 </head>
@@ -57,7 +77,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <nav class="small" aria-label="Breadcrumb"><a href="index.html">Home</a> · <a href="topics.html#guides">Guides</a> · How long will a battery hold a charge?</nav>
 <main>
 <h1>How Long Will a Battery Hold a Charge?</h1>
-<p class="sub">Published October 3, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<p class="sub">Published October 3, 2026. Updated October 6, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
 <div class="answer-box"><strong>Direct answer:</strong> The Battle Born 100 Ah spec table lists self-discharge at 2–3% per month. A later storage bullet says batteries lose 4–5% capacity per month, and a footnote calls 2 to 4% per month the typical loss that subzero storage can beat. Those are three sentences in one manual. This page does not average them. On the cabin calculator result of about 260 Ah, one month at the spec-table ends is 5.2 Ah and 7.8 Ah. The Bluetooth dongle, about 10 mA, is a different line.</div>
 <p>The cabin number comes from this site’s formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. Inputs: 1,000 Wh/day, 2 days, 12 V, LiFePO4 depth of discharge 0.80. That is (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah, which the <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a> prints as about 260 Ah. Storage loss below is applied once, to that printed result, for one month. The manual does not describe compound decay, so this page does not compound it.</p>
 
@@ -71,6 +91,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <p>260 × 0.02 = 5.2. 260 × 0.03 = 7.8. 260 × 0.04 = 10.4. 260 × 0.05 = 13.0. The 260 is the rounded cabin result, not a lab measurement of a 260 Ah pack. Charge efficiency on the same spec table is 99%. That is a charge figure, not a shelf-loss figure.</p>
 <p>The storage section also says to bring batteries to 100% state of charge and disconnect them completely. Its note then says that after six months they remain 75 to 80% charged. Applied to the same 260 Ah result, 75% is 195 Ah still stored and 80% is 208 Ah. That six-month sentence is not the spec-table percent, and it is not the 4–5% bullet. This page does not turn one into the other.</p>
 <p>The footnote’s subzero line is narrower than a generic “cold weather” warning. It says storing batteries in subzero weather (−15°F or more) can crack the ABS plastic and can cause a faster loss of capacity, in some cases drastically more than the typical 2 to 4% per month. The words are the manual’s. This page does not pick a larger percent to stand in for “drastically more.”</p>
+<p>The same storage section states a storage temperature range of −10°F to 140°F (−23°C to 60°C), and it tells you to charge the battery to 100% and disconnect the negative cable from one battery. That range is the storage sentence. It is not the charging-profile window of 32°F to 131°F (0–55°C), and it is not the discharge window of −4°F to 140°F. The subzero footnote, about −15°F cracking ABS, still stands inside the low end of this range. This page does not turn the temperature sentence into an extra percent.</p>
 
 <h2>The 10 mA dongle is not the percent</h2>
 <p>Under the storage bullet, the manual says the integrated Bluetooth dongle consistently draws approximately 10 mA, and that you should account for that draw when planning storage. The Dragonfly specification block lists the same 10 mA as the discharge rate of the built-in communication, and it says future firmware is expected to result in about 1–3 mA. Plan on the 10 mA that is written as the present draw.</p>
@@ -107,11 +128,11 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <p id="hold-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
-<p>Related: the <a href="index.html">battery bank calculator</a>, the <a href="agm-battery-guide.html">AGM guide</a> (Lifeline’s rate is a different document), and <a href="battery-maintenance-connections-and-terminals.html">maintenance and terminals</a>.</p>
+<p>Related: the <a href="index.html">battery bank calculator</a>, the <a href="agm-battery-guide.html">AGM guide</a> (Lifeline’s rate is a different document), <a href="how-to-check-12v-battery-capacity.html">how to check a 12V battery’s capacity</a> (a rested voltage, not this percent), and <a href="battery-maintenance-connections-and-terminals.html">maintenance and terminals</a>.</p>
 <h2>Sources</h2>
 <p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
 <ul>
-<li>Battle Born BB10012i/BB1002iH 100Ah 12V Smart LiFePO4 manual. Spec table self-discharge 2–3% per month; storage bullet 4–5% per month; Bluetooth about 10 mA; six-month 75–80% note; subzero footnote. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
+<li>Battle Born BB10012i/BB1002iH 100Ah 12V Smart LiFePO4 manual. Spec table self-discharge 2–3% per month; storage bullet 4–5% per month; storage temperature −10°F to 140°F (−23°C to 60°C); Bluetooth about 10 mA; six-month 75–80% note; subzero footnote. <a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf</a>. accessed Oct 3, 2026.</li>
 <li>This site’s published sizing formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD, with the 1,000 Wh/day, 2-day cabin inputs. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
