@@ -18,15 +18,15 @@
 @media(min-width:560px){.btn-amz-primary{width:auto;min-width:240px}}
 #matchedCta{margin:.85rem 0 1rem;padding:.85rem 1rem;border:1px solid var(--warn,#f5a623);border-radius:10px;background:var(--card,#1a1a1a)}
 #matchedCta[hidden]{display:none!important}
-#amzSticky{position:fixed;left:0;right:0;bottom:0;z-index:90;display:flex;align-items:center;gap:.75rem;justify-content:space-between;padding:.7rem .9rem;background:var(--card,#1a1a1a);border-top:2px solid var(--warn,#f5a623);box-shadow:0 -6px 24px rgba(0,0,0,.35)}
-#amzSticky[hidden]{display:none!important}
-#amzSticky .btn-amz-primary{width:auto;flex:1;max-width:420px}
-#amzSticky .dismiss{background:transparent;border:1px solid var(--bd,#333);color:var(--mut,#999);border-radius:8px;padding:.45rem .7rem;cursor:pointer;min-height:44px}
-body{padding-bottom:4.5rem}
+/* 100dvh keeps the bar still when the layout viewport resizes during load. bottom:0 is the fallback. */
+#amzSticky{position:fixed;left:0;bottom:0;top:calc(100dvh - 72px);width:100vw;height:72px;min-height:72px;max-height:72px;box-sizing:border-box;padding:0 .9rem;overflow:hidden;display:flex;align-items:center;z-index:90;background:var(--card,#1a1a1a);border-top:2px solid var(--warn,#f5a623);box-shadow:0 -6px 24px rgba(0,0,0,.35);font-family:system-ui,sans-serif}
+#amzSticky[hidden]{display:flex!important;opacity:0;transform:translateY(100%);pointer-events:none}
+#amzSticky .btn-amz-primary{width:auto;flex:1;max-width:420px;height:44px;min-height:44px;max-height:44px;margin:0;padding:0 .9rem;line-height:44px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:system-ui,sans-serif}
+#amzSticky .dismiss{background:transparent;border:1px solid var(--bd,#333);color:var(--mut,#999);border-radius:8px;padding:.45rem .7rem;cursor:pointer;height:44px;min-height:44px;max-height:44px}
 
 :root{--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--ok:#3fb950;--bd:#30363d}
 *{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem}
+body{background:var(--bg);color:var(--fg);line-height:1.6;max-width:880px;margin:0 auto;padding:2rem 1.25rem 72px}
 a{color:var(--acc)}
 h1{font-size:1.9rem;line-height:1.2;margin-bottom:.35rem}
 h2{font-size:1.3rem;margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--bd)}
