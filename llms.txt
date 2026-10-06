@@ -6,7 +6,7 @@
 - [About](https://battery-bank-sizer.com/about.html): who built the site, how the pages are drafted, and why
 - [Privacy](https://battery-bank-sizer.com/privacy.html): what this site loads, and the contact email
 - [Contact](https://battery-bank-sizer.com/contact.html): jpanasuk@gmail.com
-- [Generator Sizing Calculator](https://battery-bank-sizer.com/generator-sizing-calculator.html): wattage tables, running vs starting watts, real 2026 costs — the definitive sizing answer
+- [Generator Sizing Calculator](https://battery-bank-sizer.com/generator-sizing-calculator.html): running watts plus the largest starting watts; this page does not publish an appliance wattage table or generator prices
 - [GeneratorSizer hub](https://generator-sizer.com/): full generator sizing calculator — running vs starting watts, inverter sizing, battery runtime, transfer switch planner
 
 ## Coming pages
