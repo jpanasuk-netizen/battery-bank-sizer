@@ -104,7 +104,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Ah calculator</h2>
 <p>Depth of discharge is locked to the two values this site publishes. AGM work uses 0.50. The note under the result counts 105 Ah GPL-31T batteries only as nameplate amp-hours at 12 V; it does not apply at 24 V or 48 V, where series changes the string.</p>
-<form id="agm-form">
+<form id="agm-form" data-share="wh:wh,days:days,volts:v,dod:dod" data-out="agm-out" data-name="AGM bank size estimate (Battery Bank Sizer)">
 <label for="wh">Daily watt-hours</label>
 <input id="wh" type="number" min="0" step="1" value="1000">
 <label for="days">Autonomy days</label>
@@ -117,6 +117,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 </form>
 <p id="agm-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=group+31+AGM+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">Group 31 AGM batteries on Amazon</a></p>
 <p>Lithium settings, if you are not on AGM, are <a href="lithium-battery-charger.html">the lithium charger page</a>. The directory table is the <a href="index.html">battery bank calculator</a>. A rested flooded-battery voltage is a different document from this 416.7 Ah result: <a href="how-to-check-12v-battery-capacity.html">how to check a 12V battery’s capacity</a>.</p>
 <h2>Sources</h2>
@@ -127,7 +128,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s formula and the cabin AGM result of about 417 Ah. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("agm-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -146,5 +147,6 @@ document.getElementById("agm-form").addEventListener("submit", function (e) {
   document.getElementById("agm-out").textContent = msg;
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

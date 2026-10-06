@@ -110,7 +110,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Run the US amp endpoints</h2>
 <p>The form multiplies a published US amp endpoint by 12 V and by the hours you set. Eight hours is the example. Startup amp-hours are printed beside the result and are not multiplied by those hours.</p>
-<form id="heat-form">
+<form id="heat-form" data-share="amps:a,hours:h,dod:dod" data-out="heat-out" data-name="Diesel heater Ah estimate (Battery Bank Sizer)">
 <label for="amps">US page amp endpoint</label>
 <select id="amps"><option value="1.25">1.25 A — low end of 1.25–2.45 A</option><option value="2.45" selected>2.45 A — high end of 1.25–2.45 A</option></select>
 <label for="hours">Hours (this page’s example night is 8)</label>
@@ -121,6 +121,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 </form>
 <p id="heat-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=Webasto+Air+Top+2000+STC&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">Webasto Air Top 2000 STC on Amazon</a></p>
 <p>The whole-day table is the <a href="index.html">battery bank calculator</a>.</p>
 <h2>Sources</h2>
@@ -131,7 +132,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD. <a href="https://battery-bank-sizer.com/index.html">https://battery-bank-sizer.com/index.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("heat-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -144,5 +145,6 @@ document.getElementById("heat-form").addEventListener("submit", function (e) {
   document.getElementById("heat-out").textContent = msg;
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

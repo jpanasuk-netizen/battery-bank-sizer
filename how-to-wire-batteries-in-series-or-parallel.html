@@ -111,7 +111,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Ah calculator</h2>
 <p>This form runs the site formula only. It does not turn a series string into extra amp-hours.</p>
-<form id="wire-form">
+<form id="wire-form" data-share="wh:wh,days:days,volts:v,dod:dod" data-out="wire-out" data-name="Series and parallel Ah estimate (Battery Bank Sizer)">
 <label for="wh">Daily watt-hours</label>
 <input id="wh" type="number" min="0" step="1" value="1000">
 <label for="days">Autonomy days</label>
@@ -124,6 +124,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 </form>
 <p id="wire-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
 <p>Back to the <a href="index.html">battery bank calculator</a>. Storage loss on a bank you actually built is <a href="how-long-will-a-battery-hold-a-charge.html">how long a battery holds a charge</a>.</p>
 <h2>Sources</h2>
@@ -133,7 +134,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s cabin formula and the 1,000 Wh/day, 2-day example. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("wire-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -149,5 +150,6 @@ document.getElementById("wire-form").addEventListener("submit", function (e) {
   document.getElementById("wire-out").textContent = msg;
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

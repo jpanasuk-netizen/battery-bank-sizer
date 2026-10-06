@@ -115,7 +115,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Ah calculator, plus the absorption rule</h2>
 <p>The form runs the site Ah formula, then applies 30 minutes per 100 Ah to that Ah result. Whole-battery banks should use the 90-minute example above when they are three 100 Ah batteries.</p>
-<form id="chg-form">
+<form id="chg-form" data-share="wh:wh,days:days,volts:v,dod:dod" data-out="chg-out" data-name="Lithium charge-time estimate (Battery Bank Sizer)">
 <label for="wh">Daily watt-hours</label>
 <input id="wh" type="number" min="0" step="1" value="1000">
 <label for="days">Autonomy days</label>
@@ -128,8 +128,41 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 </form>
 <p id="chg-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=14.6V+lithium+battery+charger+12V&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12 V lithium chargers on Amazon</a></p>
 <p>Size the bank first on the <a href="index.html">battery bank calculator</a>. A van that sits below freezing still uses the same charge cutoff; the load math is <a href="how-many-batteries-do-i-need-for-van-life.html">how many batteries for van life</a>.</p>
+<h2>12 V LiFePO4 models with published low-temperature charge protection or self-heating</h2>
+<p>The Cold-charge / heat column on the <a href="12v-lifepo4-battery-spec-chart.html">12V LiFePO4 battery spec chart</a> is the filter. A row stays out only when that cell is “not listed.” Every row in the chart publishes a charge cutoff, a charge-temperature line, a protection mark, or a heater line, so each row is in the table below. Figures are copied from the chart. Accessed Oct 6, 2026.</p>
+<p>The calculator on this page uses the cabin inputs already stated above: 1,000 Wh/day, 2 days, 12 V, and 0.80. <a href="lithium-battery-charger.html?wh=1000&amp;days=2&amp;v=12&amp;dod=0.8">Open those inputs in the calculator</a>.</p>
+<div style="overflow-x:auto">
+<table>
+<thead><tr><th>Model</th><th>Voltage</th><th>Ah</th><th>Cold-charge / heat</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Battle Born BB10012</td><td>12V</td><td>100Ah</td><td>BMS: no charging current under 32°F (0°C). Heating is not this model.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BB10012_BB1002H_Manual.pdf" rel="noopener" target="_blank">BB10012 / BB10012H manual</a></td></tr>
+<tr><td>Battle Born BB10012H</td><td>12V</td><td>100Ah</td><td>Heated. Activates at internal ~35°F when heat is enabled; 28W when enabled. BMS: no charging current under 32°F (0°C). Charge temperature 25°F to 135°F.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BB10012_BB1002H_Manual.pdf" rel="noopener" target="_blank">BB10012 / BB10012H manual</a></td></tr>
+<tr><td>Battle Born BB10012i</td><td>12V</td><td>100Ah</td><td>BMS: no charging current under 32°F (0°C). Heating is not this model.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">BB10012i / BB10012iH manual</a></td></tr>
+<tr><td>Battle Born BB10012iH</td><td>12V</td><td>100Ah</td><td>Heated. Activates at internal ~35°F when heat is enabled; 28W when enabled. BMS: no charging current under 32°F (0°C). Charge temperature 25°F to 135°F.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BB10012i_BB1002iH_Manual.pdf" rel="noopener" target="_blank">BB10012i / BB10012iH manual</a></td></tr>
+<tr><td>Battle Born BBGC2</td><td>12V</td><td>100Ah</td><td>BMS: no charging current under 32°F (0°C). Heating is not this model.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBGC2_Manual.pdf" rel="noopener" target="_blank">BBGC2 / BBGC2H manual</a></td></tr>
+<tr><td>Battle Born BBGC2H</td><td>12V</td><td>100Ah</td><td>Heated. Activates at internal ~35°F when heat is enabled; 28W when enabled. BMS: no charging current under 32°F (0°C). Charge temperature 25°F to 135°F.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBGC2_Manual.pdf" rel="noopener" target="_blank">BBGC2 / BBGC2H manual</a></td></tr>
+<tr><td>Battle Born BBGC3</td><td>12V</td><td>270Ah</td><td>BMS: no charging current under 32°F (0°C). Heating is not this model.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBGC3_Manual.pdf" rel="noopener" target="_blank">BBGC3 / BBGC3H manual</a></td></tr>
+<tr><td>Battle Born BBGC3H</td><td>12V</td><td>270Ah</td><td>Heated. Activates at internal ~35°F when heat is enabled; 28W when enabled. BMS: no charging current under 32°F (0°C). Charge temperature 25°F to 135°F.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBGC3_Manual.pdf" rel="noopener" target="_blank">BBGC3 / BBGC3H manual</a></td></tr>
+<tr><td>Battle Born BB1275</td><td>12V</td><td>75Ah</td><td>BMS: no charging current under 32°F (0°C). Heating is not this model.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BB1275_Manual.pdf" rel="noopener" target="_blank">BB1275 / BB1275H manual</a></td></tr>
+<tr><td>Battle Born BB1275H</td><td>12V</td><td>75Ah</td><td>Heated. Activates at internal ~35°F when heat is enabled; 28W when enabled. BMS: no charging current under 32°F (0°C). Charge temperature 25°F to 135°F.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BB1275_Manual.pdf" rel="noopener" target="_blank">BB1275 / BB1275H manual</a></td></tr>
+<tr><td>Battle Born BBBS1012</td><td>12.8V</td><td>10 Ah (C5 rate)</td><td>Charging 32°F to 122°F (0°C to 50°C). Heated: not listed.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBBS1012_Manual.pdf" rel="noopener" target="_blank">BBBS1012 manual</a></td></tr>
+<tr><td>Battle Born BBBS2012</td><td>12.8V</td><td>20 Ah (C5 rate)</td><td>Charging 32°F to 122°F (0°C to 50°C). Heated: not listed.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBBS2012_Manual.pdf" rel="noopener" target="_blank">BBBS2012 manual</a></td></tr>
+<tr><td>Battle Born BBBS3012</td><td>12.8V</td><td>30 Ah (C5 rate)</td><td>Charging 32°F to 122°F (0°C to 50°C). Heated: not listed.</td><td><a href="https://battlebornbatteries.com/cdn/shop/files/BBBS3012_Manual.pdf" rel="noopener" target="_blank">BBBS3012 manual</a></td></tr>
+<tr><td>LiTime 12V 100Ah</td><td>12.8V</td><td>100Ah</td><td>Charge 0°C to 50°C / 32°F to 122°F. Self-heating: /. Low-temperature protection: /.</td><td><a href="https://www.litime.com/products/litime-12v-100ah-lithium-lifepo4-battery" rel="noopener" target="_blank">LiTime 12V 100Ah product page</a></td></tr>
+<tr><td>LiTime 12V 100Ah Group 24</td><td>12.8V</td><td>100Ah</td><td>Charge 0°C to 50°C / 32°F to 122°F. Self-heating: /. Low-temperature protection: /.</td><td><a href="https://www.litime.com/products/12v-100ah-group-24-lithium-battery" rel="noopener" target="_blank">LiTime Group 24 product page</a></td></tr>
+<tr><td>LiTime 12V 100Ah trolling motor</td><td>12.8V</td><td>100Ah</td><td>Automatic charge off ＜32°F/0°C. Recovery ≥41°F/5°C. Self-heating: /.</td><td><a href="https://www.litime.com/products/litime-12v-100ah-tm-deep-cycle-lifepo4-battery-for-trolling-motors" rel="noopener" target="_blank">LiTime trolling-motor product page</a></td></tr>
+<tr><td>LiTime LiHeat 12V 100Ah Group 24</td><td>12.8V</td><td>100Ah</td><td>Self-heating √. Heating temperature -20°C to 5°C / -4°F to 41°F. Automatic charge off ＜32°F/0°C.</td><td><a href="https://www.litime.com/products/12v-100ah-group-24-bluetooth-self-heating-battery" rel="noopener" target="_blank">LiTime LiHeat Group 24 product page</a></td></tr>
+<tr><td>Redodo 12V 100Ah</td><td>12.8V</td><td>100Ah</td><td>Charge 0°C to 50°C/32°F to 122°F. Low-temperature protection: NO. Heating temperature: NO.</td><td><a href="https://www.redodopower.com/products/12v-100ah-lithium-battery" rel="noopener" target="_blank">Redodo 12V 100Ah product page</a></td></tr>
+<tr><td>Redodo 12V 100Ah Group 24 Bluetooth</td><td>12.8V</td><td>100Ah</td><td>Low-temperature protection: Yes (32℉/0℃). Auto recovery: Yes (41℉/5℃).</td><td><a href="https://www.redodopower.com/products/12v-100ah-group-24-battery-with-bluetooth" rel="noopener" target="_blank">Redodo Group 24 Bluetooth product page</a></td></tr>
+<tr><td>SOK SK12V100H</td><td>12V</td><td>100Ah</td><td>Built-in heater, down to -4°F. Low temperature charging cut-off. Charge temperature -4 to 113 ºF.</td><td><a href="https://us.sokbattery.com/product-page/sk12v100h-12v-100ah-self-heating-lifepo4-battery" rel="noopener" target="_blank">SOK SK12V100H product page</a></td></tr>
+<tr><td>Renogy Core Mini DuoHeat</td><td>12V (spec table). Page title: 12.8V</td><td>100Ah (0.5C, 25℃)</td><td>Spec table charge range -22°F to 131°F (-30°C to 55°C). Page FAQ: charging stops if cell temperature is below 32°F (0°C); DuoHeat pads on at 41°F (5°C), off at 50°F (10°C).</td><td><a href="https://www.renogy.com/products/duoheat-tech-core-mini-12v-100ah-lithium-iron-phosphate-battery" rel="noopener" target="_blank">Renogy Core Mini product page</a></td></tr>
+<tr><td>Dakota Lithium 12V 100Ah CAN Bus</td><td>12.8V</td><td>100 Ampere hours (Ah)</td><td>Avoid charging below 32°F. Heated: not listed. Operating line: -20°F min, +120°F max optimal.</td><td><a href="https://dakotalithium.com/product/dakota-lithium-12v-100ah-with-can-bus-deep-cycle-lifepo4-battery/" rel="noopener" target="_blank">Dakota Lithium product page</a></td></tr>
+</tbody>
+</table>
+</div>
 <h2>Sources</h2>
 <p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
 <ul>
@@ -137,7 +170,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s cabin formula, 1,000 Wh/day, 2 days, 12 V, 0.80 DoD. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("chg-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -150,5 +183,6 @@ document.getElementById("chg-form").addEventListener("submit", function (e) {
   document.getElementById("chg-out").textContent = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah. Applying 30 minutes per 100 Ah to that result is " + minutes.toFixed(1) + " minutes. A 12 V lithium profile on this battery is still 14.2-14.6 V absorb and 13.4-13.8 V float, with equalization and temperature compensation disabled.";
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

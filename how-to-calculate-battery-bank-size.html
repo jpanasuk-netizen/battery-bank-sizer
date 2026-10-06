@@ -134,7 +134,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Run the six steps</h2>
 <p>The form uses only Ah = (Wh/day × days × 1.25) ÷ voltage ÷ depth of discharge. It counts 100 Ah batteries in parallel only at 12 V.</p>
-<form id="calc-form">
+<form id="calc-form" data-share="wh:wh,days:days,volts:v,dod:dod" data-out="calc-out" data-name="Battery bank size estimate (Battery Bank Sizer)">
 <label for="wh">Daily watt-hours</label>
 <input id="wh" type="number" min="0" step="1" value="1000">
 <label for="days">Autonomy days</label>
@@ -155,7 +155,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>Lifeline’s instruction to size rated capacity at least twice the required capacity, kept separate from the 1.25. <a href="https://lifelinebatteries.com/wp-content/uploads/2015/12/6-0101F-Lifeline-Technical-Manual-Final-5-06-19.pdf" rel="noopener" target="_blank">https://lifelinebatteries.com/wp-content/uploads/2015/12/6-0101F-Lifeline-Technical-Manual-Final-5-06-19.pdf</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("calc-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -174,5 +174,6 @@ document.getElementById("calc-form").addEventListener("submit", function (e) {
   document.getElementById("calc-out").textContent = msg;
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

@@ -99,7 +99,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Ah calculator</h2>
 <p>Torque does not change amp-hours. The form only runs the site formula so the terminal count has a bank behind it.</p>
-<form id="maint-form">
+<form id="maint-form" data-share="wh:wh,days:days,volts:v,dod:dod" data-out="maint-out" data-name="Terminal-page Ah estimate (Battery Bank Sizer)">
 <label for="wh">Daily watt-hours</label>
 <input id="wh" type="number" min="0" step="1" value="1000">
 <label for="days">Autonomy days</label>
@@ -121,7 +121,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s cabin formula. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("maint-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -133,5 +133,6 @@ document.getElementById("maint-form").addEventListener("submit", function (e) {
   document.getElementById("maint-out").textContent = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah. Torque stays 9 to 11 ft-lb on the Battle Born terminal, or 70 in-lb on a Lifeline M8 or M10 stud. The Ah result does not change the unit.";
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

@@ -105,7 +105,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Ah calculator</h2>
 <p>Defaults are the 1,460 Wh day, one day of autonomy, 12 V, and 0.80. Change the watt-hours when you add a sourced load. Do not type a starting-watt number into the watt-hour field.</p>
-<form id="bak-form">
+<form id="bak-form" data-share="wh:wh,days:days,volts:v,dod:dod" data-out="bak-out" data-name="Backup bank size estimate (Battery Bank Sizer)">
 <label for="wh">Watt-hours for the outage day</label>
 <input id="wh" type="number" min="0" step="1" value="1460">
 <label for="days">Autonomy days</label>
@@ -118,6 +118,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 </form>
 <p id="bak-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
 <p>The full table is the <a href="index.html">battery bank calculator</a>. Fridge watts alone stay on <a href="what-size-battery-bank-for-a-refrigerator.html">the refrigerator page</a>.</p>
 <h2>Sources</h2>
@@ -130,7 +131,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s formula, Ah = (Wh/day × days × 1.25) ÷ voltage ÷ DoD. The 8-hour night length is the duration already used on <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-a-cpap.html">the CPAP page</a>, not a Champion specification.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("bak-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -147,5 +148,6 @@ document.getElementById("bak-form").addEventListener("submit", function (e) {
   document.getElementById("bak-out").textContent = msg;
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

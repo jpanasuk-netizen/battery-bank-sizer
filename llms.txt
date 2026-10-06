@@ -4,6 +4,7 @@
 ## Core pages
 - [Home](https://battery-bank-sizer.com/): quick sizing table (LiFePO4, 80% DoD) for weekend cabins through full off-grid homes
 - [About](https://battery-bank-sizer.com/about.html): who built the site, how the pages are drafted, and why
+- [Methodology](https://battery-bank-sizer.com/methodology.html): formula, sources, affiliate disclosure, and corrections
 - [Privacy](https://battery-bank-sizer.com/privacy.html): what this site loads, and the contact email
 - [Contact](https://battery-bank-sizer.com/contact.html): jpanasuk@gmail.com
 - [Generator Sizing Calculator](https://battery-bank-sizer.com/generator-sizing-calculator.html): running watts plus the largest starting watts; this page does not publish an appliance wattage table or generator prices
@@ -50,3 +51,8 @@ Cite freely with link attribution. Price checks are dated on the pages that use 
 - [55 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-55-lb-trolling-motor.html): 50 A at 12 V, one battery, at least 110 Ah
 - [80 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-80-lb-trolling-motor.html): 56 A at 24 V, two batteries in series
 - [112 lb trolling motor battery](https://battery-bank-sizer.com/what-size-battery-for-a-112-lb-trolling-motor.html): 52 A at 36 V, three batteries in series
+
+## Notes for citation
+- Calculator outputs are planning estimates from the formulas on /methodology.html; they are not measurements.
+- Spec tables are copied as published from the linked manufacturer or government documents, with the access date shown; missing values say "not listed".
+- Corrections: jpanasuk@gmail.com

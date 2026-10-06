@@ -122,7 +122,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <tr><td>10%</td><td>1.073</td><td>11.51 V</td></tr>
 </table>
 <p>The form repeats those ten rows. It does not invent a voltage between them.</p>
-<form id="soc-form">
+<form id="soc-form" data-share="soc:soc" data-out="soc-out" data-name="Flooded open-circuit lookup (Battery Bank Sizer)">
 <label for="soc">Rested 12 V reading on Table 1</label>
 <select id="soc">
 <option value="100">12.73 V — 100%</option>
@@ -157,6 +157,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <h2>Limits, and when to call a pro</h2>
 <p>A voltage lookup does not measure remaining amp-hours. A battery can sit at 12.73 V and still have lost capacity that an open-circuit reading will not show. If the voltage is below 11.51 V, or a cell is the bad-cell case Trojan names, the maintenance page’s instruction is a specialist or retirement, not a tighter formula. Terminal work and the difference between a lithium torque spec and an AGM torque spec are on <a href="battery-maintenance-connections-and-terminals.html">maintenance, connections, and terminals</a>.</p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=DC+voltmeter&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">DC voltmeters on Amazon</a></p>
 <p>Nameplate amp-hours are the <a href="index.html">battery bank calculator</a>.</p>
 <h2>Sources</h2>
@@ -168,7 +169,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s cabin result at 0.50 depth of discharge, 416.6667 Ah. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("soc-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -183,5 +184,6 @@ document.getElementById("soc-form").addEventListener("submit", function (e) {
   document.getElementById("soc-out").textContent = msg;
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>

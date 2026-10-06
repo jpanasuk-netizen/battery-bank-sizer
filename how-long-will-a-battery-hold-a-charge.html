@@ -105,7 +105,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 
 <h2>Run the same formula, then one cited rate</h2>
 <p>The form uses only Ah = (Wh/day × days × 1.25) ÷ voltage ÷ depth of discharge, then multiplies that Ah by one rate you pick from the manual’s ranges. It does not add the Bluetooth draw.</p>
-<form id="hold-form">
+<form id="hold-form" data-share="wh:wh,days:days,volts:v,dod:dod,rate:r,hours:h" data-out="hold-out" data-name="Storage-loss estimate (Battery Bank Sizer)">
 <label for="wh">Daily watt-hours</label>
 <input id="wh" type="number" min="0" step="1" value="1000">
 <label for="days">Autonomy days</label>
@@ -127,6 +127,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 </form>
 <p id="hold-out"></p>
 <p class="small">Affiliate disclosure: as an Amazon Associate, we earn from qualifying purchases — at no cost to you.</p>
+<p class="small affil-disclosure" style="font-size:1rem">As an Amazon Associate I earn from qualifying purchases. The Amazon links below are affiliate links; they don't change the math.</p>
 <p><a class="btn-amz" href="https://www.amazon.com/s?k=12V+100Ah+LiFePO4+battery&amp;tag=generatorsi0d-20" rel="sponsored nofollow noopener" target="_blank">12V 100Ah LiFePO4 batteries on Amazon</a></p>
 <p>Related: the <a href="index.html">battery bank calculator</a>, the <a href="agm-battery-guide.html">AGM guide</a> (Lifeline’s rate is a different document), <a href="how-to-check-12v-battery-capacity.html">how to check a 12V battery’s capacity</a> (a rested voltage, not this percent), and <a href="battery-maintenance-connections-and-terminals.html">maintenance and terminals</a>.</p>
 <h2>Sources</h2>
@@ -136,7 +137,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <li>This site’s published sizing formula, Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ DoD, with the 1,000 Wh/day, 2-day cabin inputs. <a href="https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html">https://battery-bank-sizer.com/what-size-battery-bank-for-off-grid-cabin.html</a>.</li>
 </ul>
 </main>
-<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · pages may contain affiliate links</footer>
+<footer>Built by Jeremy Panasuk · <a href="/about.html">About &amp; how this was made</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a> · <a href="/methodology.html">Methodology</a> · pages may contain affiliate links</footer>
 <script>
 document.getElementById("hold-form").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -152,5 +153,6 @@ document.getElementById("hold-form").addEventListener("submit", function (e) {
   document.getElementById("hold-out").textContent = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(2) + " Ah. One month at " + (rate * 100) + "% of that result is " + loss.toFixed(2) + " Ah. Bluetooth at 10 mA for " + hours + " hours is " + bt.toFixed(2) + " Ah, reported separately and not added.";
 });
 </script>
+<script src="assets/share-result.js" defer></script>
 </body>
 </html>
