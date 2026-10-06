@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" width="720" height="280" role="img" aria-labelledby="t2 d2">
+<title id="t2">Same cabin energy at three voltages</title>
+<desc id="d2">1,000 watt-hours per day for 2 days at 0.80 depth of discharge is about 260 Ah at 12 V, 130 Ah at 24 V, and 65 Ah at 48 V.</desc>
+<rect width="720" height="280" fill="#161b22"/>
+<text x="24" y="36" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="18">Same 1,000 Wh/day, 2 days, 0.80</text>
+<rect x="48" y="70" width="180" height="120" rx="8" fill="#0d1117" stroke="#30363d"/>
+<text x="138" y="110" fill="#8b949e" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">12 V</text>
+<text x="138" y="148" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="28" text-anchor="middle">260 Ah</text>
+<rect x="270" y="70" width="180" height="120" rx="8" fill="#0d1117" stroke="#30363d"/>
+<text x="360" y="110" fill="#8b949e" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">24 V</text>
+<text x="360" y="148" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="28" text-anchor="middle">130 Ah</text>
+<rect x="492" y="70" width="180" height="120" rx="8" fill="#0d1117" stroke="#30363d"/>
+<text x="582" y="110" fill="#8b949e" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">48 V</text>
+<text x="582" y="148" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="28" text-anchor="middle">65 Ah</text>
+<text x="24" y="230" fill="#8b949e" font-family="system-ui,sans-serif" font-size="14">Rounded table figures. Unrounded 12 V result is 260.4167 Ah.</text>
+<text x="24" y="256" fill="#8b949e" font-family="system-ui,sans-serif" font-size="13">Source: this sites formula on the cabin sizing table.</text>
+</svg>

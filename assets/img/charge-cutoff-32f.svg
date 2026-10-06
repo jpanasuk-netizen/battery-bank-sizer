@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" width="720" height="260" role="img" aria-labelledby="t5 d5">
+<title id="t5">Charge cutoff at 32 degrees Fahrenheit</title>
+<desc id="d5">The BMS will not allow a charging current under 32 F. Discharge continues down to minus 4 F.</desc>
+<rect width="720" height="260" fill="#161b22"/>
+<text x="24" y="36" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="18">BMS low-temperature line</text>
+<rect x="36" y="64" width="300" height="110" rx="8" fill="#0d1117" stroke="#f78166"/>
+<text x="186" y="108" fill="#f78166" font-family="system-ui,sans-serif" font-size="16" text-anchor="middle">Under 32°F (0°C)</text>
+<text x="186" y="140" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">No charging current</text>
+<rect x="384" y="64" width="300" height="110" rx="8" fill="#0d1117" stroke="#3fb950"/>
+<text x="534" y="108" fill="#3fb950" font-family="system-ui,sans-serif" font-size="16" text-anchor="middle">Down to 4°F (20°C)</text>
+<text x="534" y="140" fill="#e6edf3" font-family="system-ui,sans-serif" font-size="14" text-anchor="middle">Discharge still allowed</text>
+<text x="24" y="214" fill="#8b949e" font-family="system-ui,sans-serif" font-size="14">These are two limits. They are not the same number.</text>
+<text x="24" y="242" fill="#8b949e" font-family="system-ui,sans-serif" font-size="13">Source: Battle Born BMS sentence quoted on this page.</text>
+</svg>

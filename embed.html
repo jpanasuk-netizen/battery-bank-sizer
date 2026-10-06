@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Battery Bank Size Calculator</title>
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://battery-bank-sizer.com/">
+<style>
+:root{color-scheme:light dark;--bg:#0d1117;--card:#161b22;--fg:#e6edf3;--mut:#8b949e;--acc:#f78166;--bd:#30363d}
+@media (prefers-color-scheme: light){
+  :root{--bg:#f6f8fa;--card:#ffffff;--fg:#1f2328;--mut:#59636e;--acc:#9a3412;--bd:#d0d7de}
+}
+*{margin:0;box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body{background:var(--bg);color:var(--fg);line-height:1.45;padding:.85rem .9rem 1rem}
+h1{font-size:1.15rem;line-height:1.25;margin-bottom:.35rem}
+p.formula{color:var(--mut);font-size:.86rem;margin:0 0 .55rem}
+label{display:block;margin:.4rem 0 .12rem;font-size:.82rem}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.4rem .5rem;width:100%}
+button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.45rem .75rem;font-weight:700;cursor:pointer;margin-top:.65rem}
+#calc-out{min-height:4.6rem;margin:.55rem 0 .35rem;font-size:.92rem}
+.credit{font-size:.82rem;color:var(--mut)}
+.credit a{color:var(--acc)}
+</style>
+</head>
+<body>
+<h1>Battery Bank Size Calculator</h1>
+<p class="formula">Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge</p>
+<form id="calc-form">
+<label for="wh">Daily watt-hours</label>
+<input id="wh" type="number" min="0" step="1" value="1000">
+<label for="days">Autonomy days</label>
+<input id="days" type="number" min="1" step="1" value="2">
+<label for="volts">Voltage</label>
+<select id="volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="dod">Depth of discharge</label>
+<select id="dod"><option value="0.8" selected>0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<button type="submit">Calculate</button>
+</form>
+<p id="calc-out"></p>
+<p class="credit">Calculator by <a href="https://battery-bank-sizer.com/" target="_blank" rel="noopener">Battery Bank Sizer</a></p>
+<script>
+document.getElementById("calc-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var wh = Number(document.getElementById("wh").value);
+  var days = Number(document.getElementById("days").value);
+  var volts = Number(document.getElementById("volts").value);
+  var dod = Number(document.getElementById("dod").value);
+  var ah = (wh * days * 1.25) / volts / dod;
+  var msg = "Ah = (" + wh + " x " + days + " x 1.25) / " + volts + " / " + dod + " = " + ah.toFixed(4) + " Ah.";
+  if (volts === 12) {
+    var n = Math.ceil(ah / 100);
+    msg += " At 12 V, " + n + " batteries of 100 Ah in parallel is " + (n * 100) + " Ah. Series does not multiply amp-hours.";
+  } else {
+    msg += " A 100 Ah count in parallel applies at 12 V. Series at " + volts + " V does not multiply amp-hours.";
+  }
+  document.getElementById("calc-out").textContent = msg;
+});
+</script>
+</body>
+</html>

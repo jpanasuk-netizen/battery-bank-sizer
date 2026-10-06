@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://battery-bank-sizer.com/12v-lifepo4-battery-spec-chart.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://battery-bank-sizer.com/agm-battery-guide.html</loc>
     <lastmod>2026-10-03</lastmod>
@@ -26,6 +32,12 @@
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/diesel-heater-battery-bank.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://battery-bank-sizer.com/embed-calculator.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -59,6 +71,9 @@
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://battery-bank-sizer.com/assets/img/six-step-ah.svg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/how-to-check-12v-battery-capacity.html</loc>
@@ -68,21 +83,30 @@
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/how-to-wire-batteries-in-series-or-parallel.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://battery-bank-sizer.com/assets/img/series-vs-parallel.svg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/index.html</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://battery-bank-sizer.com/assets/img/ah-formula-flow.svg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/lithium-battery-charger.html</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://battery-bank-sizer.com/assets/img/charge-cutoff-32f.svg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/magnet.html</loc>
@@ -107,6 +131,9 @@
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://battery-bank-sizer.com/assets/img/cabin-voltage-ah.svg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://battery-bank-sizer.com/what-size-battery-bank-for-a-1000w-inverter.html</loc>

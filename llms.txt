@@ -21,6 +21,8 @@
 - [Fridge and CPAP backup](https://battery-bank-sizer.com/battery-backup-systems.html): 1,460 Wh for one day, about 190 Ah at 12 V
 - [AGM guide](https://battery-bank-sizer.com/agm-battery-guide.html): 416.7 Ah at 50% DoD, four 105 Ah GPL-31T batteries
 - [How to calculate battery bank size](https://battery-bank-sizer.com/how-to-calculate-battery-bank-size.html): six steps; cabin 260.4167 Ah; light van 195.3125 Ah
+- [12V LiFePO4 spec chart](https://battery-bank-sizer.com/12v-lifepo4-battery-spec-chart.html): manufacturer Ah, Wh, continuous discharge, weight, cold charge, and cycles; accessed Oct 6, 2026
+- [Embed the calculator](https://battery-bank-sizer.com/embed-calculator.html): same Ah formula in an iframe; keep the credit link
 - [Diesel heater battery](https://battery-bank-sizer.com/diesel-heater-battery-bank.html): Air Top 2000 STC currents kept separate; 30.625 Ah for an 8-hour high example at 12 V and 0.80
 - [Check a 12V battery’s capacity](https://battery-bank-sizer.com/how-to-check-12v-battery-capacity.html): Trojan flooded open-circuit table; 12.73 V is 100%, 12.10 V is 50%
 

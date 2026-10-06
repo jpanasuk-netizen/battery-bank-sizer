@@ -109,6 +109,10 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <p>The 1.25 sits in the numerator on every other page of this site. Lifeline’s own AGM instruction is a different step: size rated capacity at least twice the capacity the load requires. That doubling is why this site uses 0.50 for AGM. It does not replace the 1.25. The <a href="agm-battery-guide.html">AGM guide</a> keeps those two steps apart.</p>
 
 <h2>Worked cabin</h2>
+<figure style="margin:1.2rem 0">
+<img src="assets/img/six-step-ah.svg" width="720" height="280" alt="Six steps for the cabin: 1,000 watt-hours times 2 days times 1.25 is 2,500 watt-hours, then 260.4167 Ah, then three 100 Ah batteries." loading="lazy">
+<figcaption class="small">Cabin inputs on this page: 1,000 Wh/day, 2 days, 12 V, 0.80. Step 5 is 260.4167 Ah. Source: this site’s formula.</figcaption>
+</figure>
 <p>The <a href="what-size-battery-bank-for-off-grid-cabin.html">cabin page</a> uses 1,000 Wh/day and 2 days. Step 3 is 1,000 × 2 × 1.25 = 2,500 Wh. Step 4 at 12 V is 2,500 ÷ 12 = 208.3333 Ah before depth of discharge. Step 5 at 0.80 is 208.3333 ÷ 0.80 = 260.4167 Ah. The same energy at 48 V is 2,500 ÷ 48 ÷ 0.80 = 65.1042 Ah. Dividing by 0.80 is the same as asking the nameplate to hold 2,500 ÷ 0.80 = 3,125 Wh. At 12 V that is 3,125 ÷ 12 = 260.4167 Ah, which the cabin table prints as about 260 Ah.</p>
 <p>Step 6 at 12 V: 260.4167 ÷ 100 = 2.60, so two 100 Ah batteries (200 Ah) are short and three (300 Ah) cover it. Two 100 Ah batteries in series would be 24 V at 100 Ah, not 200 Ah. Series and parallel rules, including the Battle Born stop at 48 V, are on <a href="how-to-wire-batteries-in-series-or-parallel.html">series and parallel wiring</a>.</p>
 <table>
@@ -142,7 +146,7 @@ button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55re
 <button type="submit">Calculate</button>
 </form>
 <p id="calc-out"></p>
-<p>The sizing table that already ran these rows is the <a href="index.html">battery bank calculator</a>.</p>
+<p>The sizing table that already ran these rows is the <a href="index.html">battery bank calculator</a>. Published 12 V LiFePO4 nameplate rows, including continuous discharge and cold-charge lines, are on the <a href="12v-lifepo4-battery-spec-chart.html">12V LiFePO4 battery spec chart</a>.</p>
 <h2>Sources</h2>
 <p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
 <ul>
