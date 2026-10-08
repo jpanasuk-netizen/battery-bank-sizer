@@ -44,6 +44,11 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 .faqsec{margin-top:2.2rem;border-top:1px solid var(--bd);padding-top:1rem}
 .faqsec h3{margin:1.1rem 0 .3rem}
 .faqsec p{color:var(--mut);font-size:.95rem}
+#run-form label{display:block;margin:.55rem 0 .15rem}
+#run-form input,#run-form select{background:var(--card);color:var(--fg);border:1px solid var(--bd);border-radius:6px;padding:.45rem .55rem;width:100%;max-width:22rem}
+#run-form button{background:var(--acc);color:#111;border:0;border-radius:6px;padding:.55rem .9rem;font-weight:700;cursor:pointer;margin-top:.8rem}
+#run-out{min-height:3.4rem;margin:.6rem 0 0}
+#device-watts-sources + .small{font-size:.85rem;color:var(--mut)}
 </style>
 <script type="application/ld+json">
 {
@@ -54,7 +59,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
   "operatingSystem": "Web",
   "url": "https://battery-bank-sizer.com/",
   "description": "Free battery bank sizing calculator and directory: Ah from daily Wh at 12V/24V/48V, LiFePO4 vs AGM DoD, cabin and van examples, and quick sizing tables.",
-  "dateModified": "2026-10-06",
+  "dateModified": "2026-10-08",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
@@ -84,7 +89,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <body>
 <h1>Battery Bank Size Calculator</h1>
 <p data-magnet-cta="1" style="margin:.6rem 0 1.1rem;padding:.7rem .9rem;border-left:4px solid #f59e0b;background:rgba(245,158,11,.08);font-size:1.02rem"><a href="magnet.html" style="font-weight:700">Free Ah pocket card — print it.</a></p>
-<p class="small" id="last-updated">Last updated: October 6, 2026 (CT)</p>
+<p class="small" id="last-updated">Last updated: October 8, 2026 (CT)</p>
 <p><a href="topics.html"><strong>Topic map</strong></a> — pillars, existing pages, what this site is not.</p>
 <p class="sub">Battery bank sizing for off-grid power systems.</p>
 <p class="sub">The off-grid battery bank directory — sizing tables, wiring guides, and priced battery checks. No fluff.</p>
@@ -154,6 +159,115 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <li><a href="what-size-battery-for-a-80-lb-trolling-motor.html">What size battery for an 80 lb trolling motor?</a></li>
 <li><a href="what-size-battery-for-a-112-lb-trolling-motor.html">What size battery for a 112 lb trolling motor?</a></li>
 </ul>
+<h2 id="device-runtime">🔋 Device runtime on your bank</h2>
+<p>Pick a device to fill the watts box, or type your own watts. Runtime uses this site's formula from the <a href="magnet.html">Ah card</a>: <strong>runtime hours = (Ah × volts × DoD) ÷ load watts</strong>. It does not subtract inverter losses.</p>
+<form id="run-form">
+<label for="run-device">Device (fills the watts box)</label>
+<select id="run-device">
+<option value="" selected>Custom: type watts below</option>
+<optgroup label="Computers &amp; devices">
+<option value="d1" data-watts="240">NVIDIA DGX Spark — power supply rating (240 W)</option>
+<option value="d2" data-watts="575">NVIDIA GeForce RTX 5090 card — total graphics power (575 W)</option>
+<option value="d3" data-watts="360">NVIDIA GeForce RTX 5080 card — total graphics power (360 W)</option>
+<option value="d4" data-watts="450">NVIDIA GeForce RTX 4090 card — total graphics power (450 W)</option>
+<option value="d5" data-watts="320">NVIDIA GeForce RTX 4080 card — total graphics power (320 W)</option>
+<option value="d6" data-watts="200">NVIDIA GeForce RTX 4070 card — total graphics power (200 W)</option>
+<option value="d7" data-watts="304">AMD Radeon RX 9070 XT card — typical board power (304 W)</option>
+<option value="d8" data-watts="220">AMD Radeon RX 9070 card — typical board power (220 W)</option>
+<option value="d9" data-watts="160">AMD Radeon RX 9060 XT card — typical board power (160 W)</option>
+<option value="d10" data-watts="355">AMD Radeon RX 7900 XTX card — typical board power (355 W)</option>
+<option value="d11" data-watts="170">AMD Ryzen 9 9950X3D CPU — default TDP (170 W)</option>
+<option value="d12" data-watts="170">AMD Ryzen 9 9950X CPU — default TDP (170 W)</option>
+<option value="d13" data-watts="120">AMD Ryzen 7 9800X3D CPU — default TDP (120 W)</option>
+<option value="d14" data-watts="65">AMD Ryzen 7 9700X CPU — default TDP (65 W)</option>
+<option value="d15" data-watts="65">AMD Ryzen 5 9600X CPU — default TDP (65 W)</option>
+<option value="d16" data-watts="60">MacBook Air (M5) — charger rating (60 W)</option>
+<option value="d17" data-watts="70">MacBook Pro 14-inch (M5) — charger rating (70 W)</option>
+<option value="d18" data-watts="96">MacBook Pro 14-inch (M5 Pro 18-core or M5 Max) — charger rating (96 W)</option>
+<option value="d19" data-watts="140">MacBook Pro 16-inch (M5 Pro or M5 Max) — charger rating (140 W)</option>
+<option value="d20" data-watts="105">iMac 24-inch (M4, four ports) — max power consumption (105 W)</option>
+<option value="d21" data-watts="70">Mac mini (M6) — max power consumption (70 W)</option>
+<option value="d22" data-watts="145">Mac mini (M5 Pro) — max power consumption (145 W)</option>
+<option value="d23" data-watts="200">Mac Studio (M5 Max) — max power consumption (200 W)</option>
+<option value="d24" data-watts="385">Mac Studio (M5 Ultra) — max power consumption (385 W)</option>
+<option value="d25" data-watts="330">Mac Pro (2023, M2 Ultra) — max power consumption (330 W)</option>
+<option value="d26" data-watts="60">iPhone 18 Pro or Pro Max (fast-charge adapter) — charger rating (60 W)</option>
+<option value="d27" data-watts="40">iPhone 17 (fast-charge adapter) — charger rating (40 W)</option>
+<option value="d28" data-watts="20">iPad (included 20W adapter) — charger rating (20 W)</option>
+</optgroup>
+</select>
+<label for="run-watts">Load watts</label>
+<input id="run-watts" type="number" min="1" step="1" value="100">
+<label for="run-ah">Bank amp-hours</label>
+<input id="run-ah" type="number" min="1" step="1" value="100">
+<label for="run-volts">Voltage</label>
+<select id="run-volts"><option value="12">12 V</option><option value="24">24 V</option><option value="48">48 V</option></select>
+<label for="run-dod">Depth of discharge</label>
+<select id="run-dod"><option value="0.8" selected>0.80 LiFePO4</option><option value="0.5">0.50 AGM / lead-acid</option></select>
+<button type="submit">Calculate runtime</button>
+</form>
+<p id="run-out" aria-live="polite"></p>
+<h3 id="device-watts-sources">Device watts and sources</h3>
+<p class="small">These presets use the maker's own published number, labeled by type. A graphics card figure is the card only and a CPU figure is the CPU only, not the whole PC, so add the rest of the system to the watts box yourself (the PC power supply label is the ceiling). A charger rating is the most that charger can draw while charging, so runtime at that number is the short end.</p>
+<table>
+<thead>
+<tr><th scope="col">Device</th><th scope="col" class="num">Watts</th><th scope="col">Wattage type</th><th scope="col">Source</th></tr>
+</thead>
+<tbody>
+<tr><td>NVIDIA DGX Spark</td><td class="num">240</td><td>Power supply rating</td><td><a href="https://www.nvidia.com/en-us/products/workstations/dgx-spark/" rel="noopener" target="_blank">www.nvidia.com</a></td></tr>
+<tr><td>NVIDIA GeForce RTX 5090 card</td><td class="num">575</td><td>Total graphics power (card only)</td><td><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/" rel="noopener" target="_blank">www.nvidia.com</a></td></tr>
+<tr><td>NVIDIA GeForce RTX 5080 card</td><td class="num">360</td><td>Total graphics power (card only)</td><td><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5080/" rel="noopener" target="_blank">www.nvidia.com</a></td></tr>
+<tr><td>NVIDIA GeForce RTX 4090 card</td><td class="num">450</td><td>Total graphics power (card only)</td><td><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/" rel="noopener" target="_blank">www.nvidia.com</a></td></tr>
+<tr><td>NVIDIA GeForce RTX 4080 card</td><td class="num">320</td><td>Total graphics power (card only)</td><td><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4080-family/" rel="noopener" target="_blank">www.nvidia.com</a></td></tr>
+<tr><td>NVIDIA GeForce RTX 4070 card</td><td class="num">200</td><td>Total graphics power (card only)</td><td><a href="https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-family/" rel="noopener" target="_blank">www.nvidia.com</a></td></tr>
+<tr><td>AMD Radeon RX 9070 XT card</td><td class="num">304</td><td>Typical board power (card only)</td><td><a href="https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070xt.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Radeon RX 9070 card</td><td class="num">220</td><td>Typical board power (card only)</td><td><a href="https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Radeon RX 9060 XT card</td><td class="num">160</td><td>Typical board power (card only)</td><td><a href="https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9060xt.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Radeon RX 7900 XTX card</td><td class="num">355</td><td>Typical board power (card only)</td><td><a href="https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xtx.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Ryzen 9 9950X3D CPU</td><td class="num">170</td><td>Default TDP (CPU only)</td><td><a href="https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Ryzen 9 9950X CPU</td><td class="num">170</td><td>Default TDP (CPU only)</td><td><a href="https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Ryzen 7 9800X3D CPU</td><td class="num">120</td><td>Default TDP (CPU only)</td><td><a href="https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Ryzen 7 9700X CPU</td><td class="num">65</td><td>Default TDP (CPU only)</td><td><a href="https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>AMD Ryzen 5 9600X CPU</td><td class="num">65</td><td>Default TDP (CPU only)</td><td><a href="https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html" rel="noopener" target="_blank">www.amd.com</a></td></tr>
+<tr><td>MacBook Air (M5)</td><td class="num">60</td><td>Charger rating (included 40W Dynamic Power Adapter, 60W max)</td><td><a href="https://www.apple.com/macbook-air/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+<tr><td>MacBook Pro 14-inch (M5)</td><td class="num">70</td><td>Charger rating (included 70W USB-C Power Adapter)</td><td><a href="https://www.apple.com/macbook-pro/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+<tr><td>MacBook Pro 14-inch (M5 Pro 18-core or M5 Max)</td><td class="num">96</td><td>Charger rating (included 96W USB-C Power Adapter)</td><td><a href="https://www.apple.com/macbook-pro/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+<tr><td>MacBook Pro 16-inch (M5 Pro or M5 Max)</td><td class="num">140</td><td>Charger rating (included 140W USB-C Power Adapter)</td><td><a href="https://www.apple.com/macbook-pro/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+<tr><td>iMac 24-inch (M4, four ports)</td><td class="num">105</td><td>Max power consumption (Apple CPU Max figure)</td><td><a href="https://support.apple.com/en-us/109513" rel="noopener" target="_blank">support.apple.com</a></td></tr>
+<tr><td>Mac mini (M6)</td><td class="num">70</td><td>Max power consumption</td><td><a href="https://support.apple.com/en-us/103253" rel="noopener" target="_blank">support.apple.com</a></td></tr>
+<tr><td>Mac mini (M5 Pro)</td><td class="num">145</td><td>Max power consumption</td><td><a href="https://support.apple.com/en-us/103253" rel="noopener" target="_blank">support.apple.com</a></td></tr>
+<tr><td>Mac Studio (M5 Max)</td><td class="num">200</td><td>Max power consumption</td><td><a href="https://support.apple.com/en-us/102027" rel="noopener" target="_blank">support.apple.com</a></td></tr>
+<tr><td>Mac Studio (M5 Ultra)</td><td class="num">385</td><td>Max power consumption</td><td><a href="https://support.apple.com/en-us/102027" rel="noopener" target="_blank">support.apple.com</a></td></tr>
+<tr><td>Mac Pro (2023, M2 Ultra)</td><td class="num">330</td><td>Max power consumption</td><td><a href="https://support.apple.com/en-us/102839" rel="noopener" target="_blank">support.apple.com</a></td></tr>
+<tr><td>iPhone 18 Pro or Pro Max (fast-charge adapter)</td><td class="num">60</td><td>Charger rating (60W-capable adapter Apple lists for fast charge; sold separately)</td><td><a href="https://www.apple.com/iphone-18-pro/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+<tr><td>iPhone 17 (fast-charge adapter)</td><td class="num">40</td><td>Charger rating (40W adapter Apple lists for fast charge; sold separately)</td><td><a href="https://www.apple.com/iphone-17/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+<tr><td>iPad (included 20W adapter)</td><td class="num">20</td><td>Charger rating (20W USB-C Power Adapter in the box)</td><td><a href="https://www.apple.com/ipad-11/specs/" rel="noopener" target="_blank">www.apple.com</a></td></tr>
+</tbody>
+</table>
+<script>
+(function () {
+  var form = document.getElementById("run-form");
+  var dev = document.getElementById("run-device");
+  var watts = document.getElementById("run-watts");
+  function run() {
+    var w = Number(watts.value);
+    var ah = Number(document.getElementById("run-ah").value);
+    var volts = Number(document.getElementById("run-volts").value);
+    var dod = Number(document.getElementById("run-dod").value);
+    var out = document.getElementById("run-out");
+    if (!(w > 0) || !(ah > 0)) { out.textContent = "Enter load watts and bank amp-hours above zero."; return; }
+    var hrs = (ah * volts * dod) / w;
+    out.textContent = "Runtime = (" + ah + " Ah x " + volts + " V x " + dod + ") / " + w + " W = " + hrs.toFixed(2) + " hours.";
+  }
+  dev.addEventListener("change", function () {
+    var o = dev.options[dev.selectedIndex];
+    if (o && o.getAttribute("data-watts")) { watts.value = o.getAttribute("data-watts"); run(); }
+  });
+  watts.addEventListener("input", function () { dev.value = ""; });
+  form.addEventListener("submit", function (e) { e.preventDefault(); run(); });
+})();
+</script>
+
 <h2>🔧 Tools (coming)</h2>
 <div class="card"><h3>Interactive Battery Bank Calculator <span class="tag">building</span></h3><p>Enter your loads, autonomy days, and voltage — get Ah, fuse size, inverter tier, and a parts list with 2026 prices. No email required.</p></div>
 
