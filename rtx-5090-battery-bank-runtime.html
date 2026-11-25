@@ -21,7 +21,7 @@
 <style>
 
 .btn-amz{display:inline-block;background:var(--card,#1a1a1a);color:var(--fg,#eee);border:1px solid var(--warn,#f5a623);border-radius:8px;padding:.55rem .9rem;font-size:.92rem;text-decoration:none;min-height:44px;line-height:1.4;margin:.2rem}
-.btn-amz-primary{background:var(--acc,#3b82f6);color:#fff!important;border-color:var(--acc,#3b82f6);font-weight:700;width:100%;text-align:center}
+.btn-amz-primary{background:#c4462b;color:#fff!important;border-color:#c4462b;font-weight:700;width:100%;text-align:center}
 @media(min-width:560px){.btn-amz-primary{width:auto;min-width:240px}}
 #matchedCta{margin:.85rem 0 1rem;padding:.85rem 1rem;border:1px solid var(--warn,#f5a623);border-radius:10px;background:var(--card,#1a1a1a)}
 #matchedCta[hidden]{display:none!important}
@@ -62,12 +62,14 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
     "@id": "https://battery-bank-sizer.com/rtx-5090-battery-bank-runtime.html"
   },
   "author": {
-    "@type": "Organization",
-    "name": "BatteryBankSizer"
+    "@type": "Person",
+    "name": "Jeremy Panasuk",
+    "url": "https://battery-bank-sizer.com/about.html"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "BatteryBankSizer"
+    "name": "BatteryBankSizer",
+    "url": "https://battery-bank-sizer.com/"
   },
   "datePublished": "2026-10-20",
   "dateModified": "2026-10-20"
@@ -143,6 +145,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <body>
 <nav class="small" aria-label="Breadcrumb"><a href="/">Home</a> · <a href="topics.html#questions">Questions</a> · How Big a Battery Bank Does an RTX 5090 PC Need?</nav>
 <h1>How Big a Battery Bank Does an RTX 5090 PC Need?</h1>
+<p class="small">Built by <a href="/about.html">Jeremy Panasuk</a>. Published October 20, 2026.</p>
 <p class="sub">Battery runtime for a high-end gaming PC, worked from NVIDIA's published power figures.</p>
 <div class="answer-box"><strong>Direct answer:</strong> <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/" rel="noopener" target="_blank">NVIDIA</a> lists the GeForce RTX 5090 at 575 W total graphics power and 1,000 W required system power. With this site's LiFePO4 settings (1.25 margin, 80% depth of discharge, 12 V), one hour of the card alone needs about 75 Ah. One hour at the full 1,000 W system figure needs about 130 Ah.</div>
 <p><strong>The 1,000 W figure is NVIDIA's power supply requirement, not a measured draw.</strong> A real PC may use less. Treat 130 Ah per hour as the planning ceiling and the 75 Ah card-only figure as a floor that leaves out the CPU, monitor and the rest of the system.</p>

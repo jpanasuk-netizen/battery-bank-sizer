@@ -40,14 +40,17 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
  "name": "12V LiFePO4 Battery Spec Chart",
  "description": "Published 12V LiFePO4 battery specs copied from manufacturer pages and manuals: amp-hours, watt-hours, max continuous discharge, weight, cold-charge or heating, and cycle rating. Accessed Oct 6, 2026.",
  "url": "https://battery-bank-sizer.com/12v-lifepo4-battery-spec-chart.html",
- "creator": {"@type": "Organization", "name": "Battery Bank Sizer"},
+ "creator": {
+  "@type": "Organization",
+  "name": "BatteryBankSizer"
+ },
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "distribution": {
   "@type": "DataDownload",
   "encodingFormat": "text/csv",
   "contentUrl": "https://battery-bank-sizer.com/assets/12v-lifepo4-battery-spec-chart.csv"
  },
- "dateModified": "2026-10-06"
+ "dateModified": "2026-11-24"
 }
 </script>
 <script type="application/ld+json">
@@ -66,8 +69,9 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <nav class="small" aria-label="Breadcrumb"><a href="/">Home</a> · <a href="topics.html#guides">Guides</a> · 12V LiFePO4 spec chart</nav>
 <main>
 <h1>12V LiFePO4 Battery Spec Chart</h1>
-<p class="sub">Published October 6, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
+<p class="sub">Published October 6, 2026. Updated November 24, 2026. Built by <a href="/about.html">Jeremy Panasuk</a>.</p>
 <p class="small">Last reviewed: Oct 6, 2026 · Next review planned: January 2027</p>
+<div class="answer-box"><strong>Direct answer:</strong> The first row, Battle Born's BB10012, is a 12V 100Ah battery with 100A max continuous discharge, 3,000-5,000 cycles, and a BMS that allows no charging current under 32°F (0°C). Three 100Ah rows cover the 260.4167 Ah weekend cabin bank; one 100A battery does not cover a 166.7 A load.</div>
 <div class="answer-box"><strong>What this table is:</strong> Nameplate figures copied from the manufacturer page or manual linked on that row. Accessed Oct 6, 2026. A blank published field is “not listed.” This page does not estimate a missing watt-hour, amp, weight, cutoff, or cycle count.</div>
 <p>Use the Ah column after you already have an amp-hour result from this site’s calculator. The formula is Ah = (Wh/day × autonomy days × 1.25) ÷ voltage ÷ depth of discharge. The weekend cabin inputs are 1,000 Wh/day, 2 days, 12 V, and 0.80: (1,000 × 2 × 1.25) ÷ 12 ÷ 0.80 = 260.4167 Ah. Three rows that say 100 Ah are 300 Ah, which covers 260.4167 Ah. That count does not check current. A 2,000 W load at 12 V is 2,000 ÷ 12 = 166.7 A. The BB10012 row lists 100 A max discharge, so one of those batteries does not cover 166.7 A.</p>
 <p>Click a column heading to sort. <a href="assets/12v-lifepo4-battery-spec-chart.csv">Download CSV</a> of the same rows.</p>
@@ -117,6 +121,7 @@ footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--bd);color:v
 <h2>How a missing cell is handled</h2>
 <p>Battle Born’s 100 Ah, 75 Ah, and 270 Ah manuals do not print watt-hours, so those cells say “not listed.” The Base Series manuals print energy with a tilde, and the tilde stays. SOK’s product page names 100 Ah and 12 V and prints 170 A and 27 lbs; it does not print watt-hours.</p>
 <p>Gaming PC on battery? See <a href="rtx-5090-battery-bank-runtime.html">RTX 5090 battery bank runtime</a>.</p>
+<p>Compare them side by side in <a href="/agm-vs-lifepo4-battery-bank.html">AGM vs LiFePO4 battery bank</a>.</p>
 <h2>Sources</h2>
 <p>Compiled with AI assistance from the sources below. Spot an error? Email <a href="mailto:jpanasuk@gmail.com">jpanasuk@gmail.com</a>.</p>
 <ul>

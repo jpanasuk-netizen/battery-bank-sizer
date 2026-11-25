@@ -1,6 +1,8 @@
 # Battery Bank Sizer
 > Off-grid battery bank sizing directory: calculators, comparison guides, and real cost breakdowns for cabins, vans, and homesteads.
 
+Built and owned by Jeremy Panasuk, New Auburn, Wisconsin (jpanasuk@gmail.com). Page text is drafted with AI from the cited sources and the formulas are checked against them. The site earns from Amazon affiliate links.
+
 ## Core pages
 - [Home](https://battery-bank-sizer.com/): quick sizing table (LiFePO4, 80% DoD) for weekend cabins through full off-grid homes
 - [About](https://battery-bank-sizer.com/about.html): who built the site, how the pages are drafted, and why
@@ -26,6 +28,19 @@
 - [Embed the calculator](https://battery-bank-sizer.com/embed-calculator.html): same Ah formula in an iframe; keep the credit link
 - [Diesel heater battery](https://battery-bank-sizer.com/diesel-heater-battery-bank.html): Air Top 2000 STC currents kept separate; 30.625 Ah for an 8-hour high example at 12 V and 0.80
 - [Check a 12V battery’s capacity](https://battery-bank-sizer.com/how-to-check-12v-battery-capacity.html): Trojan flooded open-circuit table; 12.73 V is 100%, 12.10 V is 50%
+
+## Data
+- [Trolling motor amp draw and battery data (Minn Kota charts)](https://battery-bank-sizer.com/trolling-motor-amp-draw-data.html): 13 sourced rows: trolling motor amp draw and battery sizing data, each linked to the published source, with a CSV download and citation.
+- [Trolling motor amp draw and battery data (Minn Kota charts) CSV](https://battery-bank-sizer.com/trolling-motor-amp-draw-data.csv): the same rows as Trolling motor amp draw and battery data (Minn Kota charts), as CSV
+
+## Trolling motors
+- [Best Battery for a Minn Kota Trolling Motor: Minn Kota's Group 24, 27 and 31 Rows](https://battery-bank-sizer.com/best-battery-for-minn-kota-trolling-motor.html): Minn Kota's chart calls for a 12 V deep-cycle marine battery of at least 110 Ah: group 24 good, group 27 better, group 31 best. 24 V motors take two.
+- [Best Battery for Trolling Motor on Kayak: 12 V Draw and Runtime](https://battery-bank-sizer.com/best-battery-for-kayak-trolling-motor.html): Minn Kota's 12 V trolling motors draw at most 30 A, 42 A, or 50 A. The chart asks for at least 110 Ah. A 70 Ah group 24 lasts about 2.3 hours at 30 A.
+- [Deep Cycle vs Lithium Battery for Trolling Motor: Draw and 85% Rule](https://battery-bank-sizer.com/deep-cycle-vs-lithium-battery-for-trolling-motor.html): Deep cycle vs lithium for a trolling motor: Minn Kota says brushed motors on lithium should stay at 85% speed, and the continuous rating must cover max draw.
+
+## More guides
+- [AGM vs LiFePO4 Battery Bank: Same Load, Both Ways](https://battery-bank-sizer.com/agm-vs-lifepo4-battery-bank.html): 1,000 Wh a day for 2 days at 12 V needs about 417 Ah of AGM (four Lifeline GPL-31Ts) or 260 Ah of LiFePO4 (three Battle Born BB10012s).
+- [RTX 5090 Battery Bank Runtime: 75 Ah to 130 Ah per Hour at 12V](https://battery-bank-sizer.com/rtx-5090-battery-bank-runtime.html): NVIDIA lists the RTX 5090 at 575 W graphics power and 1,000 W system power. One hour at 12 V LiFePO4 needs about 75 Ah for the card and 130 Ah at 1,000 W.
 
 ## Use policy
 Cite freely with link attribution. Price checks are dated on the pages that use them. Do not present those prices as financial advice.
